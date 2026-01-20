@@ -1,69 +1,159 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termos de Uso | Dr. Luiz Fernando Cardoso</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Termos de Uso | Odontologia Ideale - Dr. Luiz Fernando Cardoso</title>
+    <meta name="description" content="Termos de Uso da Odontologia Ideale. Regras e diretrizes para utilização do nosso site e agendamento de consultas.">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Poppins', 'sans-serif'] },
-                    colors: { brand: { 50: '#f0fdf4', 500: '#22c55e', 600: '#16a34a', 900: '#14532d' } }
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    }
                 }
             }
         }
     </script>
-</head>
-<body class="bg-gray-50 text-gray-700 font-sans">
 
-    <nav class="bg-white shadow-sm py-4">
-        <div class="container mx-auto px-6 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-bold text-brand-900">
-                <i class="fa-solid fa-tooth text-brand-600 mr-2"></i>Dr. Luiz Fernando Cardoso
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700 antialiased">
+
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="logo-ideale.png" alt="Odontologia Ideale" class="h-12 md:h-16 w-auto">
             </a>
-            <a href="index.html" class="text-sm font-semibold text-brand-600 hover:underline">Voltar ao site</a>
+            
+            <div class="hidden md:flex space-x-8 items-center font-medium text-sm text-gray-600">
+                <a href="index.html#home" class="hover:text-brand-600 transition">Início</a>
+                <a href="index.html#sobre" class="hover:text-brand-600 transition">O Consultório</a>
+                <a href="index.html#tratamentos" class="hover:text-brand-600 transition">Especialidades</a>
+                <a href="index.html#contato" class="px-5 py-2.5 bg-brand-600 text-white rounded-full hover:bg-brand-700 transition shadow-lg flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Agendar
+                </a>
+            </div>
+
+            <button class="md:hidden text-gray-600" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 absolute w-full shadow-xl">
+            <div class="flex flex-col space-y-4 text-center">
+                <a href="index.html#home" onclick="toggleMenu()" class="block py-2">Início</a>
+                <a href="index.html#sobre" onclick="toggleMenu()" class="block py-2">O Consultório</a>
+                <a href="index.html#contato" onclick="toggleMenu()" class="block py-3 bg-brand-600 text-white rounded-lg">Agendar Agora</a>
+            </div>
         </div>
     </nav>
 
-    <main class="container mx-auto px-6 py-12 max-w-4xl">
-        <div class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
-            <h1 class="text-3xl font-heading font-bold text-gray-900 mb-8 border-b pb-4">Termos de Uso</h1>
-            
-            <section class="mb-8">
-                <h2 class="text-xl font-bold text-brand-900 mb-4">1. Aceitação dos Termos</h2>
-                <p class="mb-4 leading-relaxed">Ao acessar o site do Dr. Luiz Fernando Cardoso (Odontologia Ideale), você concorda em cumprir estes termos de serviço e todas as leis e regulamentos aplicáveis.</p>
-            </section>
+    <main class="pt-32 pb-20">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="bg-white rounded-3xl p-8 md:p-16 shadow-sm border border-gray-100">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 border-b border-brand-100 pb-4">Termos de Uso</h1>
+                
+                <div class="space-y-8 text-gray-600 leading-relaxed text-justify">
+                    <section>
+                        <h2 class="text-xl font-bold text-brand-900 mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-600"></i> 1. Aceitação dos Termos
+                        </h2>
+                        <p>Ao acessar este site, você concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis. Se você não concordar com algum destes termos, está proibido de usar ou acessar este site.</p>
+                    </section>
 
-            <section class="mb-8">
-                <h2 class="text-xl font-bold text-brand-900 mb-4">2. Finalidade Informativa</h2>
-                <p class="mb-4 leading-relaxed">O conteúdo deste site é meramente informativo. Nenhuma informação aqui contida substitui uma consulta presencial e avaliação clínica odontológica profissional.</p>
-            </section>
+                    <section>
+                        <h2 class="text-xl font-bold text-brand-900 mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-stethoscope text-brand-600"></i> 2. Uso de Informações
+                        </h2>
+                        <p>As informações contidas neste site possuem caráter meramente informativo e educativo. O conteúdo aqui exposto <strong>não substitui</strong>, em hipótese alguma, uma consulta presencial e avaliação clínica odontológica profissional realizada pelo Dr. Luiz Fernando Cardoso.</p>
+                    </section>
 
-            <section class="mb-8">
-                <h2 class="text-xl font-bold text-brand-900 mb-4">3. Propriedade Intelectual</h2>
-                <p class="mb-4 leading-relaxed">As fotos da clínica, logotipos e textos são de propriedade exclusiva da Odontologia Ideale. A reprodução não autorizada é proibida.</p>
-            </section>
+                    <section>
+                        <h2 class="text-xl font-bold text-brand-900 mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-copyright text-brand-600"></i> 3. Propriedade Intelectual
+                        </h2>
+                        <p>Todas as fotos do consultório, logotipos, textos e elementos visuais são de propriedade exclusiva da <strong>Odontologia Ideale</strong>. A reprodução, cópia ou uso não autorizado de qualquer material contido neste site é estritamente proibida.</p>
+                    </section>
 
-            <section class="mb-8">
-                <h2 class="text-xl font-bold text-brand-900 mb-4">4. Agendamentos</h2>
-                <p class="mb-4 leading-relaxed">O contato via WhatsApp não garante agendamento imediato. O horário só será confirmado após interação com nossa equipe de recepção e verificação de disponibilidade.</p>
-            </section>
+                    <section>
+                        <h2 class="text-xl font-bold text-brand-900 mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-calendar-check text-brand-600"></i> 4. Agendamentos via WhatsApp
+                        </h2>
+                        <p>O início de um contato via WhatsApp através dos botões deste site não garante o agendamento imediato. O horário da consulta só será efetivado após a confirmação direta da nossa equipe de recepção, mediante disponibilidade de agenda.</p>
+                    </section>
 
-            <section class="mb-8">
-                <h2 class="text-xl font-bold text-brand-900 mb-4">5. Limitação de Responsabilidade</h2>
-                <p class="mb-4 leading-relaxed">Não nos responsabilizamos por instabilidades técnicas no acesso ao site ou por informações desatualizadas em sites de terceiros que redirecionem para este endereço.</p>
-            </section>
+                    <section>
+                        <h2 class="text-xl font-bold text-brand-900 mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-triangle-exclamation text-brand-600"></i> 5. Limitação de Responsabilidade
+                        </h2>
+                        <p>A Odontologia Ideale não se responsabiliza por eventuais instabilidades técnicas no acesso ao site, nem por informações desatualizadas encontradas em sites de terceiros que redirecionem para o nosso endereço oficial.</p>
+                    </section>
+                </div>
 
-            <p class="text-sm text-gray-400 mt-12 text-center">Rua Herval, 579 - Belém, SP | CRO-SP 35.371</p>
+                <div class="mt-12 p-6 bg-brand-50 rounded-2xl border border-brand-100 text-center">
+                    <p class="text-sm font-semibold text-brand-900">Dr. Luiz Fernando Cardoso - CRO/SP 35.371</p>
+                    <p class="text-xs text-gray-500 mt-1">Responsável Técnico</p>
+                </div>
+
+                <p class="text-xs text-gray-400 mt-8 text-center">Última atualização: 20 de Janeiro de 2026.</p>
+            </div>
         </div>
     </main>
 
-    <footer class="py-8 text-center text-sm text-gray-500">
-        <p>© 2026 Odontologia Ideale - Dr. Luiz Fernando Cardoso</p>
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-center md:text-left">
+                    <img src="logo-ideale.png" alt="Odontologia Ideale" class="h-14 w-auto mx-auto md:mx-0 mb-4 brightness-0 invert opacity-90">
+                    <p class="text-brand-500 font-bold">Dr. Luiz Fernando Cardoso - CRO/SP 35.371</p>
+                </div>
+                <div class="flex gap-x-8 text-sm uppercase tracking-widest">
+                    <a href="index.html#home" class="hover:text-white transition">Início</a>
+                    <a href="privacidade.html" class="hover:text-white transition underline">Privacidade</a>
+                    <a href="index.html#contato" class="hover:text-white transition">Contato</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between text-xs text-center items-center gap-4">
+                <p>© 2026 Odontologia Ideale | Dr. Luiz Fernando Cardoso (Responsável Técnico). Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a href="http://www.redesigner.com.br" target="_blank" class="hover:text-brand-500 underline">Redesigner PPM</a></p>
+            </div>
+        </div>
     </footer>
+
+    <a href="https://wa.me/5511977001032" target="_blank" class="fixed bottom-6 right-6 z-40 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition border-2 border-white">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script>
+        function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
+    </script>
 </body>
 </html>
