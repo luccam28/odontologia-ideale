@@ -251,83 +251,94 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border-b-8 border-brand-600 hover:shadow-xl transition-all duration-500 relative overflow-hidden flex flex-col">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-20 h-20 bg-brand-50 rounded-2xl flex items-center justify-center overflow-hidden shadow-sm border-2 border-white">
-                            <img src="alinhador-1.jpg" class="w-full h-full object-cover" alt="Ortodontia">
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900 leading-tight">Ortodontia Moderna</h3>
+                
+                <div class="bg-white rounded-[2.5rem] shadow-sm border-b-8 border-brand-600 hover:shadow-xl transition-all duration-500 relative overflow-hidden flex flex-col">
+                    <div class="w-full h-56 overflow-hidden">
+                        <img src="alinhador-1.jpg" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" alt="Ortodontia">
                     </div>
-                    <p class="text-gray-600 mb-2 leading-relaxed">O alinhamento correto dos dentes previne dores e devolve a harmonia ao rosto.</p>
-                    
-                    <div id="descOrto" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                        <div class="pt-4 mt-4 border-t border-brand-100 text-gray-600 leading-relaxed">
-                            <p class="mb-4 font-bold text-gray-900 text-sm uppercase tracking-wider">O que entregamos:</p>
-                            <ul class="space-y-3 mb-4">
-                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-brand-600 mt-1 text-sm"></i><span class="text-sm">Alinhadores Transparentes (Invisalign).</span></li>
-                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-brand-600 mt-1 text-sm"></i><span class="text-sm">Aparelhos Autoligados (mais rápidos).</span></li>
-                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-brand-600 mt-1 text-sm"></i><span class="text-sm">Ortodontia digital com escaneamento.</span></li>
-                            </ul>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Ortodontia Moderna</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">O alinhamento correto dos dentes previne dores e devolve a harmonia ao seu rosto.</p>
+                        <div id="descOrto" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="pt-4 mt-2 border-t border-brand-100 text-gray-600">
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-brand-600 mt-1 text-sm"></i><span class="text-sm">Alinhadores Transparentes (Invisalign).</span></li>
+                                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-brand-600 mt-1 text-sm"></i><span class="text-sm">Aparelhos Autoligados.</span></li>
+                                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-brand-600 mt-1 text-sm"></i><span class="text-sm">Ortodontia digital.</span></li>
+                                </ul>
+                            </div>
                         </div>
+                        <button onclick="toggleCard('descOrto', this)" class="mt-6 text-brand-600 font-bold flex items-center gap-2 hover:gap-4 transition-all uppercase text-xs tracking-widest">
+                            <span class="toggle-text">Saiba Mais</span><i class="fas fa-plus toggle-icon"></i>
+                        </button>
                     </div>
-                    
-                    <button onclick="toggleCard('descOrto', this)" class="mt-auto pt-6 text-brand-600 font-bold flex items-center gap-2 hover:gap-4 transition-all uppercase text-xs tracking-widest">
-                        <span class="toggle-text">Saiba Mais</span><i class="fas fa-plus toggle-icon"></i>
-                    </button>
                 </div>
 
-                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border-b-8 border-accent hover:shadow-xl transition-all duration-500 relative overflow-hidden flex flex-col">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-20 h-20 bg-accent/5 rounded-2xl flex items-center justify-center overflow-hidden shadow-sm border-2 border-white">
-                            <img src="implante.png" class="w-full h-full object-cover" alt="Implantes">
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900 leading-tight">Implantes e Reabilitação</h3>
+                <div class="bg-white rounded-[2.5rem] shadow-sm border-b-8 border-accent hover:shadow-xl transition-all duration-500 relative overflow-hidden flex flex-col">
+                    <div class="w-full h-56 overflow-hidden">
+                        <img src="implante.png" class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110" alt="Implantes">
                     </div>
-                    <p class="text-gray-600 mb-2 leading-relaxed">A solução definitiva para a perda dentária. Recupere sua mastigação com segurança.</p>
-                    
-                    <div id="descImplante" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                        <div class="pt-4 mt-4 border-t border-accent/10 text-gray-600 leading-relaxed">
-                            <p class="mb-4 font-bold text-gray-900 text-sm uppercase tracking-wider">Diferenciais Ideale:</p>
-                            <ul class="space-y-3 mb-4">
-                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent mt-1 text-sm"></i><span class="text-sm">Implantes de titânio de alta pureza.</span></li>
-                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent mt-1 text-sm"></i><span class="text-sm">Carga imediata e sedação consciente.</span></li>
-                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent mt-1 text-sm"></i><span class="text-sm">Próteses em zircônia (estética natural).</span></li>
-                            </ul>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Implantes Dentários</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">A solução definitiva para a perda dentária. Recupere sua mastigação com segurança.</p>
+                        <div id="descImplante" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="pt-4 mt-2 border-t border-accent/10 text-gray-600">
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent mt-1 text-sm"></i><span class="text-sm">Implantes de titânio de alta pureza.</span></li>
+                                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent mt-1 text-sm"></i><span class="text-sm">Carga imediata e sedação.</span></li>
+                                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-accent mt-1 text-sm"></i><span class="text-sm">Próteses em zircônia.</span></li>
+                                </ul>
+                            </div>
                         </div>
+                        <button onclick="toggleCard('descImplante', this)" class="mt-6 text-accent font-bold flex items-center gap-2 hover:gap-4 transition-all uppercase text-xs tracking-widest">
+                            <span class="toggle-text">Saiba Mais</span><i class="fas fa-plus toggle-icon"></i>
+                        </button>
                     </div>
-                    
-                    <button onclick="toggleCard('descImplante', this)" class="mt-auto pt-6 text-accent font-bold flex items-center gap-2 hover:gap-4 transition-all uppercase text-xs tracking-widest">
-                        <span class="toggle-text">Saiba Mais</span><i class="fas fa-plus toggle-icon"></i>
-                    </button>
                 </div>
 
-                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border-b-8 border-gray-800 hover:shadow-xl transition-all duration-500 relative overflow-hidden flex flex-col">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-20 h-20 bg-gray-50 rounded-2xl flex items-center justify-center overflow-hidden shadow-sm border-2 border-white">
-                            <img src="sala-clinica-2.jpg" class="w-full h-full object-cover" alt="Clínica Geral">
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900 leading-tight">Prevenção e Estética</h3>
+                <div class="bg-white rounded-[2.5rem] shadow-sm border-b-8 border-gray-800 hover:shadow-xl transition-all duration-500 relative overflow-hidden flex flex-col">
+                    <div class="w-full h-56 overflow-hidden">
+                        <img src="sala-clinica-2.jpg" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" alt="Clínica Geral">
                     </div>
-                    <p class="text-gray-600 mb-2 leading-relaxed">Cuidado preventivo focado na longevidade e estética do seu sorriso.</p>
-                    
-                    <div id="descClinica" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                        <div class="pt-4 mt-4 border-t border-gray-100 text-gray-600 leading-relaxed">
-                            <p class="mb-4 font-bold text-gray-900 text-sm uppercase tracking-wider">Foco do tratamento:</p>
-                            <ul class="space-y-3 mb-4">
-                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-gray-800 mt-1 text-sm"></i><span class="text-sm">Check-up preventivo digital.</span></li>
-                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-gray-800 mt-1 text-sm"></i><span class="text-sm">Limpeza ultrassônica e profilaxia.</span></li>
-                                <li class="flex items-start gap-2"><i class="fas fa-check-circle text-gray-800 mt-1 text-sm"></i><span class="text-sm">Restaurações estéticas (minimamente invasivas).</span></li>
-                            </ul>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Prevenção e Estética</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">Cuidado focado na longevidade. Unimos saúde gengival com estética de alto padrão.</p>
+                        <div id="descClinica" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div class="pt-4 mt-2 border-t border-gray-100 text-gray-600">
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-gray-800 mt-1 text-sm"></i><span class="text-sm">Check-up preventivo digital.</span></li>
+                                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-gray-800 mt-1 text-sm"></i><span class="text-sm">Limpeza ultrassônica.</span></li>
+                                    <li class="flex items-start gap-2"><i class="fas fa-check-circle text-gray-800 mt-1 text-sm"></i><span class="text-sm">Restaurações estéticas.</span></li>
+                                </ul>
+                            </div>
                         </div>
+                        <button onclick="toggleCard('descClinica', this)" class="mt-6 text-gray-800 font-bold flex items-center gap-2 hover:gap-4 transition-all uppercase text-xs tracking-widest">
+                            <span class="toggle-text">Saiba Mais</span><i class="fas fa-plus toggle-icon"></i>
+                        </button>
                     </div>
-                    
-                    <button onclick="toggleCard('descClinica', this)" class="mt-auto pt-6 text-gray-800 font-bold flex items-center gap-2 hover:gap-4 transition-all uppercase text-xs tracking-widest">
-                        <span class="toggle-text">Saiba Mais</span><i class="fas fa-plus toggle-icon"></i>
-                    </button>
                 </div>
+
             </div>
         </div>
     </section>
+
+    <script>
+        function toggleCard(id, button) {
+            const content = document.getElementById(id);
+            const textSpan = button.querySelector('.toggle-text');
+            const icon = button.querySelector('.toggle-icon');
+
+            if (!content.style.maxHeight || content.style.maxHeight === '0px') {
+                content.style.maxHeight = content.scrollHeight + "px";
+                textSpan.textContent = 'Fechar';
+                icon.classList.replace('fa-plus', 'fa-minus');
+            } else {
+                content.style.maxHeight = '0px';
+                textSpan.textContent = 'Saiba Mais';
+                icon.classList.replace('fa-minus', 'fa-plus');
+            }
+        }
+    </script>
 
     <script>
         function toggleCard(id, button) {
