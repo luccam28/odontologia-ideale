@@ -111,10 +111,11 @@
             </a>
             
             <div class="hidden md:flex space-x-8 items-center font-medium text-sm text-gray-600">
-                <a href="#home" class="hover:text-brand-600 transition">Home</a>
-                <a href="#sobre" class="hover:text-brand-600 transition">O Consultório</a>
-                <a href="#tratamentos" class="hover:text-brand-600 transition">Especialidades</a>
-                <a href="#depoimentos" class="hover:text-brand-600 transition">Depoimentos</a>
+                <a href="#home" class="hover:text-brand-600 transition">HOME</a>
+                <a href="#sobre" class="hover:text-brand-600 transition">O CONSULTÓRIO</a>
+                <a href="#tratamentos" class="hover:text-brand-600 transition">ESPECIALIDADES</a>
+                <a href="#depoimentos" class="hover:text-brand-600 transition">DEPOIMENTOS</a>
+                <a href="#faq" class="hover:text-brand-600 transition">DÚVIDAS</a>
                 <a href="#contato" class="px-5 py-2.5 bg-brand-600 text-white rounded-full hover:bg-brand-700 transition shadow-lg flex items-center gap-2" aria-label="Agendar via WhatsApp">
                     <i class="fa-brands fa-whatsapp"></i> Agendar Avaliação
                 </a>
@@ -143,14 +144,17 @@
                     Dr. Luiz Fernando Cardoso | CRO-SP: 35.371
                 </span>
                 <h1 class="text-4xl md:text-6xl font-heading font-bold text-gray-900 leading-tight mb-6">
-                    O sorriso que você sempre sonhou.<br>
+                   Seu sorriso saudável começa aqui.<br>
                     <span class="text-2xl md:text-4xl block mt-2 font-medium">
                             Referência em Odontologia no <span class="text-brand-600 font-bold">Belém</span>
                     </span>
                 </h1>
                 
                 <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                    Aliamos tecnologia de ponta a um atendimento humanizado para devolver sua autoestima. Especialistas em <strong>Implantes</strong>, <strong>Ortodontia Moderna</strong> e <strong>Saúde Bucal Completa</strong>.
+                   Transformamos <strong>saúde bocal</strong> em confiança e bem-estar com <strong>atendimento humanizado e tecnologia avançada</strong>.<br>
+                    ✔ Especialidades completas para toda a família<br>
+                    ✔ Tratamentos modernos e personalizados<br>
+                    ✔ Atendimento focado no seu conforto
                 </p>
                 <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
                     <a href="https://wa.me/5511977001032" class="px-8 py-4 bg-brand-600 text-white font-semibold rounded-lg shadow-lg hover:bg-brand-700 hover:scale-105 transition transform flex items-center justify-center gap-2">
@@ -228,7 +232,13 @@
                 <h4 class="text-brand-600 font-bold uppercase tracking-wide mb-2 text-sm">Tradição e Excelência</h4>
                 <h2 class="text-3xl font-heading font-bold text-gray-900 mb-6">Dr. Luiz Fernando Cardoso</h2>
                 <p class="text-gray-600 mb-4 text-lg">
-                    Com mais de 35 anos de dedicação à odontologia, o Dr. Luiz Fernando lidera a <strong>Odontologia Ideale</strong> com o compromisso de oferecer tratamentos definitivos que unem estética impecável e funcionalidade.
+                    Cuidando do seu sorriso com experiência e dedicação.<br>
+                        Na <strong>Odontologia Ideale</strong>, o <strong>Dr. Luiz Fernando Cardoso</strong> e sua equipe combinam experiência de mais de 35 anos com métodos atualizados e acolhimento individualizado.<br>Aqui, cada tratamento é planejado com foco em resultados duradouros e conforto total.
+                        <br>
+                        ✨ Nosso compromisso é simples:<br>
+                        ✔ Atendimento respeitoso e sem pressa<br>
+                        ✔ Ambientes confortáveis e equipados<br>
+                        ✔ Soluções que se adaptam ao seu estilo de vida
                 </p>
                 <div class="bg-brand-50 p-6 rounded-xl border border-brand-100 mb-8 inline-block text-left w-full">
                     <ul class="space-y-3 text-gray-700">
@@ -245,8 +255,8 @@
         <div class="container mx-auto px-4 md:px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-brand-600 font-bold uppercase tracking-widest text-sm mb-4 block">Nossa Expertise</span>
-                <h2 class="text-4xl lg:text-5xl font-extrabold mb-6 leading-tight text-gray-900">Especialidades Ideale</h2>
-                <p class="text-lg text-gray-500 leading-relaxed">Clique em "Saiba Mais" para conhecer os detalhes de como nossa abordagem moderna transforma sua saúde bucal.</p>
+                <h2 class="text-4xl lg:text-5xl font-extrabold mb-6 leading-tight text-gray-900">Especialidades Odontologia Ideale</h2>
+                <p class="text-lg text-gray-500 leading-relaxed">Tratamentos personalizados para sua saúde bucal completa.<br>Oferecemos uma gama de serviços que cuidam de todas as fases da sua saúde dental — desde prevenção até tratamentos estéticos e reabilitação funcional.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -347,12 +357,75 @@
         </div>
     </section>
 
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-600 font-bold uppercase tracking-widest text-sm mb-4 block">Tira-Dúvidas</span>
+                <h2 class="text-3xl font-heading font-bold text-gray-900 mb-4">Dúvidas Comuns dos Pacientes</h2>
+                <p class="text-gray-500">Separamos as perguntas mais frequentes para você agendar sua consulta com total tranquilidade.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                    <button onclick="toggleFAQ(this)" class="w-full px-6 py-5 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition duration-300 group">
+                        <span class="font-bold text-gray-800 text-lg group-hover:text-brand-600 transition">Vocês atendem convênios?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-300 group-hover:text-brand-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 pb-6 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+                            Para manter o alto padrão de nossos tratamentos e o tempo de dedicação a cada paciente, optamos pelo atendimento particular.<br>Contudo, valorizamos seu <strong>plano de saúde</strong>: fornecemos todo o suporte e documentação para que você utilize seu direito ao <strong>reembolso</strong> de forma simples e sem burocracia.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                    <button onclick="toggleFAQ(this)" class="w-full px-6 py-5 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition duration-300 group">
+                        <span class="font-bold text-gray-800 text-lg group-hover:text-brand-600 transition">Como funciona a avaliação para Implantes?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-300 group-hover:text-brand-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 pb-6 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+                            A avaliação é feita presencialmente pelo Dr. Luiz Fernando. Utilizamos exames digitais para analisar sua estrutura óssea e indicar a melhor técnica (como carga imediata ou implante tradicional). O objetivo é que você saia da consulta com um plano de tratamento claro e seguro.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                    <button onclick="toggleFAQ(this)" class="w-full px-6 py-5 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition duration-300 group">
+                        <span class="font-bold text-gray-800 text-lg group-hover:text-brand-600 transition">O consultório tem estacionamento?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-300 group-hover:text-brand-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 pb-6 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+                            Estamos localizados na Rua Herval, uma região tranquila do Belém. Existem vagas disponíveis na própria rua e estacionamentos conveniados muito próximos ao consultório para seu total conforto.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                    <button onclick="toggleFAQ(this)" class="w-full px-6 py-5 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition duration-300 group">
+                        <span class="font-bold text-gray-800 text-lg group-hover:text-brand-600 transition">Consigo agendar horários fora do comercial?</span>
+                        <i class="fa-solid fa-chevron-down text-brand-300 group-hover:text-brand-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="px-6 pb-6 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+                            Entendemos a correria do dia a dia. Oferecemos flexibilidade de horários em dias específicos. O ideal é clicar no botão do WhatsApp e consultar a disponibilidade da nossa agenda para esta semana.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section id="contato" class="py-20 bg-white">
         <div class="container mx-auto px-4 md:px-6">
             <div class="bg-brand-50 rounded-3xl overflow-hidden shadow-sm flex flex-col md:flex-row border border-brand-100">
                 <div class="md:w-1/2 p-10 md:p-16">
                     <h2 class="text-3xl font-bold mb-6 text-gray-900">Agende sua Visita</h2>
-                    <p class="text-gray-600 mb-8">Estamos localizados no coração do Belém, prontos para te atender.</p>
+                    <p class="text-gray-600 mb-8">Pronto para transformar seu sorriso?<br>
+                        Agende sua avaliação conosco de forma simples e rápida:</p>
                     
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
@@ -398,17 +471,18 @@
 
                 <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-medium">
                     <div class="flex flex-col items-center md:items-start space-y-2">
-                        <h5 class="text-white uppercase text-xs tracking-widest mb-1 opacity-50">Navegação</h5>
-                        <a href="#home" class="hover:text-brand-500 transition">Home</a>
-                        <a href="#sobre" class="hover:text-brand-500 transition">O Consultório</a>
-                        <a href="#tratamentos" class="hover:text-brand-500 transition">Especialidades</a>
-                        <a href="#depoimentos" class="hover:text-brand-500 transition">Depoimentos</a>
-                        <a href="#contato" class="hover:text-brand-500 transition">Contato</a>
+                        <h5 class="text-white uppercase text-xs tracking-widest mb-1 opacity-50">NAVEGAÇÃO</h5>
+                        <a href="#home" class="hover:text-brand-500 transition">HOME</a>
+                        <a href="#sobre" class="hover:text-brand-500 transition">O CONSULTÓRIO</a>
+                        <a href="#tratamentos" class="hover:text-brand-500 transition">ESPECIALIDADES</a>
+                        <a href="#depoimentos" class="hover:text-brand-500 transition">DEPOIMENTOS</a>
+                        <a href="#faq" class="hover:text-brand-500 transition">DÚVIDAS</a>
+                        <a href="#contato" class="hover:text-brand-500 transition">CONTATO</a>
                     </div>
                     <div class="flex flex-col items-center md:items-start space-y-2">
-                        <h5 class="text-white uppercase text-xs tracking-widest mb-1 opacity-50">Suporte</h5>
-                        <a href="privacidade.html" class="hover:text-brand-500 transition">Política de Privacidade</a>
-                        <a href="termos.html" class="hover:text-brand-500 transition">Termos de Uso</a>
+                        <h5 class="text-white uppercase text-xs tracking-widest mb-1 opacity-50">SUPORTE</h5>
+                        <a href="privacidade.html" class="hover:text-brand-500 transition">POLÍTICA DE PRIVACIDADE</a>
+                        <a href="termos.html" class="hover:text-brand-500 transition">TERMOS DE USO</a>
                     </div>
                 </div>
 
@@ -449,6 +523,32 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            const isOpened = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+            // Fecha todos os outros FAQs abertos (opcional, mas recomendado para limpeza)
+            document.querySelectorAll('.faq-content').forEach(el => {
+                el.style.maxHeight = '0px';
+                // Reseta ícones dos outros
+                const btn = el.previousElementSibling;
+                const icn = btn.querySelector('i');
+                if(icn) icn.style.transform = 'rotate(0deg)';
+            });
+
+            if (!isOpened) {
+                // Abre o atual
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                // Se já estava aberto e clicou, ele fecha (o loop acima já fechou, mas garantimos o reset do ícone)
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+
         function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
         
         function toggleCard(id, button) {
