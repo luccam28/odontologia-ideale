@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- =====================================================================
      Odontologia Ideale – Página Institucional
-     Versão: 3.0 (Final – com todas as otimizações)
+     Versão: 3.1 (Acordeões corrigidos + botões "Ver Infográfico Completo")
      Autor: Redesigner PPM
      Última atualização: 2026-02-12
      ===================================================================== -->
@@ -260,6 +260,150 @@
             margin-left: 16px;
             cursor: pointer;
         }
+        /* ==================== MODAL INFOGRÁFICO ==================== */
+        .infographic-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(0, 0, 0, 0.88);
+            backdrop-filter: blur(6px);
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            animation: modalFadeIn 0.25s ease;
+        }
+        .infographic-modal.open { display: flex; }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        .infographic-modal-dialog {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            max-width: 92vw;
+            width: 1000px;
+            max-height: 92vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 32px 80px rgba(0,0,0,0.5);
+            animation: modalSlideUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes modalSlideUp {
+            from { transform: translateY(30px) scale(0.97); opacity: 0; }
+            to   { transform: translateY(0) scale(1); opacity: 1; }
+        }
+
+        .infographic-modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 20px;
+            background: #f0fdf4;
+            border-bottom: 1px solid #dcfce7;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .infographic-modal-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            color: #15803d;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            flex: 1;
+        }
+
+        .infographic-modal-nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        .infographic-modal-nav button {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: 2px solid #22c55e;
+            background: white;
+            color: #16a34a;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+
+        .infographic-modal-nav button:hover {
+            background: #22c55e;
+            color: white;
+        }
+
+        .infographic-modal-nav button:disabled {
+            opacity: 0.3;
+            cursor: default;
+        }
+
+        .infographic-modal-nav button:disabled:hover {
+            background: white;
+            color: #16a34a;
+        }
+
+        .infographic-modal-counter {
+            font-size: 12px;
+            font-weight: 700;
+            color: #6b7280;
+            min-width: 36px;
+            text-align: center;
+        }
+
+        .infographic-modal-close {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: none;
+            background: #fee2e2;
+            color: #dc2626;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            transition: all 0.2s;
+            flex-shrink: 0;
+        }
+
+        .infographic-modal-close:hover {
+            background: #dc2626;
+            color: white;
+        }
+
+        .infographic-modal-body {
+            overflow: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0;
+            flex: 1;
+            background: #f9fafb;
+        }
+
+        .infographic-modal-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: opacity 0.25s ease;
+        }
+
+        .infographic-modal-img.loading { opacity: 0; }
     </style>
 </head>
 
@@ -447,9 +591,12 @@
                                     <p>• Alinhadores transparentes (imperceptíveis).</p>
                                     <p class="italic text-xs mt-2">Indicado para crianças, adolescentes e adultos.</p>
                                 </div>
+                                <button onclick="openInfographic(['alinhador-4.png' , 'alinhador-3.png'], 'Alinhadores' )" class="mt-4 w-full flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-brand-200 transition-all duration-200 hover:shadow-sm">
+                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                </button>
                             </div>
-                            <!-- ARIA: button controla o conteúdo expansível -->
-                            <button onclick="toggleCard('descOrto', this)" class="mt-auto pt-4 text-brand-600 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-brand-800 transition-colors" aria-expanded="false" aria-controls="descOrto">
+                            <!-- ARIA: button controla o conteúdo expansível, agora com classe toggle-btn -->
+                            <button onclick="toggleCard('descOrto', this)" class="mt-auto pt-4 text-brand-600 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-brand-800 transition-colors toggle-btn" aria-expanded="false" aria-controls="descOrto">
                                 <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
                             </button>
                         </div>
@@ -471,8 +618,11 @@
                                     <p>• Enxertos ósseos (quando há perda óssea).</p>
                                     <p>• Reabilitação total estética e funcional.</p>
                                 </div>
+                                <button onclick="openInfographic(['implante2.png','implante3.png'], 'Implantes Dentários')" class="mt-4 w-full flex items-center justify-center gap-2 bg-teal-50 hover:bg-teal-100 text-accent font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-teal-200 transition-all duration-200 hover:shadow-sm">
+                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                </button>
                             </div>
-                            <button onclick="toggleCard('descImplante', this)" class="mt-auto pt-4 text-accent font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-teal-800 transition-colors" aria-expanded="false" aria-controls="descImplante">
+                            <button onclick="toggleCard('descImplante', this)" class="mt-auto pt-4 text-accent font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-teal-800 transition-colors toggle-btn" aria-expanded="false" aria-controls="descImplante">
                                 <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
                             </button>
                         </div>
@@ -494,8 +644,11 @@
                                     <p>• Restaurações estéticas e Limpeza (Check-up).</p>
                                     <p>• Correção de diastemas e dentes manchados.</p>
                                 </div>
+                                <button onclick="openInfographic(['clinica1.png','clinica2.png'], 'Estética e Odontologia Geral')" class="mt-4 w-full flex items-center justify-center gap-2 bg-gray-50 hover:bg-gray-100 text-gray-800 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-gray-200 transition-all duration-200 hover:shadow-sm">
+                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                </button>
                             </div>
-                            <button onclick="toggleCard('descEstetica', this)" class="mt-auto pt-4 text-gray-800 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-black transition-colors" aria-expanded="false" aria-controls="descEstetica">
+                            <button onclick="toggleCard('descEstetica', this)" class="mt-auto pt-4 text-gray-800 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-black transition-colors toggle-btn" aria-expanded="false" aria-controls="descEstetica">
                                 <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
                             </button>
                         </div>
@@ -517,8 +670,11 @@
                                     <p>• Removíveis parciais (Ponte móvel).</p>
                                     <p>• Odontologia Restauradora completa.</p>
                                 </div>
+                                <button onclick="openInfographic(['tratamento1.1.png','tratamento1.2.png'], 'Próteses Dentárias')" class="mt-4 w-full flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-brand-200 transition-all duration-200 hover:shadow-sm">
+                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                </button>
                             </div>
-                            <button onclick="toggleCard('descProtese', this)" class="mt-auto pt-4 text-brand-700 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-brand-900 transition-colors" aria-expanded="false" aria-controls="descProtese">
+                            <button onclick="toggleCard('descProtese', this)" class="mt-auto pt-4 text-brand-700 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-brand-900 transition-colors toggle-btn" aria-expanded="false" aria-controls="descProtese">
                                 <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
                             </button>
                         </div>
@@ -540,8 +696,11 @@
                                     <p>• Preservação do dente natural.</p>
                                     <p>• Alívio imediato da dor de dente.</p>
                                 </div>
+                                <button onclick="openInfographic(['tratamento2.1.png','tratamento2.2.png'], 'Endodontia – Tratamento de Canal')" class="mt-4 w-full flex items-center justify-center gap-2 bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-purple-200 transition-all duration-200 hover:shadow-sm">
+                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                </button>
                             </div>
-                            <button onclick="toggleCard('descEndo', this)" class="mt-auto pt-4 text-purple-600 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-purple-800 transition-colors" aria-expanded="false" aria-controls="descEndo">
+                            <button onclick="toggleCard('descEndo', this)" class="mt-auto pt-4 text-purple-600 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-purple-800 transition-colors toggle-btn" aria-expanded="false" aria-controls="descEndo">
                                 <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
                             </button>
                         </div>
@@ -563,8 +722,11 @@
                                     <p>• Enxerto Ósseo (para implantes).</p>
                                     <p>• Reabilitação estética rosa.</p>
                                 </div>
+                                <button onclick="openInfographic(['tratamento3.1.png','tratamento3.2.png'], 'Periodontia')" class="mt-4 w-full flex items-center justify-center gap-2 bg-red-50 hover:bg-red-100 text-red-600 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-red-200 transition-all duration-200 hover:shadow-sm">
+                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                </button>
                             </div>
-                            <button onclick="toggleCard('descPerio', this)" class="mt-auto pt-4 text-red-500 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-red-700 transition-colors" aria-expanded="false" aria-controls="descPerio">
+                            <button onclick="toggleCard('descPerio', this)" class="mt-auto pt-4 text-red-500 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-red-700 transition-colors toggle-btn" aria-expanded="false" aria-controls="descPerio">
                                 <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
                             </button>
                         </div>
@@ -804,6 +966,32 @@
         </div>
     </footer>
 
+    <!-- ==================== MODAL INFOGRÁFICO ==================== -->
+    <div id="infographic-modal" class="infographic-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="closeInfographicOnBackdrop(event)">
+        <div class="infographic-modal-dialog">
+            <!-- Header -->
+            <div class="infographic-modal-header">
+                <span id="modal-title" class="infographic-modal-title"></span>
+                <div class="infographic-modal-nav" id="modal-nav">
+                    <button onclick="changeSlide(-1)" id="modal-prev" aria-label="Anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <span id="modal-counter" class="infographic-modal-counter"></span>
+                    <button onclick="changeSlide(1)" id="modal-next" aria-label="Próximo">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <button onclick="closeInfographic()" class="infographic-modal-close" aria-label="Fechar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <!-- Image -->
+            <div class="infographic-modal-body">
+                <img id="modal-img" src="" alt="Infográfico" class="infographic-modal-img" />
+            </div>
+        </div>
+    </div>
+
     <!-- ==================== WHATSAPP FIXO (FLUTUANTE) ==================== -->
     <a href="https://wa.me/5511977001032" target="_blank" class="fixed bottom-6 right-6 z-40 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition hover:scale-110 pulse-animation border-2 border-white" aria-label="WhatsApp">
         <i class="fa-brands fa-whatsapp text-3xl"></i>
@@ -892,7 +1080,7 @@
         }
 
         // ------------------------------------------------------------------
-        // CARDS DE TRATAMENTOS – apenas UM abre por vez
+        // CARDS DE TRATAMENTOS – apenas UM abre por vez (CORRIGIDO)
         // ------------------------------------------------------------------
         function toggleCard(id, button) {
             const content = document.getElementById(id);
@@ -900,14 +1088,19 @@
             const icon = button.querySelector('.toggle-icon');
             const isOpened = content.style.maxHeight && content.style.maxHeight !== '0px';
 
-            // Fecha TODOS os cards primeiro
+            // Fecha TODOS os cards primeiro (usando a classe toggle-btn para encontrar o botão correto)
             document.querySelectorAll('[id^="desc"]').forEach(el => {
                 el.style.maxHeight = '0px';
-                // Volta o texto e ícone do respectivo botão
-                const btn = el.parentElement.querySelector('button');
+                // Volta o texto e ícone do respectivo botão (agora usando .toggle-btn)
+                const btn = el.parentElement.querySelector('.toggle-btn');
                 if (btn) {
-                    btn.querySelector('.toggle-text').textContent = 'Ver Detalhes';
-                    btn.querySelector('.toggle-icon').classList.replace('fa-minus', 'fa-plus');
+                    const btnText = btn.querySelector('.toggle-text');
+                    const btnIcon = btn.querySelector('.toggle-icon');
+                    if (btnText) btnText.textContent = 'Ver Detalhes';
+                    if (btnIcon) {
+                        btnIcon.classList.remove('fa-minus');
+                        btnIcon.classList.add('fa-plus');
+                    }
                     btn.setAttribute('aria-expanded', 'false');
                 }
             });
@@ -916,7 +1109,8 @@
             if (!isOpened) {
                 content.style.maxHeight = content.scrollHeight + "px";
                 textSpan.textContent = 'Fechar';
-                icon.classList.replace('fa-plus', 'fa-minus');
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
                 button.setAttribute('aria-expanded', 'true');
             }
             // Se estava aberto, já foi fechado pelo loop acima
@@ -940,11 +1134,62 @@
             else navbar.classList.remove("shadow-md");
         };
 
+        // ------------------------------------------------------------------
+        // MODAL INFOGRÁFICO
+        // ------------------------------------------------------------------
+        let _infographicImages = [];
+        let _infographicIndex  = 0;
+
+        function openInfographic(images, title) {
+            _infographicImages = images;
+            _infographicIndex  = 0;
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-nav').style.display = images.length > 1 ? 'flex' : 'none';
+            _renderSlide();
+            document.getElementById('infographic-modal').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeInfographic() {
+            document.getElementById('infographic-modal').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        function closeInfographicOnBackdrop(e) {
+            if (e.target === document.getElementById('infographic-modal')) closeInfographic();
+        }
+
+        function changeSlide(dir) {
+            const next = _infographicIndex + dir;
+            if (next < 0 || next >= _infographicImages.length) return;
+            _infographicIndex = next;
+            _renderSlide();
+        }
+
+        function _renderSlide() {
+            const img = document.getElementById('modal-img');
+            img.classList.add('loading');
+            img.onload  = () => img.classList.remove('loading');
+            img.onerror = () => img.classList.remove('loading');
+            img.src = _infographicImages[_infographicIndex];
+            img.alt = document.getElementById('modal-title').textContent + ' – imagem ' + (_infographicIndex + 1);
+            document.getElementById('modal-counter').textContent =
+                _infographicImages.length > 1
+                    ? (_infographicIndex + 1) + ' / ' + _infographicImages.length
+                    : '';
+            document.getElementById('modal-prev').disabled = _infographicIndex === 0;
+            document.getElementById('modal-next').disabled = _infographicIndex === _infographicImages.length - 1;
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape')      closeInfographic();
+            if (e.key === 'ArrowLeft')   changeSlide(-1);
+            if (e.key === 'ArrowRight')  changeSlide(1);
+        });
+
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
 </body>
-
 </html>
-
