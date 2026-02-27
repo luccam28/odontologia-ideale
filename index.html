@@ -575,160 +575,187 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
                     <!-- CARD 1: Ortodontia -->
-                    <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-brand-600 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
-                        <div class="w-full h-72 overflow-hidden relative">
-                            <img src="alinhador.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Aparelho ortodôntico e alinhadores transparentes" loading="lazy" decoding="async">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
-                            <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Ortodontia</h3>
-                        </div>
-                        <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
-                            <p class="text-gray-600 mb-4 text-sm">Corrige dentes desalinhados, apinhados ou problemas de mordida, melhorando função e estética.</p>
-                            <div id="descOrto" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                                <div class="pt-4 border-t border-brand-100 text-gray-600 text-sm space-y-2">
-                                    <p>• Aparelho fixo metálico.</p>
-                                    <p>• Aparelho fixo estético (porcelana).</p>
-                                    <p>• Aparelho removível.</p>
-                                    <p>• Alinhadores transparentes (imperceptíveis).</p>
-                                    <p class="italic text-xs mt-2">Indicado para crianças, adolescentes e adultos.</p>
+                        <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-brand-600 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
+                            <div class="w-full h-72 overflow-hidden relative">
+                                <img src="alinhador.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Aparelho ortodôntico e alinhadores transparentes" loading="lazy" decoding="async">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
+                                <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Ortodontia</h3>
+                            </div>
+                            <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
+                                <p class="text-gray-600 mb-4 text-sm">Um sorriso alinhado vai além da estética — melhora a mastigação, a fala e a autoestima.<br>O tratamento ortodôntico corrige dentes desalinhados, apinhados e problemas de mordida em qualquer fase da vida.</p>
+                                <div id="descOrto" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                    <div class="pt-4 border-t border-brand-100 text-gray-600 text-sm space-y-2">
+                                        <p class="font-semibold text-brand-700 text-xs uppercase tracking-wide mb-1">Opções de tratamento</p>
+                                        <p>• Aparelho fixo metálico.</p>
+                                        <p>• Aparelho fixo estético (porcelana).</p>
+                                        <p>• Aparelho removível.</p>
+                                        <p>• Alinhadores transparentes — discretos e praticamente imperceptíveis.</p>
+                                        <p class="italic text-xs mt-2 text-gray-400">Indicado para crianças, adolescentes e adultos. O diagnóstico precoce amplia os resultados.</p>
+                                    </div>
+                                    <button onclick="openInfographic(['alinhador-3.png', 'alinhador-4.png', 'alinhador-2.png'], 'Alinhadores')" class="mt-4 w-full flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-brand-200 transition-all duration-200 hover:shadow-sm">
+                                        <i class="fas fa-images"></i> Ver Infográfico Completo
+                                    </button>
                                 </div>
-                                <button onclick="openInfographic(['alinhador-3.png' , 'alinhador-4.png' , 'alinhador-2.png' ], 'Alinhadores' )" class="mt-4 w-full flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-brand-200 transition-all duration-200 hover:shadow-sm">
-                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                <button onclick="toggleCard('descOrto', this)" class="mt-auto pt-4 text-brand-600 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-brand-800 transition-colors toggle-btn" aria-expanded="false" aria-controls="descOrto">
+                                    <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
                                 </button>
                             </div>
-                            <!-- ARIA: button controla o conteúdo expansível, agora com classe toggle-btn -->
-                            <button onclick="toggleCard('descOrto', this)" class="mt-auto pt-4 text-brand-600 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-brand-800 transition-colors toggle-btn" aria-expanded="false" aria-controls="descOrto">
-                                <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
-                            </button>
                         </div>
-                    </div>
 
                     <!-- CARD 2: Implantes -->
-                    <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-accent hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
-                        <div class="w-full h-72 overflow-hidden relative">
-                            <img src="implante.png" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Implantes dentários de titânio" loading="lazy" decoding="async">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
-                            <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Implantes</h3>
-                        </div>
-                        <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
-                            <p class="text-gray-600 mb-4 text-sm">Reposição de dentes perdidos com titânio biocompatível, restabelecendo a mastigação.</p>
-                            <div id="descImplante" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                                <div class="pt-4 border-t border-accent/10 text-gray-600 text-sm space-y-2">
-                                    <p>• Instalação de implantes de titânio.</p>
-                                    <p>• Carga imediata (dentes no mesmo dia).</p>
-                                    <p>• Enxertos ósseos (quando há perda óssea).</p>
-                                    <p>• Reabilitação total estética e funcional.</p>
+                        <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-accent hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
+                            <div class="w-full h-72 overflow-hidden relative">
+                                <img src="implante.png" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Implantes dentários de titânio" loading="lazy" decoding="async">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
+                                <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Implantes</h3>
+                            </div>
+                            <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
+                                <p class="text-gray-600 mb-4 text-sm">Perder um dente não precisa ser definitivo.<br>O implante de titânio é a solução mais próxima de um dente natural — devolve a mastigação, a estética e a qualidade de vida com alta durabilidade.</p>
+                                <div id="descImplante" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                    <div class="pt-4 border-t border-accent/10 text-gray-600 text-sm space-y-2">
+                                        <p class="font-semibold text-accent text-xs uppercase tracking-wide mb-1">O que oferecemos</p>
+                                        <p>• Implantes de titânio biocompatível (osseointegração).</p>
+                                        <p>• Carga imediata — implante e prótese no mesmo dia.</p>
+                                        <p>• Enxerto ósseo para casos com perda óssea severa.</p>
+                                        <p>• Reabilitação total com foco em estética e função.</p>
+                                        <p class="italic text-xs mt-2 text-gray-400">Planejamento individualizado para resultados previsíveis e duradouros.</p>
+                                    </div>
+                                    <button onclick="openInfographic(['implante2.png','implante3.png'], 'Implantes Dentários')" class="mt-4 w-full flex items-center justify-center gap-2 bg-teal-50 hover:bg-teal-100 text-accent font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-teal-200 transition-all duration-200 hover:shadow-sm">
+                                        <i class="fas fa-images"></i> Ver Infográfico Completo
+                                    </button>
                                 </div>
-                                <button onclick="openInfographic(['implante2.png','implante3.png'], 'Implantes Dentários')" class="mt-4 w-full flex items-center justify-center gap-2 bg-teal-50 hover:bg-teal-100 text-accent font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-teal-200 transition-all duration-200 hover:shadow-sm">
-                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                <button onclick="toggleCard('descImplante', this)" class="mt-auto pt-4 text-accent font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-teal-800 transition-colors toggle-btn" aria-expanded="false" aria-controls="descImplante">
+                                    <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
                                 </button>
                             </div>
-                            <button onclick="toggleCard('descImplante', this)" class="mt-auto pt-4 text-accent font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-teal-800 transition-colors toggle-btn" aria-expanded="false" aria-controls="descImplante">
-                                <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
-                            </button>
                         </div>
-                    </div>
 
-                    <!-- CARD 3: Estética & Clínica Geral -->
-                    <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-gray-800 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
-                        <div class="w-full h-72 overflow-hidden relative">
-                            <img src="sala-clinica.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Sala de atendimento odontológico" loading="lazy" decoding="async">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
-                            <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Estética & Geral</h3>
-                        </div>
-                        <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
-                            <p class="text-gray-600 mb-4 text-sm">Prevenção, diagnóstico e harmonização do sorriso com procedimentos restauradores.</p>
-                            <div id="descEstetica" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                                <div class="pt-4 border-t border-gray-100 text-gray-600 text-sm space-y-2">
-                                    <p>• Clareamento dental (Laser/Caseiro).</p>
-                                    <p>• Facetas de resina e cerâmica.</p>
-                                    <p>• Restaurações estéticas e Limpeza (Check-up).</p>
-                                    <p>• Correção de diastemas e dentes manchados.</p>
+                    <!-- CARD 3: Clínica Geral -->
+                        <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-gray-800 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
+                            <div class="w-full h-72 overflow-hidden relative">
+                                <img src="sala-clinica.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Sala de atendimento odontológico" loading="lazy" decoding="async">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
+                                <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Clínica Geral</h3>
+                            </div>
+                            <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
+                                <p class="text-gray-600 mb-4 text-sm">A base de um sorriso saudável está no cuidado contínuo, da prevenção ao tratamento, o clínico geral é o ponto de partida para a sua saúde bucal em qualquer fase da vida.</p>
+                                <div id="descEstetica" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                    <div class="pt-4 border-t border-gray-100 text-gray-600 text-sm space-y-3">
+                                        <div>
+                                            <p class="font-semibold text-gray-800 text-xs uppercase tracking-wide mb-1">Prevenção</p>
+                                            <p>Consultas de rotina, limpeza, aplicação de flúor, selantes e radiografias — cuidados simples que evitam problemas complexos.</p>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-800 text-xs uppercase tracking-wide mb-1">Restaurações</p>
+                                            <p>Tratamento de cáries com resina composta, cerâmica ou restaurações metálicas, devolvendo forma e função ao dente.</p>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-800 text-xs uppercase tracking-wide mb-1">Cirurgia & Gengiva</p>
+                                            <p>Extrações, emergências de canal, tratamento de gengivite e encaminhamento para especialistas quando necessário.</p>
+                                        </div>
+                                        <p class="italic text-xs mt-1 text-gray-400">Atendimento especial para pacientes idosos — com atenção às particularidades sistêmicas e uso de medicamentos.</p>
+                                    </div>
+                                    <button onclick="openInfographic(['clinica1.png','clinica2.png'], 'Estética e Odontologia Geral')" class="mt-4 w-full flex items-center justify-center gap-2 bg-gray-50 hover:bg-gray-100 text-gray-800 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-gray-200 transition-all duration-200 hover:shadow-sm">
+                                        <i class="fas fa-images"></i> Ver Infográfico Completo
+                                    </button>
                                 </div>
-                                <button onclick="openInfographic(['clinica1.png','clinica2.png'], 'Estética e Odontologia Geral')" class="mt-4 w-full flex items-center justify-center gap-2 bg-gray-50 hover:bg-gray-100 text-gray-800 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-gray-200 transition-all duration-200 hover:shadow-sm">
-                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                <button onclick="toggleCard('descEstetica', this)" class="mt-auto pt-4 text-gray-800 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-black transition-colors toggle-btn" aria-expanded="false" aria-controls="descEstetica">
+                                    <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
                                 </button>
                             </div>
-                            <button onclick="toggleCard('descEstetica', this)" class="mt-auto pt-4 text-gray-800 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-black transition-colors toggle-btn" aria-expanded="false" aria-controls="descEstetica">
-                                <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
-                            </button>
                         </div>
-                    </div>
 
                     <!-- CARD 4: Prótese -->
-                    <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-brand-700 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
-                        <div class="w-full h-72 overflow-hidden relative bg-gray-200">
-                             <img src="tratamento1.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Prótese dentária fixa e removível" loading="lazy" decoding="async">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
-                            <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Prótese</h3>
-                        </div>
-                        <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
-                            <p class="text-gray-600 mb-4 text-sm">Devolução da função mastigatória, fala e autoestima através da reposição dentária.</p>
-                            <div id="descProtese" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                                <div class="pt-4 border-t border-brand-100 text-gray-600 text-sm space-y-2">
-                                    <p>• Próteses Fixas (sobre dentes ou implantes).</p>
-                                    <p>• Removíveis totais (Dentaduras).</p>
-                                    <p>• Removíveis parciais (Ponte móvel).</p>
-                                    <p>• Odontologia Restauradora completa.</p>
+                        <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-brand-700 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
+                            <div class="w-full h-72 overflow-hidden relative bg-gray-200">
+                                <img src="tratamento1.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Prótese dentária fixa e removível" loading="lazy" decoding="async">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
+                                <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Prótese</h3>
+                            </div>
+                            <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
+                                <p class="text-gray-600 mb-4 text-sm">Dentes perdidos afetam muito mais do que a aparência — comprometem a mastigação, a fala e a autoestima.<br>A prótese dentária devolve tudo isso com planejamento preciso e resultado duradouro.</p>
+                                <div id="descProtese" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                    <div class="pt-4 border-t border-brand-100 text-gray-600 text-sm space-y-3">
+                                        <div>
+                                            <p class="font-semibold text-brand-700 text-xs uppercase tracking-wide mb-1">Próteses Fixas</p>
+                                            <p>A melhor opção para restabelecer mastigação e estética. Apoiadas em dentes naturais ou implantes, são estáveis e praticamente idênticas aos dentes originais.</p>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-brand-700 text-xs uppercase tracking-wide mb-1">Próteses Removíveis</p>
+                                            <p>Totais (dentadura) ou parciais (ponte móvel) — soluções acessíveis e funcionais para reposição de vários dentes perdidos.</p>
+                                        </div>
+                                        <p class="italic text-xs mt-1 text-gray-400">O tratamento pode envolver etapas complementares como endodontia, periodontia ou implantes — tudo planejado de forma integrada.</p>
+                                    </div>
+                                    <button onclick="openInfographic(['tratamento1.1.png','tratamento1.2.png'], 'Próteses Dentárias')" class="mt-4 w-full flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-brand-200 transition-all duration-200 hover:shadow-sm">
+                                        <i class="fas fa-images"></i> Ver Infográfico Completo
+                                    </button>
                                 </div>
-                                <button onclick="openInfographic(['tratamento1.1.png','tratamento1.2.png'], 'Próteses Dentárias')" class="mt-4 w-full flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-brand-200 transition-all duration-200 hover:shadow-sm">
-                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                <button onclick="toggleCard('descProtese', this)" class="mt-auto pt-4 text-brand-700 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-brand-900 transition-colors toggle-btn" aria-expanded="false" aria-controls="descProtese">
+                                    <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
                                 </button>
                             </div>
-                            <button onclick="toggleCard('descProtese', this)" class="mt-auto pt-4 text-brand-700 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-brand-900 transition-colors toggle-btn" aria-expanded="false" aria-controls="descProtese">
-                                <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
-                            </button>
                         </div>
-                    </div>
 
                     <!-- CARD 5: Endodontia (Canal) -->
-                    <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-purple-600 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
-                        <div class="w-full h-72 overflow-hidden relative bg-gray-200">
-                             <img src="tratamento2.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Tratamento de canal odontológico" loading="lazy" decoding="async">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
-                            <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Endodontia</h3>
-                        </div>
-                        <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
-                            <p class="text-gray-600 mb-4 text-sm">Tratamento de canal para dentes com cárie profunda ou trauma, eliminando a dor.</p>
-                            <div id="descEndo" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                                <div class="pt-4 border-t border-purple-100 text-gray-600 text-sm space-y-2">
-                                    <p>• Remoção de tecidos infectados.</p>
-                                    <p>• Desinfecção e selamento dos canais.</p>
-                                    <p>• Preservação do dente natural.</p>
-                                    <p>• Alívio imediato da dor de dente.</p>
+                        <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-purple-600 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
+                            <div class="w-full h-72 overflow-hidden relative bg-gray-200">
+                                <img src="tratamento2.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Tratamento de canal odontológico" loading="lazy" decoding="async">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
+                                <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Endodontia</h3>
+                            </div>
+                            <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
+                                <p class="text-gray-600 mb-4 text-sm">O tratamento de canal tem má fama — mas é ele que elimina a dor e salva o dente.<br> Com técnica adequada, é preciso, eficaz e muito menos desconfortável do que se imagina.</p>
+                                <div id="descEndo" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                    <div class="pt-4 border-t border-purple-100 text-gray-600 text-sm space-y-3">
+                                        <div>
+                                            <p class="font-semibold text-purple-700 text-xs uppercase tracking-wide mb-1">Quando é indicado</p>
+                                            <p>Cárie profunda que atingiu a polpa (parte interna com nervos e vasos) ou traumas que causaram necrose do tecido vivo do dente.</p>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-purple-700 text-xs uppercase tracking-wide mb-1">Como funciona</p>
+                                            <p>Remove-se o tecido infectado, desinfectam-se os canais radiculares e realiza-se o selamento — preservando o dente natural e eliminando a dor.</p>
+                                        </div>
+                                        <p class="italic text-xs mt-1 text-gray-400">Salvar o dente natural é sempre a melhor opção. O tratamento endodôntico evita extrações e mantém a integridade da arcada dentária.</p>
+                                    </div>
+                                    <button onclick="openInfographic(['tratamento2.1.png','tratamento2.2.png'], 'Endodontia – Tratamento de Canal')" class="mt-4 w-full flex items-center justify-center gap-2 bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-purple-200 transition-all duration-200 hover:shadow-sm">
+                                        <i class="fas fa-images"></i> Ver Infográfico Completo
+                                    </button>
                                 </div>
-                                <button onclick="openInfographic(['tratamento2.1.png','tratamento2.2.png'], 'Endodontia – Tratamento de Canal')" class="mt-4 w-full flex items-center justify-center gap-2 bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-purple-200 transition-all duration-200 hover:shadow-sm">
-                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                <button onclick="toggleCard('descEndo', this)" class="mt-auto pt-4 text-purple-600 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-purple-800 transition-colors toggle-btn" aria-expanded="false" aria-controls="descEndo">
+                                    <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
                                 </button>
                             </div>
-                            <button onclick="toggleCard('descEndo', this)" class="mt-auto pt-4 text-purple-600 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-purple-800 transition-colors toggle-btn" aria-expanded="false" aria-controls="descEndo">
-                                <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
-                            </button>
                         </div>
-                    </div>
 
-                     <!-- CARD 6: Periodontia (Gengiva) -->
-                     <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-red-500 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
-                        <div class="w-full h-72 overflow-hidden relative bg-gray-200">
-                             <img src="tratamento3.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Tratamento da gengiva e periodontia" loading="lazy" decoding="async">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
-                            <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Periodontia</h3>
-                        </div>
-                        <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
-                            <p class="text-gray-600 mb-4 text-sm">Saúde da gengiva e do osso que sustenta os dentes. Prevenção da perda dentária.</p>
-                            <div id="descPerio" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                                <div class="pt-4 border-t border-red-100 text-gray-600 text-sm space-y-2">
-                                    <p>• Tratamento de Gengivite e Periodontite.</p>
-                                    <p>• Enxerto Gengival (Retração).</p>
-                                    <p>• Enxerto Ósseo (para implantes).</p>
-                                    <p>• Reabilitação estética rosa.</p>
+                     <!-- CARD 6: Periodontia & Enxerto -->
+                        <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-red-500 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
+                            <div class="w-full h-72 overflow-hidden relative bg-gray-200">
+                                <img src="tratamento3.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Tratamento da gengiva e periodontia" loading="lazy" decoding="async">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
+                                <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Periodontia & Enxerto</h3>
+                            </div>
+                            <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
+                                <p class="text-gray-600 mb-4 text-sm">Gengiva inflamada, sangramento ou dentes móveis são sinais de alerta. A saúde periodontal é a base de todo o tratamento — e o enxerto reconstrói o que a doença ou o tempo comprometeram.</p>
+                                <div id="descPerio" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                    <div class="pt-4 border-t border-red-100 text-gray-600 text-sm space-y-3">
+                                        <div>
+                                            <p class="font-semibold text-red-600 text-xs uppercase tracking-wide mb-1">Gengivite & Periodontite</p>
+                                            <p>A gengivite é o estágio inicial — reversível com tratamento. Sem cuidado, evolui para periodontite: uma infecção crônica que destrói o osso e o ligamento que sustentam o dente, podendo levar à perda dentária e até afetar a saúde geral do organismo.</p>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-red-600 text-xs uppercase tracking-wide mb-1">Enxerto Ósseo & Gengival</p>
+                                            <p>Quando há perda de volume ósseo ou retração gengival, o enxerto reconstrói esses tecidos — viabilizando implantes, protegendo raízes expostas e recuperando a estética do sorriso.</p>
+                                        </div>
+                                        <p class="italic text-xs mt-1 text-gray-400">Pacientes fumantes e diabéticos têm risco aumentado de doença periodontal — o acompanhamento regular é essencial.</p>
+                                    </div>
+                                    <button onclick="openInfographic(['tratamento3.1.png','tratamento3.2.png' , 'tratamento4.png','tratamento5.png'], 'Periodontia')" class="mt-4 w-full flex items-center justify-center gap-2 bg-red-50 hover:bg-red-100 text-red-600 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-red-200 transition-all duration-200 hover:shadow-sm">
+                                        <i class="fas fa-images"></i> Ver Infográfico Completo
+                                    </button>
                                 </div>
-                                <button onclick="openInfographic(['tratamento3.1.png','tratamento3.2.png'], 'Periodontia')" class="mt-4 w-full flex items-center justify-center gap-2 bg-red-50 hover:bg-red-100 text-red-600 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-red-200 transition-all duration-200 hover:shadow-sm">
-                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                <button onclick="toggleCard('descPerio', this)" class="mt-auto pt-4 text-red-500 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-red-700 transition-colors toggle-btn" aria-expanded="false" aria-controls="descPerio">
+                                    <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
                                 </button>
                             </div>
-                            <button onclick="toggleCard('descPerio', this)" class="mt-auto pt-4 text-red-500 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-red-700 transition-colors toggle-btn" aria-expanded="false" aria-controls="descPerio">
-                                <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
-                            </button>
                         </div>
                     </div>
 
