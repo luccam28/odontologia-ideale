@@ -1,85 +1,65 @@
 <!DOCTYPE html>
-<!-- =====================================================================
-     Odontologia Ideale – Página Institucional
-     Versão: 3.1 (Acordeões corrigidos + botões "Ver Infográfico Completo")
-     Autor: Redesigner PPM
-     Última atualização: 2026-02-12
-     ===================================================================== -->
+<!-- 
+     =====================================================================
+     PROJETO: ODONTOLOGIA IDEALE - EXPERIÊNCIA DIGITAL ULTRA-PREMIUM
+     VERSÃO: 4.3 (BOUTIQUE EDITION - FAVICON FIX)
+     DESENVOLVEDOR: Redesigner PPM
+     
+     CONTEÚDO: 
+     - Favicon e Apple Touch Icon integrados com a marca
+     - Hero Imponente (Frase: A arte de harmonizar saúde, estética...)
+     - Maestria Clínica (38 anos - Termo "tradição" removido)
+     - Protocolos Bio-Segurança ANVISA/CONAMA (Texto do PDF)
+     - Imagens em dimensões expandidas para impacto visual
+     =====================================================================
+-->
 <html lang="pt-BR" class="scroll-smooth">
 <head>
-    <!-- ============================ META BASE ============================ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <!-- Formatação de telefones no mobile -->
     <meta name="format-detection" content="telephone=yes">
-
-    <!-- SEO – Descrição e palavras‑chave -->
-    <meta name="description" content="Odontologia Ideale no Belém, SP. Desde 1988 cuidando de sorrisos. Dr. Luiz Fernando Cardoso (CRO-SP 35.371). Implantes, Ortodontia, Estética e Biossegurança rigorosa.">
-    <meta name="keywords" content="Dentista Belém, Odontologia Ideale, Implantes Dentários, Invisalign, Aparelho Estético, Tratamento de Canal, Prótese Dentária, Dr. Luiz Fernando Cardoso, Zona Leste SP, Biossegurança">
-    <meta name="author" content="Odontologia Ideale">
-    <meta name="robots" content="index, follow">
-    <meta name="rating" content="general">
-    <meta name="distribution" content="global">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Geolocalização (Google) -->
-    <meta name="geo.region" content="BR-SP">
-    <meta name="geo.placename" content="São Paulo">
-    <meta name="geo.position" content="-23.5365519;-46.5947704">
-    <meta name="ICBM" content="-23.5365519, -46.5947704">
+    <!-- SEO & INDEXAÇÃO -->
+    <title>Odontologia Ideale | Arte, Estética e Saúde no Belém, SP</title>
+    <meta name="description" content="Odontologia Ideale no Belém, SP. 38 anos de maestria clínica com o Dr. Luiz Fernando Cardoso. Especialistas em Implantes, Ortodontia e Estética sob rigorosos protocolos de segurança.">
+    <meta name="keywords" content="Dentista Belém, Odontologia Ideale, Dr. Luiz Fernando Cardoso, Implantes Dentários, Invisalign Belém, Estética Dental, Biossegurança ANVISA, Dentista 38 anos">
+    <meta name="author" content="Odontologia Ideale">
+    <meta name="robots" content="index, follow">
 
-    <!-- ======================== OPEN GRAPH / FACEBOOK ======================= -->
+    <!-- ============================ FAVICONS (CORRIGIDO) ============================ -->
+    <!-- Ícone para o Navegador -->
+    <link rel="icon" type="image/png" sizes="32x32" href="logo-ideale.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo-ideale.png">
+    <link rel="shortcut icon" href="logo-ideale.png">
+    
+    <!-- Ícone para dispositivos Apple (Home Screen) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="logo-ideale.png">
+    
+    <!-- Ícone para Android/Chrome -->
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#0d5c3a">
+
+    <!-- OPEN GRAPH (SOCIAL MEDIA) -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Odontologia Ideale | Tradição e Excelência no Belém, SP">
-    <meta property="og:description" content="37 anos de experiência. Transforme seu sorriso com Dr. Luiz Fernando Cardoso e equipe. Implantes, Aparelhos, Estética e Prevenção.">
+    <meta property="og:title" content="Odontologia Ideale | Legado em Saúde Bucal">
+    <meta property="og:description" content="A arte de harmonizar saúde, estética e o seu bem-estar em um ambiente boutique no Belém.">
     <meta property="og:image" content="https://luccam28.github.io/site-dentista/img/fachada-odontologia-ideale.jpg">
     <meta property="og:url" content="https://luccam28.github.io/site-dentista/">
-    <meta property="og:site_name" content="Odontologia Ideale">
-    <meta property="og:locale" content="pt_BR">
 
-    <!-- ======================== TWITTER CARDS ======================= -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Odontologia Ideale | Dr. Luiz Fernando Cardoso - Belém, SP">
-    <meta name="twitter:description" content="Referência em Odontologia no Belém há 37 anos. Agende sua avaliação.">
-    <meta name="twitter:image" content="https://luccam28.github.io/site-dentista/img/fachada-odontologia-ideale.jpg">
-
-    <!-- URL canônica (evita conteúdo duplicado) -->
-    <link rel="canonical" href="https://luccam28.github.io/site-dentista/">
-
-    <!-- Sitemap -->
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-
-    <!-- Título da aba / SERP -->
-    <title>Odontologia Ideale - Dr. Luiz Fernando Cardoso | Tradição e Tecnologia no Belém</title>
-
-    <!-- Favicon (compatível com navegadores antigos) -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
-    <link rel="apple-touch-icon" href="/img/logo-ideale.png">
-    <meta name="theme-color" content="#22c55e">
-
-    <!-- ==================== GOOGLE ADS – ESPAÇO RESERVADO =================== -->
-    <!-- Google Ads – Código de conversão / remarketing (inserir aqui) -->
-    <!-- ===================================================================== -->
-
-    <!-- ========== PRÉ‑CONEXÃO (acelera conexões com origens externas) ========= -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <!-- PRE-CONEXÕES & PERFORMANCE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <!-- ========== PRÉ‑CARREGAMENTO (recursos críticos) ========= -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" as="style">
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
-
-    <!-- ==================== FOLHAS DE ESTILO =================== -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <!-- Google Fonts com display=swap (evita FOIT) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet" crossorigin="anonymous">
-
-    <!-- ==================== TAILWIND (UTILITÁRIO SOB DEMANDA) ==================== -->
+    <!-- FONTES PREMIUM -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS CORE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- TAILWIND ENGINE -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -88,1127 +68,910 @@
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
                         heading: ['Poppins', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
                     },
                     colors: {
                         brand: {
-                            50: '#f0fdf4',
-                            100: '#dcfce7',
-                            500: '#22c55e',
-                            600: '#16a34a',
-                            700: '#15803d',
-                            800: '#166534',
-                            900: '#14532d',
+                            50: '#f4faf7', 100: '#e0f2e9', 200: '#b7dfca', 300: '#7cc4a2',
+                            400: '#4aa87d', 500: '#2d8b62', 600: '#1a6e49',
+                            700: '#0d5c3a', 
+                            800: '#0a482d', 900: '#073b24',
                         },
-                        accent: '#0d9488',
+                        accent: '#c8a96e', 
+                        cream: '#faf9f6',
+                        slate: { 800: '#1e293b', 900: '#0f172a' }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1.2s ease-out forwards',
+                        'slide-up': 'slideUp 1s ease-out forwards',
+                        'subtle-zoom': 'subtleZoom 20s infinite alternate',
+                    },
+                    keyframes: {
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+                        slideUp: { '0%': { transform: 'translateY(40px)', opacity: '0' }, '100%': { transform: 'translateY(0)', opacity: '1' } },
+                        subtleZoom: { '0%': { transform: 'scale(1)' }, '100%': { transform: 'scale(1.1)' } }
                     }
                 }
             }
         }
     </script>
 
-    <!-- ==================== DADOS ESTRUTURADOS (JSON‑LD) ENRIQUECIDOS ==================== -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "DentalClinic",
-                "@id": "https://luccam28.github.io/site-dentista/#dentalclinic",
-                "name": "Odontologia Ideale",
-                "alternateName": "Consultório Dr. Luiz Fernando Cardoso",
-                "image": [
-                    "https://luccam28.github.io/site-dentista/img/logo-ideale.png",
-                    "https://luccam28.github.io/site-dentista/img/fachada-odontologia-ideale.jpg"
-                ],
-                "url": "https://luccam28.github.io/site-dentista/",
-                "telephone": "+551122928008",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "Rua Herval, 579",
-                    "addressLocality": "Belém",
-                    "addressRegion": "SP",
-                    "postalCode": "03062-000",
-                    "addressCountry": "BR"
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": -23.5365519,
-                    "longitude": -46.5947704
-                },
-                "hasMap": "https://maps.google.com/?q=Rua+Herval+579+Belém+São+Paulo",
-                "openingHoursSpecification": [
-                    {
-                        "@type": "OpeningHoursSpecification",
-                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                        "opens": "08:00",
-                        "closes": "18:00"
-                    }
-                ],
-                "priceRange": "$$",
-                "foundingDate": "1988",
-                "sameAs": [
-                    "https://www.instagram.com/odontologiaideale/"
-                ],
-                "employee": [
-                    {
-                        "@type": "Person",
-                        "name": "Dr. Luiz Fernando Cardoso",
-                        "jobTitle": "Ortodontista e Implantodontista",
-                        "identifier": "CRO-SP 35.371"
-                    },
-                    {
-                        "@type": "Person",
-                        "name": "Dr. Paulo Menezes Lautenschlaeger",
-                        "jobTitle": "Implantodontista",
-                        "identifier": "CRO-SP 30.648"
-                    },
-                    {
-                        "@type": "Person",
-                        "name": "Dra. Paula Hadad Pozzo",
-                        "jobTitle": "Endodontista",
-                        "identifier": "CRO-SP 80.414"
-                    }
-                ],
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "5.0",
-                    "reviewCount": "47",
-                    "bestRating": "5",
-                    "worstRating": "1"
-                }
-            }
-        ]
-    }
-    </script>
-
-    <!-- ==================== ESTILOS CRÍTICOS INLINE ==================== -->
+    <!-- ==================== ESTILOS CUSTOMIZADOS (BOUTIQUE CSS) ==================== -->
     <style>
-        /* Garante que o layout não quebre durante o carregamento */
-        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; font-weight: 700; }
-        
-        /* Fundo da seção hero – otimizado com gradiente leve */
-        .hero-bg {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)), 
-                            url('/img/recepcao-odontologia.jpg');
-            background-size: cover;
-            background-position: center;
+        /* 
+         * 1. VARIÁVEIS DE DESIGN 
+         */
+        :root {
+            --it-green: #0d5c3a;
+            --it-gold: #c8a96e;
+            --it-cream: #faf9f6;
+            --it-white: #ffffff;
+            --transition-primary: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
-        /* Animação de pulso para botões de ação (WhatsApp) */
-        .pulse-animation { animation: pulse-green 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
-        @keyframes pulse-green {
-            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
-            50% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+        /* 
+         * 2. RESET & BASE 
+         */
+        body { 
+            background-color: var(--it-cream); 
+            color: #334155; 
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* Foco visível para acessibilidade */
-        :focus-visible { outline: 2px solid #22c55e; outline-offset: 2px; }
-        
-        /* Classe para lazy loading com fade‑in suave */
-        .lazy-load { opacity: 0; transition: opacity 0.3s ease-in; }
-        .lazy-load.loaded { opacity: 1; }
-
-        /* Substituição da classe 'prose' por estilos manuais */
-        .texto-institucional p {
-            color: #4b5563;
-            font-size: 1.125rem;
-            line-height: 1.75;
-            margin-bottom: 1rem;
-            text-align: justify;
+        /* 
+         * 3. COMPONENTES DE NAVEGAÇÃO 
+         */
+        .glass-nav {
+            background: rgba(250, 249, 246, 0.92);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(200, 169, 110, 0.15);
+            transition: var(--transition-primary);
         }
 
-        /* Link para pular conteúdo (acessibilidade) */
-        .skip-link {
+        .nav-link-boutique {
+            font-size: 0.65rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            font-weight: 700;
+            position: relative;
+            color: var(--it-green);
+        }
+
+        .nav-link-boutique::after {
+            content: '';
             position: absolute;
-            top: -40px;
+            bottom: -6px;
             left: 0;
-            background: #16a34a;
-            color: white;
-            padding: 8px 16px;
-            z-index: 100;
-            text-decoration: none;
-            border-radius: 0 0 8px 0;
-            transition: top 0.2s;
-        }
-        .skip-link:focus {
-            top: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--it-gold);
+            transition: width 0.4s ease;
         }
 
-        /* Banner LGPD – inicialmente oculto, exibido via JS (simulado) */
-        .lgpd-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.9);
-            color: white;
-            padding: 16px;
-            text-align: center;
-            z-index: 999;
-            display: none;
-            backdrop-filter: blur(4px);
+        .nav-link-boutique:hover::after { width: 100%; }
+
+        /* 
+         * 4. ELEMENTOS VISUAIS DA HERO 
+         */
+        .hero-title {
+            line-height: 1.02;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: -0.01em;
         }
-        .lgpd-banner.show { display: block; }
-        .lgpd-banner button {
-            background: #22c55e;
-            border: none;
-            color: white;
-            padding: 8px 24px;
-            border-radius: 999px;
-            font-weight: bold;
-            margin-left: 16px;
-            cursor: pointer;
+
+        .hero-decoration-frame {
+            position: absolute;
+            border: 1px solid rgba(200, 169, 110, 0.3);
+            z-index: -1;
+            pointer-events: none;
         }
-        /* ==================== MODAL INFOGRÁFICO ==================== */
+
+        /* 
+         * 5. CARDS DE SERVIÇOS (ESTILO EDITORIAL) 
+         */
+        .card-editorial {
+            background: var(--it-white);
+            border: 1px solid rgba(200, 169, 110, 0.1);
+            transition: var(--transition-primary);
+            position: relative;
+        }
+
+        .card-editorial:hover {
+            transform: translateY(-20px);
+            box-shadow: 0 50px 100px -20px rgba(13, 92, 58, 0.15);
+            border-color: var(--it-gold);
+        }
+
+        .image-zoom-wrapper {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image-zoom-wrapper img {
+            filter: grayscale(100%);
+            transition: all 1s ease;
+        }
+
+        .card-editorial:hover .image-zoom-wrapper img {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+
+        /* 
+         * 6. BOTÕES DE LUXO 
+         */
+        .btn-luxury {
+            background-color: var(--it-green);
+            color: var(--it-white);
+            padding: 1.4rem 3.5rem;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 4px;
+            font-weight: 700;
+            transition: var(--transition-primary);
+            border: 1px solid transparent;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-luxury:hover {
+            background-color: var(--it-gold);
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(200, 169, 110, 0.3);
+        }
+
+        .btn-outline-luxury {
+            border: 1px solid rgba(13, 92, 58, 0.2);
+            padding: 1.2rem 3rem;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 3px;
+            font-weight: 700;
+            transition: var(--transition-primary);
+        }
+
+        .btn-outline-luxury:hover {
+            border-color: var(--it-green);
+            background-color: var(--it-white);
+        }
+
+        /* 
+         * 7. SEÇÃO BIOSSEGURANÇA (PDF INTEGRATION) 
+         */
+        .bio-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .bio-card {
+            padding: 2.5rem;
+            border-left: 1px solid var(--it-gold);
+            background: rgba(255, 255, 255, 0.03);
+            transition: var(--transition-primary);
+        }
+
+        .bio-card:hover { background: rgba(255, 255, 255, 0.07); }
+
+        /* 
+         * 8. ANIMAÇÕES DE REVELAÇÃO 
+         */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 
+         * 9. MODAL & OVERLAYS 
+         */
         .infographic-modal {
             display: none;
             position: fixed;
             inset: 0;
             z-index: 9999;
-            background: rgba(0, 0, 0, 0.88);
-            backdrop-filter: blur(6px);
+            background: rgba(7, 59, 36, 0.98);
+            backdrop-filter: blur(15px);
             align-items: center;
             justify-content: center;
-            padding: 16px;
-            animation: modalFadeIn 0.25s ease;
+            padding: 30px;
         }
+
         .infographic-modal.open { display: flex; }
 
-        @keyframes modalFadeIn {
-            from { opacity: 0; }
-            to   { opacity: 1; }
-        }
-
-        .infographic-modal-dialog {
+        .modal-content-custom {
             background: #fff;
-            border-radius: 20px;
-            overflow: hidden;
-            max-width: 92vw;
-            width: 1000px;
-            max-height: 92vh;
+            width: 100%;
+            max-width: 1200px;
+            max-height: 90vh;
+            border-radius: 0;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 32px 80px rgba(0,0,0,0.5);
-            animation: modalSlideUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            box-shadow: 0 60px 120px rgba(0,0,0,0.6);
         }
 
-        @keyframes modalSlideUp {
-            from { transform: translateY(30px) scale(0.97); opacity: 0; }
-            to   { transform: translateY(0) scale(1); opacity: 1; }
+        /* 
+         * 10. DECORAÇÕES DE TEXTO 
+         */
+        .gold-line {
+            width: 60px;
+            height: 1px;
+            background-color: var(--it-gold);
+            margin: 0 auto 2rem;
         }
 
-        .infographic-modal-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 14px 20px;
-            background: #f0fdf4;
-            border-bottom: 1px solid #dcfce7;
-            gap: 12px;
-            flex-shrink: 0;
+        .text-justify-custom {
+            text-align: justify;
+            text-justify: inter-word;
         }
 
-        .infographic-modal-title {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 700;
-            font-size: 15px;
-            color: #15803d;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            flex: 1;
-        }
+        /* 
+         * 11. SCROLLBAR CUSTOM 
+         */
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: var(--it-cream); }
+        ::-webkit-scrollbar-thumb { background: var(--it-gold); }
 
-        .infographic-modal-nav {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            flex-shrink: 0;
+        /* 
+         * 12. RESPONSIVIDADE ADICIONAL 
+         */
+        @media (max-width: 1024px) {
+            .hero-title { font-size: 3.5rem; }
+            .hero-image-mobile { height: 500px !important; }
         }
-
-        .infographic-modal-nav button {
-            width: 34px;
-            height: 34px;
-            border-radius: 50%;
-            border: 2px solid #22c55e;
-            background: white;
-            color: #16a34a;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 13px;
-            transition: all 0.2s;
-        }
-
-        .infographic-modal-nav button:hover {
-            background: #22c55e;
-            color: white;
-        }
-
-        .infographic-modal-nav button:disabled {
-            opacity: 0.3;
-            cursor: default;
-        }
-
-        .infographic-modal-nav button:disabled:hover {
-            background: white;
-            color: #16a34a;
-        }
-
-        .infographic-modal-counter {
-            font-size: 12px;
-            font-weight: 700;
-            color: #6b7280;
-            min-width: 36px;
-            text-align: center;
-        }
-
-        .infographic-modal-close {
-            width: 34px;
-            height: 34px;
-            border-radius: 50%;
-            border: none;
-            background: #fee2e2;
-            color: #dc2626;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-            transition: all 0.2s;
-            flex-shrink: 0;
-        }
-
-        .infographic-modal-close:hover {
-            background: #dc2626;
-            color: white;
-        }
-
-        .infographic-modal-body {
-            overflow: auto;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            padding: 0;
-            flex: 1;
-            background: #f9fafb;
-        }
-
-        .infographic-modal-img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: opacity 0.25s ease;
-        }
-
-        .infographic-modal-img.loading { opacity: 0; }
     </style>
 </head>
 
-<body class="text-gray-700 antialiased relative" itemscope itemtype="https://schema.org/DentalClinic">
+<body class="antialiased">
 
-    <!-- ==================== LINK PULAR PARA O CONTEÚDO ==================== -->
-    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <!-- ==================== SKIP LINK (ACESSIBILIDADE) ==================== -->
+    <a href="#main-content" class="sr-only focus:not-sr-only fixed top-4 left-4 bg-brand-700 text-white p-4 z-[100] font-bold uppercase tracking-widest text-[10px]">Ir para o conteúdo</a>
 
-    <!-- ==================== BARRA DE NAVEGAÇÃO (FIXA) ==================== -->
-    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Logo – link para o topo -->
-            <a href="#home" class="flex items-center" aria-label="Odontologia Ideale - Home">
-                <img src="logo-ideale.png" alt="Odontologia Ideale" class="h-20 md:h-24 w-auto" width="300" height="101" loading="eager" fetchpriority="high">
-            </a>
-
-            <!-- Links do desktop (escondidos no mobile) -->
-            <div class="hidden md:flex space-x-8 items-center font-medium text-sm text-gray-600">
-                <a href="#home" class="hover:text-brand-600 transition">HOME</a>
-                <a href="#sobre" class="hover:text-brand-600 transition">A CLÍNICA</a>
-                <a href="#tratamentos" class="hover:text-brand-600 transition">TRATAMENTOS</a>
-                <a href="#profissionais" class="hover:text-brand-600 transition">EQUIPE</a>
-                <a href="#depoimentos" class="hover:text-brand-600 transition">DEPOIMENTOS</a>
-                <!-- Botão de destaque – WhatsApp -->
-                <a href="#contato" class="px-5 py-2.5 bg-brand-600 text-white rounded-full hover:bg-brand-700 transition shadow-lg flex items-center gap-2">
-                    <i class="fa-brands fa-whatsapp"></i> Agendar
+    <!-- ==================== HEADER (BOUTIQUE NAVIGATION) ==================== -->
+    <header>
+        <nav class="fixed w-full z-50 glass-nav" id="navbar">
+            <div class="container mx-auto px-8 py-6 flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#home" class="transition transform hover:scale-105" aria-label="Voltar ao início">
+                    <img src="logo-ideale.png" alt="Odontologia Ideale" class="h-10 md:h-14 w-auto" loading="eager">
                 </a>
-            </div>
 
-            <!-- Botão do menu mobile (hambúrguer) -->
-            <button class="md:hidden text-gray-600" onclick="toggleMenu()" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
-                <i class="fa-solid fa-bars text-2xl"></i>
-            </button>
-        </div>
-        
-        <!-- Menu mobile (inicialmente oculto) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 absolute w-full shadow-xl">
-            <div class="flex flex-col space-y-4 text-center">
-                <a href="#home" onclick="toggleMenu()" class="block py-2">Início</a>
-                <a href="#sobre" onclick="toggleMenu()" class="block py-2">A Clínica</a>
-                <a href="#tratamentos" onclick="toggleMenu()" class="block py-2">Tratamentos</a>
-                <a href="#profissionais" onclick="toggleMenu()" class="block py-2">Profissionais</a>
-                <!-- Link direto para WhatsApp no mobile -->
-                <a href="https://wa.me/5511977001032" class="block py-3 bg-brand-600 text-white rounded-lg">WhatsApp</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
-    <main id="main-content">
-
-        <!-- ==================== SEÇÃO HERO (HOME) ==================== -->
-        <section id="home" class="hero-bg min-h-screen flex items-center pt-24 md:pt-20">
-            <div class="container mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-12 items-center">
-                <!-- Coluna esquerda: texto e botões -->
-                <div class="text-center md:text-left">
-                    <span class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-700 text-xs font-bold uppercase tracking-wider mb-4">
-                        37 Anos de Tradição e Excelência
-                    </span>
-                    <h1 class="text-4xl md:text-6xl font-heading font-bold text-gray-900 leading-tight mb-6">
-                       Seu sorriso saudável começa aqui.<br>
-                        <span class="text-2xl md:text-4xl block mt-2 font-medium">
-                                Odontologia Ideale no <span class="text-brand-600 font-bold">Belém</span>
-                        </span>
-                    </h1>
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-14 items-center">
+                    <div class="flex space-x-10 items-center">
+                        <a href="#home" class="nav-link-boutique">Início</a>
+                        <a href="#sobre" class="nav-link-boutique">Quem Somos</a>
+                        <a href="#tratamentos" class="nav-link-boutique">Especialidades</a>
+                        <a href="#profissionais" class="nav-link-boutique">Equipe</a>
+                        <a href="#contato" class="nav-link-boutique">Contato</a>
+                    </div>
                     
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                       Fundada em 1988, unimos <strong>tradição</strong> e <strong>tecnologia</strong> para transformar sorrisos.<br>
-                        ✔ Implantes e Reabilitação Oral<br>
-                        ✔ Ortodontia Moderna<br>
-                        ✔ Biossegurança Rigorosa
-                    </p>
-                    <!-- Botões de ação -->
-                    <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-                        <a href="https://wa.me/5511977001032" target="_blank" class="px-8 py-4 bg-brand-600 text-white font-semibold rounded-lg shadow-lg hover:bg-brand-700 hover:scale-105 transition transform flex items-center justify-center gap-2">
-                            <i class="fa-brands fa-whatsapp"></i> Agendar Avaliação
-                        </a>
-                        <a href="#tratamentos" class="px-8 py-4 bg-white text-gray-700 font-semibold rounded-lg shadow border border-gray-200 hover:bg-gray-50 transition flex items-center justify-center">
-                            Ver Tratamentos
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Coluna direita: carrossel (visível apenas em desktop) -->
-                <div class="hidden md:block relative">
-                    <div id="heroCarousel" class="carousel slide carousel-fade rounded-2xl shadow-2xl w-full h-[500px] border-4 border-white overflow-hidden" data-bs-ride="carousel">
-                        <div class="carousel-inner h-full">
-                            <!-- Primeira imagem (ativa) – prioridade máxima -->
-                            <div class="carousel-item active h-full">
-                                <img src="fachada-letreiro.jpg" class="d-block w-full h-full object-cover" alt="Fachada da Odontologia Ideale no Belém" loading="eager" fetchpriority="high" decoding="sync">
-                            </div>
-                            <!-- Segunda imagem -->
-                            <div class="carousel-item h-full">
-                                <img src="foto-externa-2.png" class="d-block w-full h-full object-cover" alt="Entrada do consultório Odontologia Ideale" loading="eager" decoding="async">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== SEÇÃO SOBRE (A CLÍNICA) ==================== -->
-        <section id="sobre" class="py-20 bg-white">
-            <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-start gap-12">
-                <!-- Coluna esquerda: imagem da fachada (agora sem sticky) -->
-                    <div class="md:w-1/2">
-                        <figure>
-                            <img src="foto-externa-1.png" alt="Fachada da Odontologia Ideale" class="rounded-lg shadow-xl w-full max-w-md mx-auto h-[500px] object-cover ring-1 ring-gray-200" loading="lazy" decoding="async">
-                        </figure>
-                    </div>
-                <!-- Coluna direita: texto institucional -->
-                <div class="md:w-1/2">
-                    <h4 class="text-brand-600 font-bold uppercase tracking-wide mb-2 text-sm">Nossa História</h4>
-                    <h2 class="text-3xl font-heading font-bold text-gray-900 mb-6">Odontologia Ideale</h2>
-                    
-                    <!-- Substituição da classe 'prose' por estilos manuais -->
-                    <div class="texto-institucional">
-                        <p>
-                            Fundada em 1988, a Odontologia Ideale acumula <strong>37 anos de experiência</strong>, aliando tradição, atualização constante e excelência no atendimento odontológico.
-                        </p>
-                        <p>
-                            Nosso trabalho é baseado em diagnóstico minucioso e planejamento criterioso, oferecendo ao paciente diferentes opções de tratamento, sempre respeitando suas necessidades, prioridades e expectativas. Acreditamos que dentes saudáveis e um sorriso harmonioso influenciam diretamente a autoestima e a qualidade de vida, impactando aspectos sociais, profissionais e pessoais.
-                        </p>
-                        <p>
-                            A saúde bucal é parte essencial da saúde do corpo como um todo. Atuamos com ética, atendimento humanizado e respeito aos receios do paciente, buscando constantemente a inovação e a qualidade técnica. Nosso objetivo é ser reconhecidos pela excelência nos serviços e pelo cuidado dedicado a cada pessoa atendida.
-                        </p>
-                    </div>
-
-                    <!-- Destaque: Biossegurança e Sustentabilidade -->
-                    <div class="bg-brand-50 p-8 rounded-2xl border border-brand-100 mb-8 relative overflow-hidden">
-                        <div class="absolute top-0 right-0 -mr-4 -mt-4 w-24 h-24 bg-brand-200 rounded-full blur-2xl opacity-50"></div>
-                        <h3 class="text-xl font-bold text-brand-800 mb-4 flex items-center gap-2">
-                            <i class="fa-solid fa-shield-virus"></i> Biossegurança e Sustentabilidade
-                        </h3>
-                        <p class="text-sm text-gray-700 leading-relaxed mb-4">
-                            A Odontologia Ideale segue rigorosamente todas as normas de biossegurança estabelecidas pela <strong>ANVISA</strong> e pelo <strong>CRO-SP</strong>. Todos os instrumentais são esterilizados em autoclave, e o uso de materiais descartáveis é adotado em larga escala. A higienização de superfícies e equipamentos é realizada com álcool 70% e solução de hipoclorito.
-                        </p>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            Os resíduos contaminados são coletados por serviço especializado, enquanto materiais recicláveis são destinados corretamente. Adotamos o uso consciente de água e energia, reduzindo impactos ambientais.
-                        </p>
-                    </div>
-
-                    <!-- Informações de contato resumidas (com link para ligação) -->
-                    <div class="flex flex-col gap-3 text-sm font-medium bg-gray-50 p-5 rounded-lg border border-gray-200">
-                        <div class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-brand-600"></i> Rua Herval, 579 – Belém – São Paulo/SP – CEP 03062-000</div>
-                        <div class="flex items-center gap-3">
-                            <i class="fa-solid fa-phone text-brand-600"></i>
-                            <a href="tel:1122928008" class="hover:text-brand-600 transition">(11) 2292-8008</a>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <i class="fa-brands fa-whatsapp text-brand-600 text-lg"></i>
-                            <a href="https://wa.me/5511977001032" class="hover:text-brand-600 transition">(11) 97700-1032</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== SEÇÃO TRATAMENTOS ==================== -->
-        <section id="tratamentos" class="py-24 bg-brand-50">
-            <div class="container mx-auto px-4 md:px-6">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span class="text-brand-600 font-bold uppercase tracking-widest text-sm mb-4 block">Especialidades</span>
-                    <h2 class="text-4xl lg:text-5xl font-extrabold mb-6 text-gray-900">Tratamentos Completos</h2>
-                    <p class="text-lg text-gray-500">Diagnóstico minucioso e tecnologia para todas as fases da sua saúde bucal.</p>
-                </div>
-
-                <!-- Grade de 6 cards -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    
-                    <!-- CARD 1: Ortodontia -->
-                        <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-brand-600 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
-                            <div class="w-full h-72 overflow-hidden relative">
-                                <img src="alinhador.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Aparelho ortodôntico e alinhadores transparentes" loading="lazy" decoding="async">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
-                                <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Ortodontia</h3>
-                            </div>
-                            <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
-                                <p class="text-gray-600 mb-4 text-sm">Um sorriso alinhado vai além da estética — melhora a mastigação, a fala e a autoestima.<br>O tratamento ortodôntico corrige dentes desalinhados, apinhados e problemas de mordida em qualquer fase da vida.</p>
-                                <div id="descOrto" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                                    <div class="pt-4 border-t border-brand-100 text-gray-600 text-sm space-y-2">
-                                        <p class="font-semibold text-brand-700 text-xs uppercase tracking-wide mb-1">Opções de tratamento</p>
-                                        <p>• Aparelho fixo metálico.</p>
-                                        <p>• Aparelho fixo estético (porcelana).</p>
-                                        <p>• Aparelho removível.</p>
-                                        <p>• Alinhadores transparentes — discretos e praticamente imperceptíveis.</p>
-                                        <p class="italic text-xs mt-2 text-gray-400">Indicado para crianças, adolescentes e adultos. O diagnóstico precoce amplia os resultados.</p>
-                                    </div>
-                                    <button onclick="openInfographic(['alinhador-3.png', 'alinhador-4.png', 'alinhador-2.png'], 'Alinhadores')" class="mt-4 w-full flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-brand-200 transition-all duration-200 hover:shadow-sm">
-                                        <i class="fas fa-images"></i> Ver Infográfico Completo
-                                    </button>
-                                </div>
-                                <button onclick="toggleCard('descOrto', this)" class="mt-auto pt-4 text-brand-600 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-brand-800 transition-colors toggle-btn" aria-expanded="false" aria-controls="descOrto">
-                                    <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                    <!-- CARD 2: Implantes -->
-                        <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-accent hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
-                            <div class="w-full h-72 overflow-hidden relative">
-                                <img src="implante.png" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Implantes dentários de titânio" loading="lazy" decoding="async">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
-                                <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Implantes</h3>
-                            </div>
-                            <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
-                                <p class="text-gray-600 mb-4 text-sm">Perder um dente não precisa ser definitivo.<br>O implante de titânio é a solução mais próxima de um dente natural — devolve a mastigação, a estética e a qualidade de vida com alta durabilidade.</p>
-                                <div id="descImplante" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                                    <div class="pt-4 border-t border-accent/10 text-gray-600 text-sm space-y-2">
-                                        <p class="font-semibold text-accent text-xs uppercase tracking-wide mb-1">O que oferecemos</p>
-                                        <p>• Implantes de titânio biocompatível (osseointegração).</p>
-                                        <p>• Carga imediata — implante e prótese no mesmo dia.</p>
-                                        <p>• Enxerto ósseo para casos com perda óssea severa.</p>
-                                        <p>• Reabilitação total com foco em estética e função.</p>
-                                        <p class="italic text-xs mt-2 text-gray-400">Planejamento individualizado para resultados previsíveis e duradouros.</p>
-                                    </div>
-                                    <button onclick="openInfographic(['implante2.png','implante3.png'], 'Implantes Dentários')" class="mt-4 w-full flex items-center justify-center gap-2 bg-teal-50 hover:bg-teal-100 text-accent font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-teal-200 transition-all duration-200 hover:shadow-sm">
-                                        <i class="fas fa-images"></i> Ver Infográfico Completo
-                                    </button>
-                                </div>
-                                <button onclick="toggleCard('descImplante', this)" class="mt-auto pt-4 text-accent font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-teal-800 transition-colors toggle-btn" aria-expanded="false" aria-controls="descImplante">
-                                    <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                    <!-- CARD 3: Clínica Geral -->
-                        <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-gray-800 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
-                            <div class="w-full h-72 overflow-hidden relative">
-                                <img src="sala-clinica.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Sala de atendimento odontológico" loading="lazy" decoding="async">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
-                                <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Clínica Geral</h3>
-                            </div>
-                            <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
-                                <p class="text-gray-600 mb-4 text-sm">A base de um sorriso saudável está no cuidado contínuo, da prevenção ao tratamento, o clínico geral é o ponto de partida para a sua saúde bucal em qualquer fase da vida.</p>
-                                <div id="descEstetica" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                                    <div class="pt-4 border-t border-gray-100 text-gray-600 text-sm space-y-3">
-                                        <div>
-                                            <p class="font-semibold text-gray-800 text-xs uppercase tracking-wide mb-1">Prevenção</p>
-                                            <p>Consultas de rotina, limpeza, aplicação de flúor, selantes e radiografias — cuidados simples que evitam problemas complexos.</p>
-                                        </div>
-                                        <div>
-                                            <p class="font-semibold text-gray-800 text-xs uppercase tracking-wide mb-1">Restaurações</p>
-                                            <p>Tratamento de cáries com resina composta, cerâmica ou restaurações metálicas, devolvendo forma e função ao dente.</p>
-                                        </div>
-                                        <div>
-                                            <p class="font-semibold text-gray-800 text-xs uppercase tracking-wide mb-1">Cirurgia & Gengiva</p>
-                                            <p>Extrações, emergências de canal, tratamento de gengivite e encaminhamento para especialistas quando necessário.</p>
-                                        </div>
-                                        <p class="italic text-xs mt-1 text-gray-400">Atendimento especial para pacientes idosos — com atenção às particularidades sistêmicas e uso de medicamentos.</p>
-                                    </div>
-                                    <button onclick="openInfographic(['clinica1.png','clinica2.png'], 'Estética e Odontologia Geral')" class="mt-4 w-full flex items-center justify-center gap-2 bg-gray-50 hover:bg-gray-100 text-gray-800 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-gray-200 transition-all duration-200 hover:shadow-sm">
-                                        <i class="fas fa-images"></i> Ver Infográfico Completo
-                                    </button>
-                                </div>
-                                <button onclick="toggleCard('descEstetica', this)" class="mt-auto pt-4 text-gray-800 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-black transition-colors toggle-btn" aria-expanded="false" aria-controls="descEstetica">
-                                    <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                    <!-- CARD 4: Prótese -->
-                        <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-brand-700 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
-                            <div class="w-full h-72 overflow-hidden relative bg-gray-200">
-                                <img src="tratamento1.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Prótese dentária fixa e removível" loading="lazy" decoding="async">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
-                                <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Prótese</h3>
-                            </div>
-                            <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
-                                <p class="text-gray-600 mb-4 text-sm">Dentes perdidos afetam muito mais do que a aparência — comprometem a mastigação, a fala e a autoestima.<br>A prótese dentária devolve tudo isso com planejamento preciso e resultado duradouro.</p>
-                                <div id="descProtese" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                                    <div class="pt-4 border-t border-brand-100 text-gray-600 text-sm space-y-3">
-                                        <div>
-                                            <p class="font-semibold text-brand-700 text-xs uppercase tracking-wide mb-1">Próteses Fixas</p>
-                                            <p>A melhor opção para restabelecer mastigação e estética. Apoiadas em dentes naturais ou implantes, são estáveis e praticamente idênticas aos dentes originais.</p>
-                                        </div>
-                                        <div>
-                                            <p class="font-semibold text-brand-700 text-xs uppercase tracking-wide mb-1">Próteses Removíveis</p>
-                                            <p>Totais (dentadura) ou parciais (ponte móvel) — soluções acessíveis e funcionais para reposição de vários dentes perdidos.</p>
-                                        </div>
-                                        <p class="italic text-xs mt-1 text-gray-400">O tratamento pode envolver etapas complementares como endodontia, periodontia ou implantes — tudo planejado de forma integrada.</p>
-                                    </div>
-                                    <button onclick="openInfographic(['tratamento1.1.png','tratamento1.2.png'], 'Próteses Dentárias')" class="mt-4 w-full flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-brand-200 transition-all duration-200 hover:shadow-sm">
-                                        <i class="fas fa-images"></i> Ver Infográfico Completo
-                                    </button>
-                                </div>
-                                <button onclick="toggleCard('descProtese', this)" class="mt-auto pt-4 text-brand-700 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-brand-900 transition-colors toggle-btn" aria-expanded="false" aria-controls="descProtese">
-                                    <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                    <!-- CARD 5: Endodontia (Canal) -->
-                        <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-purple-600 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
-                            <div class="w-full h-72 overflow-hidden relative bg-gray-200">
-                                <img src="tratamento2.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Tratamento de canal odontológico" loading="lazy" decoding="async">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
-                                <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Endodontia</h3>
-                            </div>
-                            <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
-                                <p class="text-gray-600 mb-4 text-sm">O tratamento de canal tem má fama — mas é ele que elimina a dor e salva o dente.<br> Com técnica adequada, é preciso, eficaz e muito menos desconfortável do que se imagina.</p>
-                                <div id="descEndo" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                                    <div class="pt-4 border-t border-purple-100 text-gray-600 text-sm space-y-3">
-                                        <div>
-                                            <p class="font-semibold text-purple-700 text-xs uppercase tracking-wide mb-1">Quando é indicado</p>
-                                            <p>Cárie profunda que atingiu a polpa (parte interna com nervos e vasos) ou traumas que causaram necrose do tecido vivo do dente.</p>
-                                        </div>
-                                        <div>
-                                            <p class="font-semibold text-purple-700 text-xs uppercase tracking-wide mb-1">Como funciona</p>
-                                            <p>Remove-se o tecido infectado, desinfectam-se os canais radiculares e realiza-se o selamento — preservando o dente natural e eliminando a dor.</p>
-                                        </div>
-                                        <p class="italic text-xs mt-1 text-gray-400">Salvar o dente natural é sempre a melhor opção. O tratamento endodôntico evita extrações e mantém a integridade da arcada dentária.</p>
-                                    </div>
-                                    <button onclick="openInfographic(['tratamento2.1.png','tratamento2.2.png'], 'Endodontia – Tratamento de Canal')" class="mt-4 w-full flex items-center justify-center gap-2 bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-purple-200 transition-all duration-200 hover:shadow-sm">
-                                        <i class="fas fa-images"></i> Ver Infográfico Completo
-                                    </button>
-                                </div>
-                                <button onclick="toggleCard('descEndo', this)" class="mt-auto pt-4 text-purple-600 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-purple-800 transition-colors toggle-btn" aria-expanded="false" aria-controls="descEndo">
-                                    <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                     <!-- CARD 6: Periodontia & Enxerto -->
-                        <div class="bg-white rounded-[2rem] shadow-md border-b-8 border-red-500 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden flex flex-col group h-full">
-                            <div class="w-full h-72 overflow-hidden relative bg-gray-200">
-                                <img src="tratamento3.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110" alt="Tratamento da gengiva e periodontia" loading="lazy" decoding="async">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-70 transition-opacity duration-300"></div>
-                                <h3 class="absolute bottom-4 left-6 text-white text-2xl font-bold drop-shadow-md group-hover:-translate-y-1 transition-transform duration-300">Periodontia & Enxerto</h3>
-                            </div>
-                            <div class="p-8 flex flex-col flex-grow relative z-10 bg-white">
-                                <p class="text-gray-600 mb-4 text-sm">Gengiva inflamada, sangramento ou dentes móveis são sinais de alerta. A saúde periodontal é a base de todo o tratamento — e o enxerto reconstrói o que a doença ou o tempo comprometeram.</p>
-                                <div id="descPerio" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                                    <div class="pt-4 border-t border-red-100 text-gray-600 text-sm space-y-3">
-                                        <div>
-                                            <p class="font-semibold text-red-600 text-xs uppercase tracking-wide mb-1">Gengivite & Periodontite</p>
-                                            <p>A gengivite é o estágio inicial — reversível com tratamento. Sem cuidado, evolui para periodontite: uma infecção crônica que destrói o osso e o ligamento que sustentam o dente, podendo levar à perda dentária e até afetar a saúde geral do organismo.</p>
-                                        </div>
-                                        <div>
-                                            <p class="font-semibold text-red-600 text-xs uppercase tracking-wide mb-1">Enxerto Ósseo & Gengival</p>
-                                            <p>Quando há perda de volume ósseo ou retração gengival, o enxerto reconstrói esses tecidos — viabilizando implantes, protegendo raízes expostas e recuperando a estética do sorriso.</p>
-                                        </div>
-                                        <p class="italic text-xs mt-1 text-gray-400">Pacientes fumantes e diabéticos têm risco aumentado de doença periodontal — o acompanhamento regular é essencial.</p>
-                                    </div>
-                                    <button onclick="openInfographic(['tratamento3.1.png','tratamento3.2.png' , 'tratamento4.png','tratamento5.png'], 'Periodontia')" class="mt-4 w-full flex items-center justify-center gap-2 bg-red-50 hover:bg-red-100 text-red-600 font-bold text-xs uppercase tracking-widest py-3 px-4 rounded-xl border border-red-200 transition-all duration-200 hover:shadow-sm">
-                                        <i class="fas fa-images"></i> Ver Infográfico Completo
-                                    </button>
-                                </div>
-                                <button onclick="toggleCard('descPerio', this)" class="mt-auto pt-4 text-red-500 font-bold flex items-center gap-2 uppercase text-xs tracking-widest hover:text-red-700 transition-colors toggle-btn" aria-expanded="false" aria-controls="descPerio">
-                                    <span class="toggle-text">Ver Detalhes</span><i class="fas fa-plus toggle-icon"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== SEÇÃO PROFISSIONAIS (EQUIPE) ==================== -->
-        <section id="profissionais" class="py-20 bg-white border-t border-gray-100">
-            <div class="container mx-auto px-4 md:px-6">
-                <div class="text-center mb-12">
-                    <span class="text-brand-600 font-bold uppercase tracking-widest text-sm mb-2 block">Corpo Clínico</span>
-                    <h2 class="text-3xl font-heading font-bold text-gray-900">Nossa Equipe</h2>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Dr. Luiz Fernando Cardoso -->
-                    <div class="bg-gray-50 rounded-xl p-6 text-center border hover:border-brand-300 transition hover:-translate-y-1">
-                        <div class="w-24 h-24 mx-auto bg-brand-200 rounded-full flex items-center justify-center mb-4 text-brand-600 text-3xl">
-                            <i class="fa-solid fa-user-doctor"></i>
-                        </div>
-                        <h3 class="font-bold text-gray-900 text-lg">Dr. Luiz F. Cardoso</h3>
-                        <p class="text-xs text-brand-600 font-bold uppercase mb-2">CRO-SP 35.371</p>
-                        <p class="text-sm text-gray-500">Ortodontista, Implantodontista e Clínico Geral</p>
-                    </div>
-
-                    <!-- Dr. Paulo Lautenschlaeger -->
-                    <div class="bg-gray-50 rounded-xl p-6 text-center border hover:border-brand-300 transition hover:-translate-y-1">
-                        <div class="w-24 h-24 mx-auto bg-brand-100 rounded-full flex items-center justify-center mb-4 text-brand-600 text-3xl">
-                            <i class="fa-solid fa-user-doctor"></i>
-                        </div>
-                        <h3 class="font-bold text-gray-900 text-lg">Dr. Paulo Lautenschlaeger</h3>
-                        <p class="text-xs text-brand-600 font-bold uppercase mb-2">CRO-SP 30.648</p>
-                        <p class="text-sm text-gray-500">Implantodontista<br>Proficiência em Enxerto Ósseo</p>
-                    </div>
-
-                    <!-- Dra. Simone da Silva Rodrigues Marta -->
-                    <div class="bg-gray-50 rounded-xl p-6 text-center border hover:border-brand-300 transition hover:-translate-y-1">
-                        <div class="w-24 h-24 mx-auto bg-purple-100 rounded-full flex items-center justify-center mb-4 text-purple-600 text-3xl">
-                            <i class="fa-solid fa-user-doctor"></i>
-                        </div>
-                        <h3 class="font-bold text-gray-900 text-lg">Dra. Simone da Silva Rodrigues Marta</h3>
-                        <p class="text-xs text-brand-600 font-bold uppercase mb-2">CRO-SP 50.389</p>
-                        <p class="text-sm text-gray-500">Endodontista<br></p>
-                    </div>
-
-                
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== SEÇÃO DEPOIMENTOS ==================== -->
-        <section id="depoimentos" class="py-20 bg-brand-900 text-white relative overflow-hidden">
-            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-brand-700 rounded-full blur-3xl opacity-50"></div>
-            <div class="container mx-auto px-4 md:px-6 relative z-10">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-heading font-bold">Pacientes Satisfeitos</h2>
-                    <p class="text-brand-100 mt-2">Confiança construída através de sorrisos.</p>
-                </div>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Depoimento 1 -->
-                    <div class="bg-brand-800 p-8 rounded-2xl border border-brand-700 transition">
-                        <div class="flex text-yellow-400 mb-4 text-sm">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="italic text-gray-300 mb-6">"Excelente profissional, muito atencioso, local limpo e organizado. Super indico!"</p>
-                        <p class="font-bold text-white">- Luciana Rocha</p>
-                    </div>
-                    <!-- Depoimento 2 (destaque central) -->
-                    <div class="bg-brand-800 p-8 rounded-2xl border border-brand-700 transition md:scale-105 shadow-2xl">
-                        <div class="flex text-yellow-400 mb-4 text-sm">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="italic text-gray-300 mb-6">"Dr. Luiz Fernando é um excelente profissional! Consultório muito bem estruturado e com ótimo atendimento."</p>
-                        <p class="font-bold text-white">- Marcelo Augusto</p>
-                    </div>
-                    <!-- Depoimento 3 -->
-                    <div class="bg-brand-800 p-8 rounded-2xl border border-brand-700 transition">
-                        <div class="flex text-yellow-400 mb-4 text-sm">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="italic text-gray-300 mb-6">"Ótimo atendimento e profissionalismo. Fiz meu tratamento e o resultado ficou perfeito. Recomendo a todos."</p>
-                        <p class="font-bold text-white">- Fernanda Souza</p>
-                    </div>
-                </div>
-                <!-- Link para avaliações no Google -->
-                <div class="text-center mt-12">
-                    <a href="https://g.page/r/CW_YFJt4k_hxEB0/review" target="_blank" class="inline-flex items-center gap-3 px-8 py-3 bg-white/10 hover:bg-white text-white hover:text-brand-900 border border-brand-500/30 rounded-full font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg">
-                        <i class="fa-brands fa-google text-lg"></i> Ver mais avaliações no Google
+                    <a href="https://wa.me/5511977001032" target="_blank" class="px-10 py-3 bg-brand-700 text-white text-[9px] font-bold tracking-[4px] uppercase hover:bg-accent transition-all duration-500 shadow-xl shadow-brand-900/10">
+                        Agendamento
                     </a>
                 </div>
-            </div>
-        </section>
 
-        <!-- ==================== SEÇÃO FAQ (PERGUNTAS FREQUENTES) ==================== -->
-        <section id="faq" class="py-20 bg-gray-50">
-            <div class="container mx-auto px-4 md:px-6">
-                <div class="text-center max-w-3xl mx-auto mb-12">
-                    <span class="text-brand-600 font-bold uppercase tracking-widest text-sm mb-4 block">Tira-Dúvidas</span>
-                    <h2 class="text-3xl font-heading font-bold text-gray-900 mb-4">Dúvidas Comuns</h2>
-                </div>
-
-                <div class="max-w-3xl mx-auto space-y-4">
-                    <!-- FAQ 1: Convênios -->
-                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                        <button onclick="toggleFAQ(this)" class="w-full px-6 py-5 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition duration-300 group" aria-expanded="false" aria-controls="faq-convenios">
-                            <span class="font-bold text-gray-800 text-lg group-hover:text-brand-600 transition">Vocês atendem convênios?</span>
-                            <i class="fa-solid fa-chevron-down text-brand-300 group-hover:text-brand-600 transition-transform duration-300"></i>
-                        </button>
-                        <div id="faq-convenios" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                            <div class="px-6 pb-6 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
-                                Optamos pelo atendimento particular para garantir qualidade máxima. Contudo, fornecemos todo o suporte e documentação para <strong>reembolso</strong> junto ao seu convênio.
-                            </div>
-                        </div>
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-brand-700 focus:outline-none" onclick="toggleMenu()" aria-label="Abrir Navegação">
+                    <div class="w-8 h-4 flex flex-col justify-between items-end">
+                        <span class="w-full h-[1px] bg-current"></span>
+                        <span class="w-2/3 h-[1px] bg-current"></span>
+                        <span class="w-full h-[1px] bg-current"></span>
                     </div>
-
-                    <!-- FAQ 2: Como agendar -->
-                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                        <button onclick="toggleFAQ(this)" class="w-full px-6 py-5 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition duration-300 group" aria-expanded="false" aria-controls="faq-agendar">
-                            <span class="font-bold text-gray-800 text-lg group-hover:text-brand-600 transition">Como agendar uma avaliação?</span>
-                            <i class="fa-solid fa-chevron-down text-brand-300 group-hover:text-brand-600 transition-transform duration-300"></i>
-                        </button>
-                        <div id="faq-agendar" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                            <div class="px-6 pb-6 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
-                                É muito simples! Basta entrar em contato pelo WhatsApp (11) 97700-1032 ou ligar para (11) 2292-8008.
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </button>
             </div>
-        </section>
+            
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center space-y-10 animate-fade-in text-center">
+                <button class="absolute top-10 right-10 text-4xl font-light" onclick="toggleMenu()">&times;</button>
+                <div class="space-y-6">
+                    <a href="#home" onclick="toggleMenu()" class="block text-3xl font-display italic text-brand-900">Início</a>
+                    <a href="#sobre" onclick="toggleMenu()" class="block text-3xl font-display italic text-brand-900">A Clínica</a>
+                    <a href="#tratamentos" onclick="toggleMenu()" class="block text-3xl font-display italic text-brand-900">Especialidades</a>
+                    <a href="#profissionais" onclick="toggleMenu()" class="block text-3xl font-display italic text-brand-900">Expertise</a>
+                    <a href="#contato" onclick="toggleMenu()" class="block text-3xl font-display italic text-brand-900">Contato</a>
+                </div>
+                <a href="https://wa.me/5511977001032" class="px-12 py-5 bg-brand-700 text-white uppercase text-xs tracking-widest font-bold">Solicitar Avaliação</a>
+            </div>
+        </nav>
+    </header>
 
-        <!-- ==================== SEÇÃO CONTATO ==================== -->
-        <section id="contato" class="py-20 bg-white">
-            <div class="container mx-auto px-4 md:px-6">
-                <div class="bg-brand-50 rounded-3xl overflow-hidden shadow-sm flex flex-col md:flex-row border border-brand-100">
-                    <!-- Lado esquerdo: informações e botão -->
-                    <div class="md:w-1/2 p-10 md:p-16">
-                        <h2 class="text-3xl font-bold mb-6 text-gray-900">Agende sua Visita</h2>
-                        <p class="text-gray-600 mb-8">Endereço de fácil acesso no Belém. Agende hoje mesmo:</p>
-                        
-                        <div class="space-y-6">
-                            <!-- Telefones com links clicáveis -->
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-brand-600 shadow-sm shrink-0">
-                                    <i class="fa-solid fa-phone"></i>
-                                </div>
-                                <div>
-                                    <p class="text-sm text-gray-500 font-semibold uppercase">Telefones</p>
-                                    <p class="text-lg font-bold text-gray-900">
-                                        <a href="tel:1122928008" class="hover:text-brand-600 transition">(11) 2292-8008</a>
-                                    </p>
-                                    <p class="text-lg font-bold text-gray-900">
-                                        <a href="https://wa.me/5511977001032" class="hover:text-brand-600 transition">(11) 97700-1032</a>
-                                        <span class="text-xs font-normal text-green-600 bg-green-100 px-2 rounded-full ml-2">WhatsApp</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Endereço -->
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-brand-600 shadow-sm shrink-0">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </div>
-                                <div>
-                                    <p class="text-sm text-gray-500 font-semibold uppercase">Endereço</p>
-                                    <p class="text-gray-900 font-medium">Rua Herval, 579 - Belém</p>
-                                    <p class="text-gray-500 text-sm">São Paulo/SP - CEP: 03062-000</p>
-                                    <a href="https://maps.google.com/?q=Rua+Herval+579+Belém+São+Paulo" target="_blank" class="text-brand-600 text-xs font-bold uppercase mt-1 inline-block hover:underline">Abrir no Google Maps</a>
-                                </div>
-                            </div>
-                        </div>
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content">
 
-                        <!-- Botão principal de WhatsApp -->
-                        <a href="https://wa.me/5511977001032" target="_blank" class="mt-10 inline-block w-full text-center bg-green-600 text-white font-bold py-4 rounded-lg hover:bg-green-700 transition shadow-lg pulse-animation">
-                            <i class="fa-brands fa-whatsapp mr-2 text-xl"></i> Agendar pelo WhatsApp
+        <!-- ==================== SECTION 1: HERO (THE MASTERPIECE) ==================== -->
+        <section id="home" class="min-h-screen flex items-center pt-32 pb-24 relative overflow-hidden">
+            <div class="hidden lg:block hero-decoration-frame top-1/2 left-20 w-[30%] h-[75%] -translate-y-1/2"></div>
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-brand-50/30 -z-10"></div>
+            
+            <div class="container mx-auto px-8 grid lg:grid-cols-2 gap-20 items-center">
+                <div class="space-y-12 reveal">
+                    <div class="flex items-center space-x-6">
+                        <span class="w-16 h-[1px] bg-accent"></span>
+                        <span class="text-[10px] font-bold tracking-[6px] uppercase text-accent">Legado em Saúde Bucal</span>
+                    </div>
+                    
+                    <h1 class="hero-title text-5xl md:text-7xl xl:text-8xl text-brand-700">
+                        A arte de harmonizar <br><span class="italic text-accent">saúde, estética</span> e o seu bem-estar.
+                    </h1>
+                    
+                    <p class="text-lg md:text-2xl text-slate-500 max-w-xl leading-relaxed font-light italic">
+                        Há 38 anos, transcendemos a odontologia convencional para entregar um cuidado absoluto, unindo inovação técnica e sensibilidade humana.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-8 pt-6">
+                        <a href="https://wa.me/5511977001032" target="_blank" class="btn-luxury gap-6 group">
+                            <span>Solicitar Avaliação</span>
+                            <i class="fa-brands fa-whatsapp text-xl group-hover:rotate-12 transition-transform"></i>
+                        </a>
+                        <a href="#tratamentos" class="btn-outline-luxury flex items-center justify-center">
+                            Nossas Especialidades
                         </a>
                     </div>
-                    <!-- Mapa (iframe incorporado) -->
-                    <div class="md:w-1/2 bg-gray-200 min-h-[400px]">
-                        <iframe src="https://maps.google.com/maps?q=Rua%20Herval%2C%20579%20-%20Bel%C3%A9m&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Localização da Odontologia Ideale"></iframe>
+                    
+                    <div class="pt-12 flex items-center space-x-16 opacity-40 grayscale">
+                        <div class="text-center">
+                            <p class="text-3xl font-display text-brand-700">38y</p>
+                            <p class="text-[9px] uppercase font-bold tracking-[4px]">Expertise</p>
+                        </div>
+                        <div class="w-px h-12 bg-slate-300"></div>
+                        <div class="text-center">
+                            <p class="text-3xl font-display text-brand-700">5.0</p>
+                            <p class="text-[9px] uppercase font-bold tracking-[4px]">Google Score</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative flex justify-center lg:justify-end reveal" style="transition-delay: 0.4s">
+                    <div class="relative w-full max-w-2xl group"> 
+                        <div class="absolute -top-12 -left-12 w-full h-full border border-accent rounded-sm z-0 transition-all group-hover:-top-10 group-hover:-left-10 duration-700"></div>
+                        
+                        <div class="relative z-10 bg-white p-6 shadow-[0_80px_150px_-30px_rgba(0,0,0,0.4)]">
+                            <div class="overflow-hidden">
+                                <img src="fachada-letreiro.jpg" alt="Fachada Odontologia Ideale Belém" class="w-full h-[700px] object-cover transition-all duration-[2000ms] grayscale hover:grayscale-0 hover:scale-105" fetchpriority="high">
+                            </div>
+                        </div>
+                        
+                        <div class="absolute -bottom-14 -right-14 bg-brand-700 text-white p-12 rounded-full w-52 h-52 flex flex-col items-center justify-center text-center shadow-3xl z-20 hidden xl:flex border-[10px] border-cream">
+                            <span class="text-[10px] uppercase tracking-[5px] mb-3 opacity-60">Maestria em</span>
+                            <span class="text-4xl font-display italic">Sorrisos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECTION 2: QUEM SOMOS (PDF UPDATED) ==================== -->
+        <section id="sobre" class="py-44 bg-white relative">
+            <div class="container mx-auto px-8">
+                <div class="grid lg:grid-cols-2 gap-32 items-center">
+                    <div class="relative reveal">
+                        <div class="absolute -inset-4 bg-brand-50 -z-10 translate-x-8 translate-y-8"></div>
+                        <img src="foto-externa-1.png" alt="Ambiente Odontologia Ideale" class="w-full h-[700px] object-cover rounded-sm shadow-2xl">
+                    </div>
+
+                    <div class="space-y-12 reveal" style="transition-delay: 0.3s">
+                        <div class="space-y-6">
+                            <h2 class="text-[12px] font-bold tracking-[8px] uppercase text-accent">O Legado</h2>
+                            <h3 class="text-4xl md:text-6xl font-display text-brand-700 italic leading-tight">38 anos esculpindo <br>trajetórias de sucesso.</h3>
+                            <div class="w-24 h-[1px] bg-accent"></div>
+                        </div>
+                        
+                        <div class="space-y-10 text-slate-600 leading-relaxed font-light text-justify-custom text-xl italic">
+                            <p>
+                                Fundada em 1988, a <strong class="font-semibold text-brand-700">Odontologia Ideale acumula 38 anos de expertise</strong>, buscando incessantemente a atualização técnica e a inovação tecnológica para alcançar o ápice no atendimento odontológico.
+                            </p>
+                            <p>
+                                Nossa filosofia de trabalho reside no acolhimento genuíno e na compreensão profunda das necessidades e expectativas de cada paciente. Cada diagnóstico é uma obra de precisão, onde o planejamento criterioso respeita a individualidade e a transparência em cada etapa.
+                            </p>
+                            <p>
+                                Acreditamos que um sorriso harmônico é a base da autoestima e impacta diretamente a qualidade de vida. Atuamos com ética rigorosa, transformando o receio de ir ao dentista em uma experiência de conforto e segurança absoluta.
+                            </p>
+                            <div class="pt-6">
+                                <p class="font-display text-2xl text-brand-700 border-l-2 border-accent pl-8">
+                                    "Nosso propósito é ser a referência máxima em cuidado dedicado, reconhecidos pela excelência técnica e pelo respeito a cada pessoa atendida."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECTION 3: BIOSSEGURANÇA & RIGOR (PDF PAGE 2) ==================== -->
+        <section class="py-32 bg-brand-900 text-white relative pattern-bg">
+            <div class="container mx-auto px-8">
+                <div class="max-w-6xl mx-auto space-y-20">
+                    <div class="text-center space-y-6 reveal">
+                        <div class="gold-line"></div>
+                        <h2 class="text-3xl md:text-5xl font-display italic text-accent uppercase tracking-widest">Rigor Técnico & Ética Ambiental</h2>
+                        <p class="text-brand-100 max-w-3xl mx-auto text-sm font-light leading-relaxed uppercase tracking-[5px]">Protocolos Institucionais de Segurança</p>
+                    </div>
+
+                    <div class="bio-info-grid reveal" style="transition-delay: 0.2s">
+                        <div class="bio-card space-y-6">
+                            <div class="flex items-center space-x-6 text-accent">
+                                <i class="fa-solid fa-microscope text-3xl"></i>
+                                <h4 class="text-sm font-bold uppercase tracking-widest">Padrões Institucionais</h4>
+                            </div>
+                            <p class="text-brand-100/70 text-sm font-light leading-loose text-justify-custom">
+                                A Odontologia Ideale segue rigorosamente todas as normas de biossegurança e sustentabilidade estabelecidas pela <strong class="text-white">ANVISA</strong> (Agência de Vigilância Sanitária) e pelo <strong class="text-white">CONAMA</strong> (Conselho Nacional do Meio Ambiente).
+                            </p>
+                        </div>
+
+                        <div class="bio-card space-y-6">
+                            <div class="flex items-center space-x-6 text-accent">
+                                <i class="fa-solid fa-shield-virus text-3xl"></i>
+                                <h4 class="text-sm font-bold uppercase tracking-widest">Ciclo de Esterilização</h4>
+                            </div>
+                            <p class="text-brand-100/70 text-sm font-light leading-loose text-justify-custom">
+                                Todos os instrumentais são processados em autoclave. Insumos clínicos são estritamente de <strong class="text-white">uso único</strong> e descartados imediatamente. A desinfecção de superfícies é realizada com agentes químicos à base de álcool, clorexidina e cloro.
+                            </p>
+                        </div>
+
+                        <div class="bio-card space-y-6">
+                            <div class="flex items-center space-x-6 text-accent">
+                                <i class="fa-solid fa-leaf text-3xl"></i>
+                                <h4 class="text-sm font-bold uppercase tracking-widest">Responsabilidade Pública</h4>
+                            </div>
+                            <p class="text-brand-100/70 text-sm font-light leading-loose text-justify-custom">
+                                Resíduos contaminados são segregados e acondicionados em recipientes certificados, com coleta realizada por empresas especializadas sob determinação da <strong class="text-white">Prefeitura de São Paulo</strong> para incineração controlada.
+                            </p>
+                        </div>
+
+                        <div class="bio-card space-y-6">
+                            <div class="flex items-center space-x-6 text-accent">
+                                <i class="fa-solid fa-recycle text-3xl"></i>
+                                <h4 class="text-sm font-bold uppercase tracking-widest">Compromisso Ecológico</h4>
+                            </div>
+                            <p class="text-brand-100/70 text-sm font-light leading-loose text-justify-custom">
+                                Materiais recicláveis (plásticos, metais e papéis) são destinados às estações de reciclagem. Adotamos o uso consciente de recursos hídricos e energia elétrica em toda a nossa operação clínica.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECTION 4: ESPECIALIDADES (BOUTIQUE GRID) ==================== -->
+        <section id="tratamentos" class="py-44 bg-cream">
+            <div class="container mx-auto px-8">
+                <!-- Section Intro -->
+                <div class="text-center max-w-3xl mx-auto mb-32 reveal">
+                    <h2 class="text-[12px] font-bold tracking-[8px] uppercase text-accent mb-6">Expertise em Performance</h2>
+                    <h3 class="text-5xl md:text-7xl font-display text-brand-700 italic">Sua saúde bucal em mãos de mestres.</h3>
+                </div>
+
+                <!-- Grid de Tratamentos Expandido -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+                    
+                    <!-- CARD 1: ORTODONTIA -->
+                    <div class="card-editorial flex flex-col h-full reveal" style="transition-delay: 0.1s">
+                        <div class="image-zoom-wrapper h-[450px]">
+                            <img src="alinhador.png" alt="Ortodontia de Alta Performance" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-brand-900/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="text-white text-[10px] tracking-[5px] uppercase border border-white p-6">Detalhes Técnicos</span>
+                            </div>
+                        </div>
+                        <div class="p-14 flex flex-col flex-grow">
+                            <div class="flex justify-between items-start mb-8">
+                                <h4 class="text-3xl font-display text-brand-900 italic">Ortodontia</h4>
+                                <span class="text-[10px] text-accent font-bold uppercase tracking-widest">Elite</span>
+                            </div>
+                            <p class="text-slate-500 font-light mb-10 flex-grow leading-relaxed text-lg">
+                                Alinhamento imperceptível através de tecnologia invisível ou convencional. Planejamento digital para resultados harmônicos.
+                            </p>
+                            
+                            <!-- Accordion Content -->
+                            <div id="descOrto" class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+                                <div class="pt-8 border-t border-slate-100 space-y-6">
+                                    <ul class="text-[11px] uppercase tracking-[4px] text-brand-700 font-bold space-y-3">
+                                        <li>• Invisalign & Alinhadores</li>
+                                        <li>• Aparelhos Estéticos Ceramizados</li>
+                                        <li>• Ortodontia Autoligada Digital</li>
+                                    </ul>
+                                    <button onclick="openInfographic(['alinhador-3.png', 'alinhador-4.png', 'alinhador-2.png'], 'Ortodontia Digital')" class="w-full py-5 bg-brand-50 text-brand-700 text-[10px] font-bold uppercase tracking-[3px] hover:bg-brand-700 hover:text-white transition">
+                                        Ver Galeria Clínica
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- Trigger Button -->
+                            <button onclick="toggleCard('descOrto', this)" class="mt-10 flex justify-between items-center group/btn toggle-btn border-t border-slate-100 pt-10">
+                                <span class="toggle-text text-[11px] uppercase tracking-[4px] font-bold text-brand-900 group-hover/btn:text-accent transition">Conhecer</span>
+                                <i class="fa-solid fa-plus text-xs text-accent transition-transform group-hover:rotate-90 toggle-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2: IMPLANTES -->
+                    <div class="card-editorial flex flex-col h-full reveal" style="transition-delay: 0.2s">
+                        <div class="image-zoom-wrapper h-[450px]">
+                            <img src="implante.png" alt="Implantodontia de Precisão" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-14 flex flex-col flex-grow text-left">
+                            <div class="flex justify-between items-start mb-8">
+                                <h4 class="text-3xl font-display text-brand-900 italic">Implantes</h4>
+                                <span class="text-[10px] text-accent font-bold uppercase tracking-widest">Cirurgia</span>
+                            </div>
+                            <p class="text-slate-500 font-light mb-10 flex-grow leading-relaxed text-lg">
+                                Reabilitação total com sistemas de titânio biocompatível. Conforto pleno, segurança e estética restaurada.
+                            </p>
+                            <div id="descImp" class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+                                <div class="pt-8 border-t border-slate-100 space-y-6">
+                                    <ul class="text-[11px] uppercase tracking-[4px] text-brand-700 font-bold space-y-3">
+                                        <li>• Carga Imediata Superior</li>
+                                        <li>• Enxertos Ósseos Complexos</li>
+                                        <li>• Próteses Fixas em Zircônia</li>
+                                    </ul>
+                                    <button onclick="openInfographic(['implante2.png','implante3.png'], 'Implantodontia')" class="w-full py-5 bg-brand-50 text-brand-700 text-[10px] font-bold uppercase tracking-[3px] hover:bg-brand-700 hover:text-white transition">
+                                        Protocolo de Tratamento
+                                    </button>
+                                </div>
+                            </div>
+                            <button onclick="toggleCard('descImp', this)" class="mt-10 flex justify-between items-center group/btn toggle-btn border-t border-slate-100 pt-10">
+                                <span class="toggle-text text-[11px] uppercase tracking-[4px] font-bold text-brand-900 group-hover/btn:text-accent transition">Conhecer</span>
+                                <i class="fa-solid fa-plus text-xs text-accent transition-transform toggle-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3: CUIDADO GERAL -->
+                    <div class="card-editorial flex flex-col h-full reveal" style="transition-delay: 0.3s">
+                        <div class="image-zoom-wrapper h-[450px]">
+                            <img src="sala-clinica.png" alt="Cuidado Odontológico Integral" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-14 flex flex-col flex-grow">
+                            <div class="flex justify-between items-start mb-8">
+                                <h4 class="text-3xl font-display text-brand-900 italic">Clínica Geral</h4>
+                                <span class="text-[10px] text-accent font-bold uppercase tracking-widest">Saúde</span>
+                            </div>
+                            <p class="text-slate-500 font-light mb-10 flex-grow leading-relaxed text-lg">
+                                Prevenção contínua e acompanhamento sistêmico especializado, com olhar focado na longevidade bucal.
+                            </p>
+                            <div id="descGeral" class="max-h-0 overflow-hidden transition-all duration-700">
+                                <div class="pt-8 border-t border-slate-100 space-y-6">
+                                    <ul class="text-[11px] uppercase tracking-[4px] text-brand-700 font-bold space-y-3">
+                                        <li>• Check-up Preventivo Digital</li>
+                                        <li>• Odontogeriatria Especializada</li>
+                                        <li>• Estética Restauradora 3D</li>
+                                    </ul>
+                                    <button onclick="openInfographic(['clinica1.png','clinica2.png'], 'Clínica Geral')" class="w-full py-5 bg-brand-50 text-brand-700 text-[10px] font-bold uppercase tracking-[3px] hover:bg-brand-700 hover:text-white transition">
+                                        Nossa Metodologia
+                                    </button>
+                                </div>
+                            </div>
+                            <button onclick="toggleCard('descGeral', this)" class="mt-10 flex justify-between items-center group/btn toggle-btn border-t border-slate-100 pt-10">
+                                <span class="toggle-text text-[11px] uppercase tracking-[4px] font-bold text-brand-900 group-hover/btn:text-accent transition">Conhecer</span>
+                                <i class="fa-solid fa-plus text-xs text-accent transition-transform toggle-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4: REABILITAÇÃO -->
+                    <div class="card-editorial flex flex-col h-full reveal" style="transition-delay: 0.1s">
+                        <div class="image-zoom-wrapper h-[450px]">
+                            <img src="tratamento1.png" alt="Reabilitação Oral e Prótese" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-14 flex flex-col flex-grow text-left">
+                            <div class="flex justify-between items-start mb-8">
+                                <h4 class="text-3xl font-display text-brand-900 italic">Prótese</h4>
+                                <span class="text-[10px] text-accent font-bold uppercase tracking-widest">Maestria</span>
+                            </div>
+                            <p class="text-slate-500 font-light mb-10 flex-grow leading-relaxed text-lg">
+                                Devolução total da função e harmonia. Próteses fixas ou removíveis projetadas com tecnologia CAD/CAM.
+                            </p>
+                            <div id="descProt" class="max-h-0 overflow-hidden transition-all duration-700">
+                                <div class="pt-8 border-t border-slate-100 space-y-6">
+                                    <ul class="text-[11px] uppercase tracking-[4px] text-brand-700 font-bold space-y-3">
+                                        <li>• Facetas & Lentes de Contato</li>
+                                        <li>• Coroas em Porcelana Pura</li>
+                                        <li>• Reabilitação Protética Oral</li>
+                                    </ul>
+                                    <button onclick="openInfographic(['tratamento1.1.png','tratamento1.2.png'], 'Estética e Prótese')" class="w-full py-5 bg-brand-50 text-brand-700 text-[10px] font-bold uppercase tracking-[3px] hover:bg-brand-700 hover:text-white transition">
+                                        Casos de Sucesso
+                                    </button>
+                                </div>
+                            </div>
+                            <button onclick="toggleCard('descProt', this)" class="mt-10 flex justify-between items-center group/btn toggle-btn border-t border-slate-100 pt-10">
+                                <span class="toggle-text text-[11px] uppercase tracking-[4px] font-bold text-brand-900 group-hover/btn:text-accent transition">Conhecer</span>
+                                <i class="fa-solid fa-plus text-xs text-accent transition-transform toggle-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 5: CANAL -->
+                    <div class="card-editorial flex flex-col h-full reveal" style="transition-delay: 0.2s">
+                        <div class="image-zoom-wrapper h-[450px]">
+                            <img src="tratamento2.png" alt="Endodontia Tecnológica" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-14 flex flex-col flex-grow text-left">
+                            <div class="flex justify-between items-start mb-8">
+                                <h4 class="text-3xl font-display text-brand-900 italic">Endodontia</h4>
+                                <span class="text-[10px] text-accent font-bold uppercase tracking-widest">Precisão</span>
+                            </div>
+                            <p class="text-slate-500 font-light mb-10 flex-grow leading-relaxed text-lg">
+                                Tratamentos de canal indolores através de sistemas rotatórios e tecnologia micro-invasiva.
+                            </p>
+                            <div id="descEndo" class="max-h-0 overflow-hidden transition-all duration-700">
+                                <div class="pt-8 border-t border-slate-100 space-y-6">
+                                    <ul class="text-[11px] uppercase tracking-[4px] text-brand-700 font-bold space-y-3">
+                                        <li>• Tratamento em Sessão Única</li>
+                                        <li>• Instrumentação Rotatória</li>
+                                        <li>• Localizador Apical Digital</li>
+                                    </ul>
+                                    <button onclick="openInfographic(['tratamento2.1.png','tratamento2.2.png'], 'Canal (Endodontia)')" class="w-full py-5 bg-brand-50 text-brand-700 text-[10px] font-bold uppercase tracking-[3px] hover:bg-brand-700 hover:text-white transition">
+                                        Protocolo Endodôntico
+                                    </button>
+                                </div>
+                            </div>
+                            <button onclick="toggleCard('descEndo', this)" class="mt-10 flex justify-between items-center group/btn toggle-btn border-t border-slate-100 pt-10">
+                                <span class="toggle-text text-[11px] uppercase tracking-[4px] font-bold text-brand-900 group-hover/btn:text-accent transition">Conhecer</span>
+                                <i class="fa-solid fa-plus text-xs text-accent transition-transform toggle-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 6: GENGIVA -->
+                    <div class="card-editorial flex flex-col h-full reveal" style="transition-delay: 0.3s">
+                        <div class="image-zoom-wrapper h-[450px]">
+                            <img src="tratamento3.png" alt="Periodontia e Saúde Gengival" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-14 flex flex-col flex-grow text-left">
+                            <div class="flex justify-between items-start mb-8">
+                                <h4 class="text-3xl font-display text-brand-900 italic">Periodontia</h4>
+                                <span class="text-[10px] text-accent font-bold uppercase tracking-widest">Base</span>
+                            </div>
+                            <p class="text-slate-500 font-light mb-10 flex-grow leading-relaxed text-lg">
+                                Saúde dos tecidos de sustentação. Enxertos gengivais e tratamento de doenças periodontais complexas.
+                            </p>
+                            <div id="descPerio" class="max-h-0 overflow-hidden transition-all duration-700">
+                                <div class="pt-8 border-t border-slate-100 space-y-6">
+                                    <ul class="text-[11px] uppercase tracking-[4px] text-brand-700 font-bold space-y-3">
+                                        <li>• Cirurgia Plástica Periodontal</li>
+                                        <li>• Tratamento de Retração</li>
+                                        <li>• Enxertos de Tecido Mole</li>
+                                    </ul>
+                                    <button onclick="openInfographic(['tratamento3.1.png','tratamento3.2.png' , 'tratamento4.png','tratamento5.png'], 'Saúde da Gengiva')" class="w-full py-5 bg-brand-50 text-brand-700 text-[10px] font-bold uppercase tracking-[3px] hover:bg-brand-700 hover:text-white transition">
+                                        Processos Cirúrgicos
+                                    </button>
+                                </div>
+                            </div>
+                            <button onclick="toggleCard('descPerio', this)" class="mt-10 flex justify-between items-center group/btn toggle-btn border-t border-slate-100 pt-10">
+                                <span class="toggle-text text-[11px] uppercase tracking-[4px] font-bold text-brand-900 group-hover/btn:text-accent transition">Conhecer</span>
+                                <i class="fa-solid fa-plus text-xs text-accent transition-transform toggle-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECTION 5: EQUIPE ==================== -->
+        <section id="profissionais" class="py-44 bg-white relative">
+            <div class="container mx-auto px-8">
+                <div class="flex flex-col lg:flex-row justify-between items-end mb-32 space-y-8">
+                    <div class="reveal">
+                        <h2 class="text-[12px] font-bold tracking-[8px] uppercase text-accent mb-6">Mestria Técnica</h2>
+                        <h3 class="text-5xl md:text-7xl font-display text-brand-700 italic">Corpo Clínico.</h3>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-24">
+                    <div class="space-y-10 reveal text-center lg:text-left" style="transition-delay: 0.1s">
+                        <div class="relative group mx-auto lg:mx-0 max-w-[320px]">
+                            <div class="absolute -inset-6 border border-accent/20 rounded-full transition-transform group-hover:scale-110 duration-700 pointer-events-none"></div>
+                            <div class="relative w-72 h-72 rounded-full bg-brand-50 flex items-center justify-center text-brand-700 text-7xl transition-all group-hover:bg-brand-700 group-hover:text-white shadow-inner">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-3xl font-display text-brand-900 italic">Dr. Luiz F. Cardoso</h4>
+                            <p class="text-[11px] font-bold uppercase tracking-[5px] text-accent">Responsável Técnico | CRO-SP 35.371</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-10 reveal text-center lg:text-left" style="transition-delay: 0.2s">
+                        <div class="relative group mx-auto lg:mx-0 max-w-[320px]">
+                            <div class="absolute -inset-6 border border-accent/20 rounded-full transition-transform group-hover:scale-110 duration-700 pointer-events-none"></div>
+                            <div class="relative w-72 h-72 rounded-full bg-brand-50 flex items-center justify-center text-brand-700 text-7xl transition-all group-hover:bg-brand-700 group-hover:text-white shadow-inner">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-3xl font-display text-brand-900 italic">Dr. Paulo Lautenschlaeger</h4>
+                            <p class="text-[11px] font-bold uppercase tracking-[5px] text-accent">CRO-SP 30.648</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-10 reveal text-center lg:text-left" style="transition-delay: 0.3s">
+                        <div class="relative group mx-auto lg:mx-0 max-w-[320px]">
+                            <div class="absolute -inset-6 border border-accent/20 rounded-full transition-transform group-hover:scale-110 duration-700 pointer-events-none"></div>
+                            <div class="relative w-72 h-72 rounded-full bg-brand-50 flex items-center justify-center text-brand-700 text-7xl transition-all group-hover:bg-brand-700 group-hover:text-white shadow-inner">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="text-3xl font-display text-brand-900 italic">Dra. Simone Marta</h4>
+                            <p class="text-[11px] font-bold uppercase tracking-[5px] text-accent">CRO-SP 50.389</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECTION 6: CONTATO & MAPA ==================== -->
+        <section id="contato" class="py-44 bg-brand-900 text-white relative">
+            <div class="container mx-auto px-8">
+                <div class="grid lg:grid-cols-2 gap-32 items-center reveal">
+                    <div class="space-y-16">
+                        <h2 class="text-6xl md:text-8xl font-display leading-none italic">Sua nova <br><span class="text-accent not-italic font-bold tracking-tighter uppercase">Versão.</span></h2>
+                        
+                        <div class="space-y-12">
+                            <div class="flex items-center gap-10 group">
+                                <div class="w-20 h-20 rounded-full border border-accent/30 flex items-center justify-center text-accent transition-all group-hover:bg-accent group-hover:text-brand-900">
+                                    <i class="fa-solid fa-phone-volume text-2xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] uppercase font-bold tracking-[5px] text-accent mb-2">Canais Directos</p>
+                                    <p class="text-2xl font-light italic hover:text-accent transition block">(11) 2292-8008</p>
+                                    <p class="text-2xl font-light italic hover:text-accent transition block">97700-1032</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-10 group">
+                                <div class="w-20 h-20 rounded-full border border-accent/30 flex items-center justify-center text-accent transition-all group-hover:bg-accent group-hover:text-brand-900">
+                                    <i class="fa-solid fa-location-dot text-2xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] uppercase font-bold tracking-[5px] text-accent mb-2">Onde Estamos</p>
+                                    <p class="text-2xl font-light italic">Rua Herval, 579 - Belém</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/5511977001032" target="_blank" class="btn-luxury w-full shadow-3xl">
+                            Iniciar Agendamento
+                        </a>
+                    </div>
+
+                    <div class="h-[750px] w-full border border-white/10 grayscale hover:grayscale-0 transition-all duration-[1500ms] shadow-3xl overflow-hidden relative">
+                        <iframe src="https://maps.google.com/maps?q=Rua%20Herval%2C%20579%20-%20Bel%C3%A9m&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- ==================== RODAPÉ ==================== -->
-    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
-                <!-- Logo e responsável técnico -->
-                <div class="text-center md:text-left">
-                    <img src="logo-ideale.png" alt="Odontologia Ideale" class="h-14 w-auto mx-auto md:mx-0 mb-4 brightness-0 invert opacity-90" loading="lazy" decoding="async">
-                    <p class="text-brand-500 font-bold">Dr. Luiz Fernando Cardoso - CRO/SP 35.371</p>
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="py-32 bg-cream border-t border-slate-100">
+        <div class="container mx-auto px-8">
+            <div class="grid lg:grid-cols-4 gap-20 mb-24">
+                <div class="space-y-10 col-span-1 lg:col-span-1 text-center lg:text-left">
+                    <img src="logo-ideale.png" alt="Ideale Logo" class="h-10 mx-auto lg:mx-0 opacity-50 grayscale">
+                    <p class="text-[10px] text-slate-400 font-light leading-relaxed uppercase tracking-[4px]">Evolução e Maestria Estética no Coração do Belém.</p>
                 </div>
-
-                <!-- Links rápidos (agora apontando para páginas reais) -->
-                <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-medium">
-                    <div class="flex flex-col items-center md:items-start space-y-2">
-                        <h5 class="text-white uppercase text-xs tracking-widest mb-1 opacity-50">CLÍNICA</h5>
-                        <a href="#home" class="hover:text-brand-500 transition">Home</a>
-                        <a href="#sobre" class="hover:text-brand-500 transition">História</a>
-                        <a href="#tratamentos" class="hover:text-brand-500 transition">Tratamentos</a>
-                        <a href="#profissionais" class="hover:text-brand-500 transition">Equipe</a>
-                    </div>
-                    <div class="flex flex-col items-center md:items-start space-y-2">
-                        <h5 class="text-white uppercase text-xs tracking-widest mb-1 opacity-50">LEGAL</h5>
-                        <!-- Links atualizados para páginas reais (criar posteriormente) -->
-                        <a href="/privacidade.html" class="hover:text-brand-500 transition">Privacidade</a>
-                        <a href="/termos.html" class="hover:text-brand-500 transition">Termos</a>
-                    </div>
+                <div class="space-y-8 text-center lg:text-left">
+                    <h5 class="text-[11px] font-bold uppercase tracking-[5px] text-brand-900">Diretório</h5>
+                    <ul class="text-[10px] space-y-4 text-slate-400 font-light uppercase tracking-[3px]">
+                        <li><a href="#home" class="hover:text-accent transition">Home</a></li>
+                        <li><a href="#sobre" class="hover:text-accent transition">Quem Somos</a></li>
+                        <li><a href="#tratamentos" class="hover:text-accent transition">Especialidades</a></li>
+                        <li><a href="#contato" class="hover:text-accent transition">Agendamento</a></li>
+                    </ul>
                 </div>
-
-                <!-- Redes sociais -->
-                <div class="flex space-x-6">
-                    <a href="https://www.instagram.com/odontologiaideale/" target="_blank" class="hover:text-brand-500 transition" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram text-2xl"></i>
-                    </a>
+                <div class="space-y-8 text-center lg:text-left">
+                    <h5 class="text-[11px] font-bold uppercase tracking-[5px] text-brand-900">Legal</h5>
+                    <ul class="text-[10px] space-y-4 text-slate-400 font-light uppercase tracking-[3px]">
+                        <li><a href="/privacidade.html" class="hover:text-accent transition">Privacidade</a></li>
+                        <li><a href="/termos.html" class="hover:text-accent transition">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-8 text-center lg:text-left">
+                    <h5 class="text-[11px] font-bold uppercase tracking-[5px] text-brand-900">Responsável</h5>
+                    <div class="text-[10px] text-slate-400 space-y-2 font-light uppercase tracking-[3px]">
+                        <p class="text-brand-700 font-bold tracking-[4px]">Dr. Luiz Fernando Cardoso</p>
+                        <p>CRO/SP 35.371</p>
+                    </div>
                 </div>
             </div>
-
-            <!-- Copyright e créditos -->
-            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between text-xs text-center items-center gap-4">
-                <p>© 2026 Odontologia Ideale. Todos os direitos reservados. - Responsável Técnico: Dr. Luiz Fernando Cardoso - CRO/SP 35.371</p>
-                <p>Desenvolvido por <a href="https://www.redesigner.com.br" class="hover:text-brand-500 underline">Redesigner PPM</a></p>
+            <div class="pt-16 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center text-center space-y-6 md:space-y-0">
+                <p class="text-[9px] uppercase tracking-[4px] text-slate-300 italic">© 2026 Odontologia Ideale. Todos os direitos reservados.</p>
+                <p class="text-[9px] uppercase tracking-[4px] text-slate-300 italic">Criado por <a href="https://www.redesigner.com.br" class="text-brand-900 hover:text-accent underline transition">Redesigner PPM</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- ==================== MODAL INFOGRÁFICO ==================== -->
-    <div id="infographic-modal" class="infographic-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="closeInfographicOnBackdrop(event)">
-        <div class="infographic-modal-dialog">
-            <!-- Header -->
-            <div class="infographic-modal-header">
-                <span id="modal-title" class="infographic-modal-title"></span>
-                <div class="infographic-modal-nav" id="modal-nav">
-                    <button onclick="changeSlide(-1)" id="modal-prev" aria-label="Anterior">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <span id="modal-counter" class="infographic-modal-counter"></span>
-                    <button onclick="changeSlide(1)" id="modal-next" aria-label="Próximo">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+    <!-- MODAL -->
+    <div id="infographic-modal" class="infographic-modal" onclick="closeInfographicOnBackdrop(event)">
+        <div class="modal-content-custom">
+            <div class="p-10 border-b flex justify-between items-center bg-brand-50">
+                <span id="modal-title" class="font-display text-brand-700 text-xl italic tracking-widest uppercase">Protocolo Clínico</span>
+                <div class="flex items-center gap-10">
+                    <div id="modal-nav" class="flex gap-6">
+                        <button onclick="changeSlide(-1)" class="w-12 h-12 rounded-full border border-brand-200 text-brand-900 hover:bg-brand-900 hover:text-white transition-all flex items-center justify-center disabled:opacity-30"><i class="fa-solid fa-chevron-left text-xs"></i></button>
+                        <span id="modal-counter" class="text-[11px] font-bold text-brand-900 tracking-[5px] min-w-[50px] text-center"></span>
+                        <button onclick="changeSlide(1)" class="w-12 h-12 rounded-full border border-brand-200 text-brand-900 hover:bg-brand-900 hover:text-white transition-all flex items-center justify-center disabled:opacity-30"><i class="fa-solid fa-chevron-right text-xs"></i></button>
+                    </div>
+                    <button onclick="closeInfographic()" class="text-red-400 hover:text-red-600 hover:scale-125 transition-transform p-3 text-3xl">&times;</button>
                 </div>
-                <button onclick="closeInfographic()" class="infographic-modal-close" aria-label="Fechar">
-                    <i class="fas fa-times"></i>
-                </button>
             </div>
-            <!-- Image -->
-            <div class="infographic-modal-body">
-                <img id="modal-img" src="" alt="Infográfico" class="infographic-modal-img" />
+            <div class="overflow-auto bg-slate-100 flex-1 flex items-center justify-center p-16">
+                <img id="modal-img" src="" class="max-w-full shadow-4xl rounded-sm border-[20px] border-white transition-opacity duration-500" />
             </div>
         </div>
     </div>
 
-    <!-- ==================== WHATSAPP FIXO (FLUTUANTE) ==================== -->
-    <a href="https://wa.me/5511977001032" target="_blank" class="fixed bottom-6 right-6 z-40 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition hover:scale-110 pulse-animation border-2 border-white" aria-label="WhatsApp">
-        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    <!-- WHATSAPP BOUTIQUE -->
+    <a href="https://wa.me/5511977001032" target="_blank" class="fixed bottom-12 right-12 z-[45] bg-brand-700 text-white w-20 h-20 rounded-full flex items-center justify-center shadow-3xl hover:bg-accent transition-all hover:scale-110 active:scale-95 group shadow-brand-900/40" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp text-4xl"></i>
+        <span class="absolute right-24 bg-brand-900 text-white px-6 py-3 text-[10px] uppercase tracking-[4px] font-bold opacity-0 group-hover:opacity-100 transition-all duration-500 whitespace-nowrap shadow-2xl translate-x-4 group-hover:translate-x-0">Concierge Ideale</span>
     </a>
 
-    <!-- ==================== BOTÃO VOLTAR AO TOPO ==================== -->
-    <button id="scrollTopBtn" onclick="scrollToTop()" class="fixed bottom-24 right-6 z-30 bg-gray-800 text-white w-10 h-10 rounded-full items-center justify-center shadow-lg hover:bg-gray-700 transition hidden opacity-70 hover:opacity-100" aria-label="Voltar ao topo">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-
-    <!-- ==================== BANNER LGPD (COOKIES) ==================== -->
-    <div id="lgpd-banner" class="lgpd-banner">
-        <span>Utilizamos cookies para melhorar sua experiência. Ao continuar, você concorda com nossa <a href="/privacidade.html" class="underline text-brand-400">Política de Privacidade</a>.</span>
-        <button onclick="acceptCookies()">Aceitar</button>
-    </div>
-
-    <!-- ==================== SCRIPTS ==================== -->
+    <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
-    <!-- Google Ads – Event snippet (inserir aqui) -->
-    
     <script>
-        // ------------------------------------------------------------------
-        // LAZY LOADING com IntersectionObserver
-        // ------------------------------------------------------------------
-        document.addEventListener('DOMContentLoaded', function() {
-            const lazyImages = document.querySelectorAll('img[loading="lazy"]');
-            if ('IntersectionObserver' in window) {
-                const imageObserver = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('loaded');
-                            imageObserver.unobserve(entry.target);
-                        }
-                    });
-                });
-                lazyImages.forEach(img => imageObserver.observe(img));
-            }
-
-            // ------------------------------------------------------------------
-            // BANNER LGPD – exibe se nunca aceitou
-            // ------------------------------------------------------------------
-            if (!localStorage.getItem('lgpd-aceito')) {
-                document.getElementById('lgpd-banner').classList.add('show');
-            }
-        });
-
-        // Aceitar cookies
-        function acceptCookies() {
-            localStorage.setItem('lgpd-aceito', 'true');
-            document.getElementById('lgpd-banner').classList.remove('show');
-        }
-
-        // ------------------------------------------------------------------
-        // MENU MOBILE
-        // ------------------------------------------------------------------
-        function toggleMenu() {
-            const menu = document.getElementById('mobile-menu');
-            const button = document.querySelector('[aria-controls="mobile-menu"]');
-            const isExpanded = button.getAttribute('aria-expanded') === 'true';
-            menu.classList.toggle('hidden');
-            button.setAttribute('aria-expanded', !isExpanded);
-        }
-
-        // ------------------------------------------------------------------
-        // FAQ – expande/recolhe com rotação do ícone
-        // ------------------------------------------------------------------
-        function toggleFAQ(button) {
-            const content = button.nextElementSibling;
-            const icon = button.querySelector('i');
-            const isOpened = content.style.maxHeight && content.style.maxHeight !== '0px';
-
-            // Fecha todas as outras FAQs
-            document.querySelectorAll('.faq-content').forEach(el => {
-                el.style.maxHeight = '0px';
-                if(el.previousElementSibling.querySelector('i')) {
-                    el.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
-                    el.previousElementSibling.setAttribute('aria-expanded', 'false');
-                }
-            });
-
-            if (!isOpened) {
-                content.style.maxHeight = content.scrollHeight + "px";
-                icon.style.transform = 'rotate(180deg)';
-                button.setAttribute('aria-expanded', 'true');
-            }
-        }
-
-        // ------------------------------------------------------------------
-        // CARDS DE TRATAMENTOS – apenas UM abre por vez (CORRIGIDO)
-        // ------------------------------------------------------------------
+        function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
         function toggleCard(id, button) {
             const content = document.getElementById(id);
-            const textSpan = button.querySelector('.toggle-text');
-            const icon = button.querySelector('.toggle-icon');
             const isOpened = content.style.maxHeight && content.style.maxHeight !== '0px';
-
-            // Fecha TODOS os cards primeiro (usando a classe toggle-btn para encontrar o botão correto)
             document.querySelectorAll('[id^="desc"]').forEach(el => {
                 el.style.maxHeight = '0px';
-                // Volta o texto e ícone do respectivo botão (agora usando .toggle-btn)
-                const btn = el.parentElement.querySelector('.toggle-btn');
-                if (btn) {
-                    const btnText = btn.querySelector('.toggle-text');
-                    const btnIcon = btn.querySelector('.toggle-icon');
-                    if (btnText) btnText.textContent = 'Ver Detalhes';
-                    if (btnIcon) {
-                        btnIcon.classList.remove('fa-minus');
-                        btnIcon.classList.add('fa-plus');
-                    }
-                    btn.setAttribute('aria-expanded', 'false');
+                const parentBtn = el.closest('.card-editorial').querySelector('.toggle-btn');
+                if (parentBtn) {
+                    parentBtn.querySelector('.toggle-icon').style.transform = 'rotate(0deg)';
+                    parentBtn.querySelector('.toggle-text').textContent = 'Conhecer';
                 }
             });
-
-            // Se não estava aberto, abre agora
             if (!isOpened) {
                 content.style.maxHeight = content.scrollHeight + "px";
-                textSpan.textContent = 'Fechar';
-                icon.classList.remove('fa-plus');
-                icon.classList.add('fa-minus');
-                button.setAttribute('aria-expanded', 'true');
+                button.querySelector('.toggle-icon').style.transform = 'rotate(45deg)';
+                button.querySelector('.toggle-text').textContent = 'Fechar';
             }
-            // Se estava aberto, já foi fechado pelo loop acima
         }
-
-        // ------------------------------------------------------------------
-        // BOTÃO VOLTAR AO TOPO e sombra na navbar
-        // ------------------------------------------------------------------
-        const scrollBtn = document.getElementById("scrollTopBtn");
-        const navbar = document.getElementById("navbar");
-
-        window.onscroll = function() {
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                scrollBtn.classList.remove("hidden");
-                scrollBtn.classList.add("flex");
-            } else {
-                scrollBtn.classList.add("hidden");
-                scrollBtn.classList.remove("flex");
-            }
-            if (window.scrollY > 10) navbar.classList.add("shadow-md");
-            else navbar.classList.remove("shadow-md");
-        };
-
-        // ------------------------------------------------------------------
-        // MODAL INFOGRÁFICO
-        // ------------------------------------------------------------------
-        let _infographicImages = [];
-        let _infographicIndex  = 0;
-
+        let _infographicImages = []; let _infographicIndex = 0;
         function openInfographic(images, title) {
-            _infographicImages = images;
-            _infographicIndex  = 0;
+            _infographicImages = images; _infographicIndex = 0;
             document.getElementById('modal-title').textContent = title;
-            document.getElementById('modal-nav').style.display = images.length > 1 ? 'flex' : 'none';
             _renderSlide();
             document.getElementById('infographic-modal').classList.add('open');
             document.body.style.overflow = 'hidden';
         }
-
-        function closeInfographic() {
-            document.getElementById('infographic-modal').classList.remove('open');
-            document.body.style.overflow = '';
-        }
-
-        function closeInfographicOnBackdrop(e) {
-            if (e.target === document.getElementById('infographic-modal')) closeInfographic();
-        }
-
+        function closeInfographic() { document.getElementById('infographic-modal').classList.remove('open'); document.body.style.overflow = ''; }
+        function closeInfographicOnBackdrop(e) { if (e.target.id === 'infographic-modal') closeInfographic(); }
         function changeSlide(dir) {
             const next = _infographicIndex + dir;
             if (next < 0 || next >= _infographicImages.length) return;
-            _infographicIndex = next;
-            _renderSlide();
+            _infographicIndex = next; _renderSlide();
         }
-
         function _renderSlide() {
             const img = document.getElementById('modal-img');
-            img.classList.add('loading');
-            img.onload  = () => img.classList.remove('loading');
-            img.onerror = () => img.classList.remove('loading');
-            img.src = _infographicImages[_infographicIndex];
-            img.alt = document.getElementById('modal-title').textContent + ' – imagem ' + (_infographicIndex + 1);
-            document.getElementById('modal-counter').textContent =
-                _infographicImages.length > 1
-                    ? (_infographicIndex + 1) + ' / ' + _infographicImages.length
-                    : '';
-            document.getElementById('modal-prev').disabled = _infographicIndex === 0;
-            document.getElementById('modal-next').disabled = _infographicIndex === _infographicImages.length - 1;
+            img.style.opacity = '0';
+            setTimeout(() => {
+                img.src = _infographicImages[_infographicIndex];
+                document.getElementById('modal-counter').textContent = (_infographicIndex + 1) + '/' + _infographicImages.length;
+                document.getElementById('modal-prev').disabled = _infographicIndex === 0;
+                document.getElementById('modal-next').disabled = _infographicIndex === _infographicImages.length - 1;
+                img.style.opacity = '1';
+            }, 200);
         }
-
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape')      closeInfographic();
-            if (e.key === 'ArrowLeft')   changeSlide(-1);
-            if (e.key === 'ArrowRight')  changeSlide(1);
-        });
-
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+        window.onscroll = function() {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 150) navbar.classList.add("py-3", "shadow-2xl");
+            else navbar.classList.remove("py-3", "shadow-2xl");
+        };
     </script>
 </body>
 </html>
