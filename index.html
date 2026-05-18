@@ -1,977 +1,2195 @@
 <!DOCTYPE html>
-<!-- 
-     =====================================================================
-     PROJETO: ODONTOLOGIA IDEALE - EXPERIÊNCIA DIGITAL ULTRA-PREMIUM
-     VERSÃO: 4.3 (BOUTIQUE EDITION - FAVICON FIX)
-     DESENVOLVEDOR: Redesigner PPM
-     
-     CONTEÚDO: 
-     - Favicon e Apple Touch Icon integrados com a marca
-     - Hero Imponente (Frase: A arte de harmonizar saúde, estética...)
-     - Maestria Clínica (38 anos - Termo "tradição" removido)
-     - Protocolos Bio-Segurança ANVISA/CONAMA (Texto do PDF)
-     - Imagens em dimensões expandidas para impacto visual
-     =====================================================================
--->
+<!-- =====================================================================
+     Odontologia Ideale – Página Institucional
+     Versão: 5.0 (Redesign – Elegância Verde)
+     Autor: Redesigner PPM / Refatorado
+     Última atualização: 2026-05-18
+     ===================================================================== -->
 <html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta name="format-detection" content="telephone=yes">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- SEO & INDEXAÇÃO -->
-    <title>Odontologia Ideale | Arte, Estética e Saúde no Belém, SP</title>
-    <meta name="description" content="Odontologia Ideale no Belém, SP. 38 anos de maestria clínica com o Dr. Luiz Fernando Cardoso. Especialistas em Implantes, Ortodontia e Estética sob rigorosos protocolos de segurança.">
-    <meta name="keywords" content="Dentista Belém, Odontologia Ideale, Dr. Luiz Fernando Cardoso, Implantes Dentários, Invisalign Belém, Estética Dental, Biossegurança ANVISA, Dentista 38 anos">
+    <meta name="description" content="Odontologia Ideale no Belém, SP. Desde 1988 cuidando de sorrisos. Dr. Luiz Fernando Cardoso (CRO-SP 35.271). Implantes, Ortodontia, Estética e Biossegurança rigorosa.">
+    <meta name="keywords" content="Dentista Belém, Odontologia Ideale, Implantes Dentários, Invisalign, Aparelho Estético, Tratamento de Canal, Prótese Dentária, Dr. Luiz Fernando Cardoso, Zona Leste SP, Biossegurança">
     <meta name="author" content="Odontologia Ideale">
     <meta name="robots" content="index, follow">
-
-    <!-- ============================ FAVICONS (CORRIGIDO) ============================ -->
-    <!-- Ícone para o Navegador -->
-    <link rel="icon" type="image/png" sizes="32x32" href="logo-ideale.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="logo-ideale.png">
-    <link rel="shortcut icon" href="logo-ideale.png">
-    
-    <!-- Ícone para dispositivos Apple (Home Screen) -->
-    <link rel="apple-touch-icon" sizes="180x180" href="logo-ideale.png">
-    
-    <!-- Ícone para Android/Chrome -->
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="theme-color" content="#0d5c3a">
-
-    <!-- OPEN GRAPH (SOCIAL MEDIA) -->
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="geo.region" content="BR-SP">
+    <meta name="geo.placename" content="São Paulo">
+    <meta name="geo.position" content="-23.5365519;-46.5947704">
+    <meta name="ICBM" content="-23.5365519, -46.5947704">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Odontologia Ideale | Legado em Saúde Bucal">
-    <meta property="og:description" content="A arte de harmonizar saúde, estética e o seu bem-estar em um ambiente boutique no Belém.">
+    <meta property="og:title" content="Odontologia Ideale | Tradição e Excelência no Belém, SP">
+    <meta property="og:description" content="38 anos de experiência. Transforme seu sorriso com Dr. Luiz Fernando Cardoso e equipe. Implantes, Aparelhos, Estética e Prevenção.">
     <meta property="og:image" content="https://luccam28.github.io/site-dentista/img/fachada-odontologia-ideale.jpg">
     <meta property="og:url" content="https://luccam28.github.io/site-dentista/">
+    <meta property="og:site_name" content="Odontologia Ideale">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Odontologia Ideale | Dr. Luiz Fernando Cardoso - Belém, SP">
+    <meta name="twitter:description" content="Referência em Odontologia no Belém há 38 anos. Agende sua avaliação.">
+    <meta name="twitter:image" content="https://luccam28.github.io/site-dentista/img/fachada-odontologia-ideale.jpg">
+    <link rel="canonical" href="https://luccam28.github.io/site-dentista/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <title>Odontologia Ideale - Dr. Luiz Fernando Cardoso | Tradição e Tecnologia no Belém</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
+    <link rel="apple-touch-icon" href="/img/logo-ideale.png">
+    <meta name="theme-color" content="#0B5C3B">
 
-    <!-- PRE-CONEXÕES & PERFORMANCE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
-    <!-- FONTES PREMIUM -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS CORE -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- TAILWIND ENGINE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" crossorigin="anonymous">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        heading: ['Poppins', 'sans-serif'],
-                        display: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Cormorant Garamond', 'serif'],
                     },
                     colors: {
                         brand: {
-                            50: '#f4faf7', 100: '#e0f2e9', 200: '#b7dfca', 300: '#7cc4a2',
-                            400: '#4aa87d', 500: '#2d8b62', 600: '#1a6e49',
-                            700: '#0d5c3a', 
-                            800: '#0a482d', 900: '#073b24',
+                            50:  '#f0f8f4',
+                            100: '#d6ede4',
+                            200: '#aad8c4',
+                            300: '#6dbc9e',
+                            400: '#3a9e7a',
+                            500: '#1f845f',
+                            600: '#0B5C3B',
+                            700: '#094d31',
+                            800: '#073D27',
+                            900: '#052E1D',
                         },
-                        accent: '#c8a96e', 
-                        cream: '#faf9f6',
-                        slate: { 800: '#1e293b', 900: '#0f172a' }
-                    },
-                    animation: {
-                        'fade-in': 'fadeIn 1.2s ease-out forwards',
-                        'slide-up': 'slideUp 1s ease-out forwards',
-                        'subtle-zoom': 'subtleZoom 20s infinite alternate',
-                    },
-                    keyframes: {
-                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
-                        slideUp: { '0%': { transform: 'translateY(40px)', opacity: '0' }, '100%': { transform: 'translateY(0)', opacity: '1' } },
-                        subtleZoom: { '0%': { transform: 'scale(1)' }, '100%': { transform: 'scale(1.1)' } }
+                        accent: '#C8A96E',
+                        ivory: '#F8F5EE',
+                        warm:  '#F2EDE3',
                     }
                 }
             }
         }
     </script>
 
-    <!-- ==================== ESTILOS CUSTOMIZADOS (BOUTIQUE CSS) ==================== -->
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "DentalClinic",
+                "@id": "https://luccam28.github.io/site-dentista/#dentalclinic",
+                "name": "Odontologia Ideale",
+                "alternateName": "Consultório Dr. Luiz Fernando Cardoso",
+                "image": [
+                    "https://luccam28.github.io/site-dentista/img/logo-ideale.png",
+                    "https://luccam28.github.io/site-dentista/img/fachada-odontologia-ideale.jpg"
+                ],
+                "url": "https://luccam28.github.io/site-dentista/",
+                "telephone": "+551122928008",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Rua Herval, 579",
+                    "addressLocality": "Belém",
+                    "addressRegion": "SP",
+                    "postalCode": "03062-000",
+                    "addressCountry": "BR"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": -23.5365519,
+                    "longitude": -46.5947704
+                },
+                "hasMap": "https://maps.google.com/?q=Rua+Herval+579+Belém+São+Paulo",
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                        "opens": "08:00",
+                        "closes": "18:00"
+                    }
+                ],
+                "priceRange": "$$",
+                "foundingDate": "1988",
+                "sameAs": [
+                    "https://www.instagram.com/odontologiaideale/"
+                ],
+                "employee": [
+                    {
+                        "@type": "Person",
+                        "name": "Dr. Luiz Fernando Cardoso",
+                        "jobTitle": "Ortodontista e Implantodontista",
+                        "identifier": "CRO-SP 35.271"
+                    },
+                    {
+                        "@type": "Person",
+                        "name": "Dr. Paulo Menezes Lautenschlaeger",
+                        "jobTitle": "Implantodontista",
+                        "identifier": "CRO-SP 30.648"
+                    },
+                    {
+                        "@type": "Person",
+                        "name": "Dra. Paula Hadad Pozzo",
+                        "jobTitle": "Endodontista",
+                        "identifier": "CRO-SP 80.414"
+                    }
+                ],
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5.0",
+                    "reviewCount": "47",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                }
+            }
+        ]
+    }
+    </script>
+
     <style>
-        /* 
-         * 1. VARIÁVEIS DE DESIGN 
-         */
+        /* ============================================================
+           RESET & BASE
+           ============================================================ */
+        *, *::before, *::after { box-sizing: border-box; }
+
         :root {
-            --it-green: #0d5c3a;
-            --it-gold: #c8a96e;
-            --it-cream: #faf9f6;
-            --it-white: #ffffff;
-            --transition-primary: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            --c-ivory:   #F8F5EE;
+            --c-warm:    #F2EDE3;
+            --c-brand:   #0B5C3B;
+            --c-brand-d: #073D27;
+            --c-accent:  #C8A96E;
+            --c-dark:    #111714;
+            --c-text:    #2d2d2d;
+            --c-muted:   #6b7280;
+            --radius-lg: 1.5rem;
+            --radius-xl: 2rem;
+            --shadow-soft: 0 4px 32px rgba(0,0,0,.07);
+            --shadow-card: 0 8px 40px rgba(0,0,0,.09);
+            --shadow-hover: 0 20px 60px rgba(0,0,0,.14);
         }
 
-        /* 
-         * 2. RESET & BASE 
-         */
-        body { 
-            background-color: var(--it-cream); 
-            color: #334155; 
-            font-family: 'Inter', sans-serif;
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--c-ivory);
+            color: var(--c-text);
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
         }
 
-        /* 
-         * 3. COMPONENTES DE NAVEGAÇÃO 
-         */
-        .glass-nav {
-            background: rgba(250, 249, 246, 0.92);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(200, 169, 110, 0.15);
-            transition: var(--transition-primary);
-        }
-
-        .nav-link-boutique {
-            font-size: 0.65rem;
-            letter-spacing: 0.25em;
-            text-transform: uppercase;
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
             font-weight: 700;
-            position: relative;
-            color: var(--it-green);
+            line-height: 1.15;
+            letter-spacing: -.01em;
         }
 
-        .nav-link-boutique::after {
+        h4, h5, h6 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+        }
+
+        /* ============================================================
+           SKIP LINK
+           ============================================================ */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--c-brand);
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 100;
+            text-decoration: none;
+            border-radius: 0 0 8px 0;
+            transition: top .2s;
+        }
+        .skip-link:focus { top: 0; }
+
+        /* ============================================================
+           NAVBAR
+           ============================================================ */
+        #navbar {
+            background: rgba(248,245,238,.94);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(11,92,59,.08);
+            transition: all .3s ease;
+        }
+        #navbar.scrolled {
+            box-shadow: 0 2px 20px rgba(0,0,0,.08);
+        }
+
+        .nav-link-item {
+            position: relative;
+            font-size: .8rem;
+            font-weight: 600;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--c-text);
+            text-decoration: none;
+            padding-bottom: 3px;
+            transition: color .25s;
+        }
+        .nav-link-item::after {
             content: '';
             position: absolute;
-            bottom: -6px;
-            left: 0;
-            width: 0;
+            bottom: 0; left: 0;
+            width: 0; height: 1.5px;
+            background: var(--c-accent);
+            transition: width .3s ease;
+        }
+        .nav-link-item:hover { color: var(--c-brand); }
+        .nav-link-item:hover::after { width: 100%; }
+
+        .btn-nav-cta {
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            background: var(--c-brand);
+            color: #fff;
+            border-radius: 100px;
+            padding: .55rem 1.4rem;
+            transition: all .25s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: .4rem;
+            border: 1.5px solid transparent;
+        }
+        .btn-nav-cta:hover {
+            background: transparent;
+            color: var(--c-brand);
+            border-color: var(--c-brand);
+        }
+
+        /* ============================================================
+           SECTION LABEL (small caps above headings)
+           ============================================================ */
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: .7rem;
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            color: var(--c-accent);
+            margin-bottom: .8rem;
+        }
+        .section-label::before,
+        .section-label::after {
+            content: '';
+            display: block;
+            width: 28px;
             height: 1px;
-            background-color: var(--it-gold);
-            transition: width 0.4s ease;
+            background: var(--c-accent);
+            opacity: .7;
         }
 
-        .nav-link-boutique:hover::after { width: 100%; }
-
-        /* 
-         * 4. ELEMENTOS VISUAIS DA HERO 
-         */
-        .hero-title {
-            line-height: 1.02;
-            font-family: 'Playfair Display', serif;
-            letter-spacing: -0.01em;
+        /* ============================================================
+           HERO
+           ============================================================ */
+        .hero-section {
+            background: var(--c-ivory);
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
         }
-
-        .hero-decoration-frame {
+        .hero-section::before {
+            content: '';
             position: absolute;
-            border: 1px solid rgba(200, 169, 110, 0.3);
-            z-index: -1;
+            top: -200px; right: -200px;
+            width: 700px; height: 700px;
+            background: radial-gradient(circle, rgba(11,92,59,.07) 0%, transparent 65%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: -100px; left: -100px;
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(200,169,110,.08) 0%, transparent 65%);
+            border-radius: 50%;
             pointer-events: none;
         }
 
-        /* 
-         * 5. CARDS DE SERVIÇOS (ESTILO EDITORIAL) 
-         */
-        .card-editorial {
-            background: var(--it-white);
-            border: 1px solid rgba(200, 169, 110, 0.1);
-            transition: var(--transition-primary);
-            position: relative;
-        }
-
-        .card-editorial:hover {
-            transform: translateY(-20px);
-            box-shadow: 0 50px 100px -20px rgba(13, 92, 58, 0.15);
-            border-color: var(--it-gold);
-        }
-
-        .image-zoom-wrapper {
-            overflow: hidden;
-            position: relative;
-        }
-
-        .image-zoom-wrapper img {
-            filter: grayscale(100%);
-            transition: all 1s ease;
-        }
-
-        .card-editorial:hover .image-zoom-wrapper img {
-            filter: grayscale(0%);
-            transform: scale(1.05);
-        }
-
-        /* 
-         * 6. BOTÕES DE LUXO 
-         */
-        .btn-luxury {
-            background-color: var(--it-green);
-            color: var(--it-white);
-            padding: 1.4rem 3.5rem;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 4px;
-            font-weight: 700;
-            transition: var(--transition-primary);
-            border: 1px solid transparent;
+        .hero-eyebrow {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-        }
-
-        .btn-luxury:hover {
-            background-color: var(--it-gold);
-            transform: scale(1.02);
-            box-shadow: 0 20px 40px rgba(200, 169, 110, 0.3);
-        }
-
-        .btn-outline-luxury {
-            border: 1px solid rgba(13, 92, 58, 0.2);
-            padding: 1.2rem 3rem;
-            text-transform: uppercase;
-            font-size: 0.7rem;
-            letter-spacing: 3px;
+            gap: .5rem;
+            font-size: .72rem;
             font-weight: 700;
-            transition: var(--transition-primary);
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--c-brand);
+            background: rgba(11,92,59,.07);
+            border: 1px solid rgba(11,92,59,.15);
+            padding: .35rem 1rem;
+            border-radius: 100px;
+            margin-bottom: 1.25rem;
         }
 
-        .btn-outline-luxury:hover {
-            border-color: var(--it-green);
-            background-color: var(--it-white);
+        .hero-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.8rem, 6vw, 5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--c-dark);
+            margin-bottom: 1.25rem;
+        }
+        .hero-title em {
+            font-style: italic;
+            color: var(--c-brand);
         }
 
-        /* 
-         * 7. SEÇÃO BIOSSEGURANÇA (PDF INTEGRATION) 
-         */
-        .bio-info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+        .hero-sub {
+            font-size: 1rem;
+            color: var(--c-muted);
+            line-height: 1.75;
+            margin-bottom: 2rem;
+        }
+        .hero-sub strong { color: var(--c-text); font-weight: 600; }
+
+        .hero-check {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: .9rem;
+            color: var(--c-text);
+            font-weight: 500;
+        }
+        .hero-check i {
+            color: var(--c-brand);
+            font-size: .75rem;
+        }
+
+        .btn-primary-hero {
+            background: var(--c-brand);
+            color: #fff;
+            font-weight: 700;
+            font-size: .88rem;
+            letter-spacing: .03em;
+            padding: .9rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            transition: all .25s ease;
+            border: 2px solid var(--c-brand);
+        }
+        .btn-primary-hero:hover {
+            background: var(--c-brand-d);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(11,92,59,.25);
+        }
+
+        .btn-secondary-hero {
+            background: #fff;
+            color: var(--c-text);
+            font-weight: 600;
+            font-size: .88rem;
+            padding: .9rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            border: 2px solid #e5e7eb;
+            transition: all .25s ease;
+        }
+        .btn-secondary-hero:hover {
+            border-color: var(--c-brand);
+            color: var(--c-brand);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .hero-image-frame {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-hover);
+        }
+        .hero-image-frame::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(135deg, var(--c-brand) 0%, var(--c-accent) 100%);
+            border-radius: calc(var(--radius-xl) + 2px);
+            z-index: -1;
+        }
+
+        .hero-badge {
+            position: absolute;
+            bottom: -1rem;
+            left: -1rem;
+            background: #fff;
+            border-radius: 14px;
+            padding: 1rem 1.4rem;
+            box-shadow: var(--shadow-card);
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            z-index: 10;
+        }
+        .hero-badge-icon {
+            width: 44px; height: 44px;
+            background: linear-gradient(135deg, var(--c-brand), #1f845f);
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            color: #fff;
+            font-size: 1.1rem;
+        }
+        .hero-badge-num {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1;
+            color: var(--c-dark);
+        }
+        .hero-badge-txt {
+            font-size: .72rem;
+            color: var(--c-muted);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+        }
+
+        /* ============================================================
+           STATS STRIP
+           ============================================================ */
+        .stats-strip {
+            background: var(--c-brand);
+            padding: 2.5rem 0;
+        }
+        .stat-item {
+            text-align: center;
+            color: #fff;
+        }
+        .stat-num {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.6rem;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+        }
+        .stat-label {
+            font-size: .72rem;
+            font-weight: 600;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,.65);
+            margin-top: .25rem;
+        }
+        .stat-divider {
+            width: 1px;
+            background: rgba(255,255,255,.15);
+            align-self: stretch;
+        }
+
+        /* ============================================================
+           SOBRE
+           ============================================================ */
+        .sobre-section { background: #fff; }
+
+        .sobre-image {
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            position: relative;
+            box-shadow: var(--shadow-card);
+        }
+        .sobre-image img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            display: block;
+        }
+        .sobre-image-accent {
+            position: absolute;
+            top: -1.5rem; left: -1.5rem;
+            width: 120px; height: 120px;
+            border: 3px solid var(--c-accent);
+            border-radius: 14px;
+            opacity: .5;
+            z-index: -1;
+        }
+
+        .sobre-title {
+            font-size: clamp(2rem, 4vw, 3.2rem);
+        }
+
+        .sobre-text p {
+            color: var(--c-muted);
+            font-size: .95rem;
+            line-height: 1.85;
+            margin-bottom: 1rem;
+            text-align: justify;
         }
 
         .bio-card {
-            padding: 2.5rem;
-            border-left: 1px solid var(--it-gold);
-            background: rgba(255, 255, 255, 0.03);
-            transition: var(--transition-primary);
+            background: linear-gradient(135deg, rgba(11,92,59,.04) 0%, rgba(200,169,110,.06) 100%);
+            border: 1px solid rgba(11,92,59,.1);
+            border-left: 3px solid var(--c-brand);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .bio-card-title {
+            font-size: .8rem;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--c-brand);
+            margin-bottom: .75rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
         }
 
-        .bio-card:hover { background: rgba(255, 255, 255, 0.07); }
+        .contact-pill-row {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            font-size: .88rem;
+            font-weight: 500;
+            color: var(--c-text);
+            padding: .6rem 0;
+            border-bottom: 1px solid rgba(0,0,0,.05);
+        }
+        .contact-pill-row:last-child { border-bottom: none; }
+        .contact-pill-row i {
+            width: 32px; height: 32px;
+            background: rgba(11,92,59,.08);
+            border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--c-brand);
+            font-size: .85rem;
+            flex-shrink: 0;
+        }
+        .contact-pill-row a { color: var(--c-text); text-decoration: none; transition: color .2s; }
+        .contact-pill-row a:hover { color: var(--c-brand); }
 
-        /* 
-         * 8. ANIMAÇÕES DE REVELAÇÃO 
-         */
-        .reveal {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+        /* ============================================================
+           TRATAMENTOS
+           ============================================================ */
+        .tratamentos-section { background: var(--c-ivory); }
+
+        .treatment-card {
+            background: #fff;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid rgba(0,0,0,.05);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition: box-shadow .35s ease, transform .35s ease;
+        }
+        .treatment-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-6px);
         }
 
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
+        .treatment-card-img {
+            width: 100%;
+            height: 260px;
+            overflow: hidden;
+            position: relative;
+        }
+        .treatment-card-img img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: transform .7s ease, filter .4s ease;
+        }
+        .treatment-card:hover .treatment-card-img img {
+            transform: scale(1.08);
+            filter: brightness(1.05);
+        }
+        .treatment-card-img-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(7,61,39,.85) 0%, rgba(7,61,39,.25) 50%, transparent 100%);
+        }
+        .treatment-card-img-title {
+            position: absolute;
+            bottom: 1rem; left: 1.25rem;
+            color: #fff;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: -.01em;
+            transition: transform .3s ease;
+        }
+        .treatment-card:hover .treatment-card-img-title {
+            transform: translateY(-4px);
         }
 
-        /* 
-         * 9. MODAL & OVERLAYS 
-         */
+        .treatment-card-body {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .treatment-card-desc {
+            font-size: .875rem;
+            color: var(--c-muted);
+            line-height: 1.75;
+            margin-bottom: .75rem;
+        }
+
+        .toggle-btn {
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--c-brand);
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: .6rem 0 0;
+            margin-top: auto;
+            transition: color .2s;
+            border-top: 1px solid rgba(0,0,0,.06);
+            width: 100%;
+            text-align: left;
+        }
+        .toggle-btn:hover { color: var(--c-brand-d); }
+
+        .infographic-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            padding: .65rem 1rem;
+            border-radius: 8px;
+            border: 1px solid rgba(11,92,59,.2);
+            background: rgba(11,92,59,.04);
+            color: var(--c-brand);
+            cursor: pointer;
+            transition: all .2s;
+            margin-top: .75rem;
+            width: 100%;
+        }
+        .infographic-btn:hover {
+            background: var(--c-brand);
+            color: #fff;
+            border-color: var(--c-brand);
+        }
+
+        .card-detail-inner {
+            padding-top: .75rem;
+            border-top: 1px solid rgba(0,0,0,.06);
+            font-size: .85rem;
+            color: var(--c-muted);
+            line-height: 1.7;
+        }
+        .card-detail-inner p { margin-bottom: .35rem; }
+        .card-detail-label {
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--c-brand);
+            margin-bottom: .3rem;
+        }
+        .card-detail-italic {
+            font-style: italic;
+            font-size: .78rem;
+            color: #9ca3af;
+            margin-top: .5rem;
+        }
+
+        /* ============================================================
+           PROFISSIONAIS
+           ============================================================ */
+        .equipe-section { background: #fff; }
+
+        .doctor-card {
+            background: var(--c-ivory);
+            border-radius: var(--radius-lg);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border: 1px solid rgba(11,92,59,.08);
+            transition: all .3s ease;
+        }
+        .doctor-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--c-accent);
+            box-shadow: var(--shadow-card);
+        }
+        .doctor-avatar {
+            width: 80px; height: 80px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.8rem;
+            margin: 0 auto 1rem;
+            position: relative;
+        }
+        .doctor-avatar::after {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            border: 2px dashed var(--c-accent);
+            opacity: .5;
+        }
+        .doctor-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--c-dark);
+            margin-bottom: .2rem;
+        }
+        .doctor-cro {
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--c-accent);
+            margin-bottom: .4rem;
+        }
+        .doctor-spec {
+            font-size: .82rem;
+            color: var(--c-muted);
+            line-height: 1.55;
+        }
+
+        /* ============================================================
+           DEPOIMENTOS
+           ============================================================ */
+        .depoimentos-section {
+            background: var(--c-brand-d);
+            position: relative;
+            overflow: hidden;
+        }
+        .depoimentos-section::before {
+            content: '';
+            position: absolute;
+            top: -150px; right: -150px;
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(200,169,110,.12) 0%, transparent 65%);
+            border-radius: 50%;
+        }
+        .depoimentos-section::after {
+            content: '';
+            position: absolute;
+            bottom: -100px; left: -100px;
+            width: 400px; height: 400px;
+            background: radial-gradient(circle, rgba(11,92,59,.35) 0%, transparent 65%);
+            border-radius: 50%;
+        }
+
+        .depo-card {
+            background: rgba(255,255,255,.04);
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            transition: all .3s ease;
+            position: relative;
+        }
+        .depo-card:hover {
+            background: rgba(255,255,255,.07);
+            border-color: rgba(200,169,110,.3);
+            transform: translateY(-4px);
+        }
+        .depo-card-featured {
+            background: rgba(200,169,110,.08);
+            border-color: rgba(200,169,110,.25);
+            transform: scale(1.03);
+        }
+        .depo-card-featured:hover { transform: scale(1.03) translateY(-4px); }
+
+        .depo-quote-mark {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4rem;
+            line-height: .5;
+            color: var(--c-accent);
+            opacity: .4;
+            margin-bottom: .5rem;
+            display: block;
+        }
+        .depo-text {
+            font-size: .9rem;
+            color: rgba(255,255,255,.75);
+            line-height: 1.75;
+            font-style: italic;
+            margin-bottom: 1.25rem;
+        }
+        .depo-author {
+            font-size: .82rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: .03em;
+        }
+        .depo-stars {
+            display: flex;
+            gap: 2px;
+            color: #f59e0b;
+            font-size: .75rem;
+            margin-bottom: .75rem;
+        }
+        .google-review-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: .6rem;
+            font-size: .8rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            color: #fff;
+            background: rgba(255,255,255,.08);
+            border: 1px solid rgba(255,255,255,.15);
+            padding: .75rem 1.75rem;
+            border-radius: 100px;
+            text-decoration: none;
+            transition: all .25s ease;
+        }
+        .google-review-btn:hover {
+            background: #fff;
+            color: var(--c-brand);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,.2);
+        }
+
+        /* ============================================================
+           FAQ
+           ============================================================ */
+        .faq-section { background: var(--c-ivory); }
+
+        .faq-item {
+            background: #fff;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,.06);
+            box-shadow: 0 2px 12px rgba(0,0,0,.04);
+            transition: box-shadow .2s;
+        }
+        .faq-item:hover { box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+
+        .faq-btn {
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background .2s;
+        }
+        .faq-btn:hover { background: rgba(11,92,59,.02); }
+
+        .faq-question {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--c-dark);
+            transition: color .2s;
+        }
+        .faq-btn:hover .faq-question { color: var(--c-brand); }
+
+        .faq-icon {
+            width: 28px; height: 28px;
+            background: rgba(11,92,59,.08);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--c-brand);
+            font-size: .7rem;
+            transition: all .3s ease;
+            flex-shrink: 0;
+        }
+
+        /* ============================================================
+           CONTATO
+           ============================================================ */
+        .contato-section { background: #fff; }
+
+        .contact-card {
+            background: linear-gradient(145deg, rgba(11,92,59,.04) 0%, rgba(200,169,110,.04) 100%);
+            border: 1px solid rgba(11,92,59,.1);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+        }
+
+        .contact-info-side {
+            padding: 3.5rem;
+        }
+        @media (max-width: 768px) {
+            .contact-info-side { padding: 2rem; }
+        }
+
+        .contact-icon-circle {
+            width: 44px; height: 44px;
+            background: #fff;
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--c-brand);
+            font-size: .95rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,.07);
+            flex-shrink: 0;
+        }
+
+        .btn-whatsapp-cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            width: 100%;
+            padding: 1rem;
+            background: var(--c-brand);
+            color: #fff;
+            font-weight: 700;
+            font-size: .9rem;
+            letter-spacing: .03em;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all .25s ease;
+            margin-top: 2rem;
+            animation: pulse-green 2.5s cubic-bezier(.4,0,.6,1) infinite;
+        }
+        .btn-whatsapp-cta:hover {
+            background: var(--c-brand-d);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(11,92,59,.3);
+        }
+
+        /* ============================================================
+           FOOTER
+           ============================================================ */
+        .footer-main {
+            background: var(--c-dark);
+            color: rgba(255,255,255,.55);
+        }
+        .footer-brand-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            color: rgba(255,255,255,.85);
+            font-weight: 600;
+        }
+        .footer-link {
+            color: rgba(255,255,255,.5);
+            text-decoration: none;
+            font-size: .85rem;
+            transition: color .2s;
+        }
+        .footer-link:hover { color: var(--c-accent); }
+        .footer-heading {
+            font-size: .68rem;
+            font-weight: 700;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,.3);
+            margin-bottom: .75rem;
+        }
+        .footer-divider {
+            border-color: rgba(255,255,255,.07);
+            margin: 2rem 0;
+        }
+        .footer-copyright {
+            font-size: .78rem;
+            color: rgba(255,255,255,.3);
+        }
+        .footer-social-link {
+            width: 36px; height: 36px;
+            background: rgba(255,255,255,.07);
+            border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+            color: rgba(255,255,255,.5);
+            text-decoration: none;
+            transition: all .2s;
+            font-size: 1rem;
+        }
+        .footer-social-link:hover {
+            background: var(--c-accent);
+            color: #fff;
+        }
+
+        /* ============================================================
+           FLOATING ELEMENTS
+           ============================================================ */
+        .whatsapp-fab {
+            position: fixed;
+            bottom: 1.5rem; right: 1.5rem;
+            z-index: 40;
+            width: 56px; height: 56px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37,211,102,.4);
+            border: 3px solid #fff;
+            transition: all .2s ease;
+            animation: pulse-green 2.5s cubic-bezier(.4,0,.6,1) infinite;
+        }
+        .whatsapp-fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 28px rgba(37,211,102,.5);
+        }
+
+        @keyframes pulse-green {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,.5); }
+            50%       { box-shadow: 0 0 0 14px rgba(37,211,102,0); }
+        }
+
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 6rem; right: 1.5rem;
+            z-index: 30;
+            width: 40px; height: 40px;
+            background: var(--c-brand);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            align-items: center; justify-content: center;
+            font-size: .85rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,.15);
+            transition: all .2s;
+            opacity: .8;
+        }
+        #scrollTopBtn:hover { opacity: 1; transform: translateY(-2px); }
+
+        /* ============================================================
+           LGPD BANNER
+           ============================================================ */
+        .lgpd-banner {
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            background: rgba(5,46,29,.97);
+            color: rgba(255,255,255,.85);
+            padding: 1rem 1.5rem;
+            text-align: center;
+            z-index: 999;
+            display: none;
+            backdrop-filter: blur(8px);
+            border-top: 1px solid rgba(200,169,110,.2);
+            font-size: .85rem;
+        }
+        .lgpd-banner.show { display: block; }
+        .lgpd-banner a { color: var(--c-accent); }
+        .lgpd-banner button {
+            background: var(--c-accent);
+            border: none;
+            color: var(--c-dark);
+            padding: .45rem 1.4rem;
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: .8rem;
+            margin-left: 1rem;
+            cursor: pointer;
+            transition: all .2s;
+        }
+        .lgpd-banner button:hover { background: #d4b87c; }
+
+        /* ============================================================
+           MODAL INFOGRÁFICO
+           ============================================================ */
         .infographic-modal {
             display: none;
             position: fixed;
             inset: 0;
             z-index: 9999;
-            background: rgba(7, 59, 36, 0.98);
-            backdrop-filter: blur(15px);
+            background: rgba(0,0,0,.92);
+            backdrop-filter: blur(8px);
             align-items: center;
             justify-content: center;
-            padding: 30px;
+            padding: 1rem;
+            animation: modalFadeIn .25s ease;
         }
-
         .infographic-modal.open { display: flex; }
 
-        .modal-content-custom {
+        @keyframes modalFadeIn {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        .infographic-modal-dialog {
             background: #fff;
-            width: 100%;
-            max-width: 1200px;
-            max-height: 90vh;
-            border-radius: 0;
+            border-radius: 20px;
+            overflow: hidden;
+            max-width: 92vw;
+            width: 1000px;
+            max-height: 92vh;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 60px 120px rgba(0,0,0,0.6);
+            box-shadow: 0 40px 100px rgba(0,0,0,.6);
+            animation: modalSlideUp .3s cubic-bezier(.34,1.56,.64,1);
         }
 
-        /* 
-         * 10. DECORAÇÕES DE TEXTO 
-         */
-        .gold-line {
-            width: 60px;
-            height: 1px;
-            background-color: var(--it-gold);
-            margin: 0 auto 2rem;
+        @keyframes modalSlideUp {
+            from { transform: translateY(30px) scale(.97); opacity: 0; }
+            to   { transform: translateY(0) scale(1); opacity: 1; }
         }
 
-        .text-justify-custom {
-            text-align: justify;
-            text-justify: inter-word;
+        .infographic-modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: .9rem 1.25rem;
+            background: var(--c-ivory);
+            border-bottom: 1px solid rgba(0,0,0,.07);
+            gap: .75rem;
+            flex-shrink: 0;
         }
 
-        /* 
-         * 11. SCROLLBAR CUSTOM 
-         */
-        ::-webkit-scrollbar { width: 5px; }
-        ::-webkit-scrollbar-track { background: var(--it-cream); }
-        ::-webkit-scrollbar-thumb { background: var(--it-gold); }
-
-        /* 
-         * 12. RESPONSIVIDADE ADICIONAL 
-         */
-        @media (max-width: 1024px) {
-            .hero-title { font-size: 3.5rem; }
-            .hero-image-mobile { height: 500px !important; }
+        .infographic-modal-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--c-brand);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            flex: 1;
         }
+
+        .infographic-modal-nav {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            flex-shrink: 0;
+        }
+
+        .infographic-modal-nav button {
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            border: 1.5px solid var(--c-brand);
+            background: #fff;
+            color: var(--c-brand);
+            cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            font-size: .75rem;
+            transition: all .2s;
+        }
+        .infographic-modal-nav button:hover { background: var(--c-brand); color: #fff; }
+        .infographic-modal-nav button:disabled { opacity: .3; cursor: default; }
+        .infographic-modal-nav button:disabled:hover { background: #fff; color: var(--c-brand); }
+
+        .infographic-modal-counter {
+            font-size: .75rem;
+            font-weight: 700;
+            color: var(--c-muted);
+            min-width: 32px;
+            text-align: center;
+        }
+
+        .infographic-modal-close {
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            border: none;
+            background: #fee2e2;
+            color: #dc2626;
+            cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            font-size: .8rem;
+            transition: all .2s;
+            flex-shrink: 0;
+        }
+        .infographic-modal-close:hover { background: #dc2626; color: #fff; }
+
+        .infographic-modal-body {
+            overflow: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0;
+            flex: 1;
+            background: #f3f4f6;
+        }
+
+        .infographic-modal-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: opacity .25s ease;
+        }
+        .infographic-modal-img.loading { opacity: 0; }
+
+        /* ============================================================
+           LAZY LOAD FADE
+           ============================================================ */
+        .lazy-load { opacity: 0; transition: opacity .35s ease-in; }
+        .lazy-load.loaded { opacity: 1; }
+
+        /* ============================================================
+           FOCUS / ACCESSIBILITY
+           ============================================================ */
+        :focus-visible { outline: 2px solid var(--c-brand); outline-offset: 2px; }
+
+        /* ============================================================
+           SCROLL REVEAL ANIMATION
+           ============================================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .65s ease, transform .65s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: .1s; }
+        .reveal-delay-2 { transition-delay: .2s; }
+        .reveal-delay-3 { transition-delay: .3s; }
+
+        /* ============================================================
+           MOBILE MENU
+           ============================================================ */
+        #mobile-menu {
+            background: rgba(248,245,238,.98);
+            backdrop-filter: blur(16px);
+            border-top: 1px solid rgba(11,92,59,.08);
+        }
+        .mobile-menu-link {
+            display: block;
+            padding: .75rem 1rem;
+            font-size: .9rem;
+            font-weight: 600;
+            color: var(--c-text);
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            transition: all .2s;
+        }
+        .mobile-menu-link:hover {
+            background: rgba(11,92,59,.07);
+            color: var(--c-brand);
+        }
+        .mobile-menu-cta {
+            display: block;
+            padding: .85rem 1rem;
+            background: var(--c-brand);
+            color: #fff;
+            font-weight: 700;
+            font-size: .88rem;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: .5rem;
+            transition: background .2s;
+        }
+        .mobile-menu-cta:hover { background: var(--c-brand-d); }
     </style>
 </head>
 
-<body class="antialiased">
+<body itemscope itemtype="https://schema.org/DentalClinic">
 
-    <!-- ==================== SKIP LINK (ACESSIBILIDADE) ==================== -->
-    <a href="#main-content" class="sr-only focus:not-sr-only fixed top-4 left-4 bg-brand-700 text-white p-4 z-[100] font-bold uppercase tracking-widest text-[10px]">Ir para o conteúdo</a>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
-    <!-- ==================== HEADER (BOUTIQUE NAVIGATION) ==================== -->
-    <header>
-        <nav class="fixed w-full z-50 glass-nav" id="navbar">
-            <div class="container mx-auto px-8 py-6 flex justify-between items-center">
-                <!-- Logo -->
-                <a href="#home" class="transition transform hover:scale-105" aria-label="Voltar ao início">
-                    <img src="logo-ideale.png" alt="Odontologia Ideale" class="h-10 md:h-14 w-auto" loading="eager">
+    <!-- ==================== NAVBAR ==================== -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" aria-label="Odontologia Ideale - Home">
+                <img src="logo-ideale.png" alt="Odontologia Ideale" class="h-14 md:h-16 w-auto" width="300" height="101" loading="eager" fetchpriority="high">
+            </a>
+
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#home" class="nav-link-item">Home</a>
+                <a href="#sobre" class="nav-link-item">A Clínica</a>
+                <a href="#tratamentos" class="nav-link-item">Tratamentos</a>
+                <a href="#profissionais" class="nav-link-item">Equipe</a>
+                <a href="#depoimentos" class="nav-link-item">Depoimentos</a>
+                <a href="#contato" class="btn-nav-cta">
+                    <i class="fa-brands fa-whatsapp"></i> Agendar
                 </a>
-
-                <!-- Desktop Menu -->
-                <div class="hidden lg:flex space-x-14 items-center">
-                    <div class="flex space-x-10 items-center">
-                        <a href="#home" class="nav-link-boutique">Início</a>
-                        <a href="#sobre" class="nav-link-boutique">Quem Somos</a>
-                        <a href="#tratamentos" class="nav-link-boutique">Especialidades</a>
-                        <a href="#profissionais" class="nav-link-boutique">Equipe</a>
-                        <a href="#contato" class="nav-link-boutique">Contato</a>
-                    </div>
-                    
-                    <a href="https://wa.me/5511977001032" target="_blank" class="px-10 py-3 bg-brand-700 text-white text-[9px] font-bold tracking-[4px] uppercase hover:bg-accent transition-all duration-500 shadow-xl shadow-brand-900/10">
-                        Agendamento
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button class="lg:hidden text-brand-700 focus:outline-none" onclick="toggleMenu()" aria-label="Abrir Navegação">
-                    <div class="w-8 h-4 flex flex-col justify-between items-end">
-                        <span class="w-full h-[1px] bg-current"></span>
-                        <span class="w-2/3 h-[1px] bg-current"></span>
-                        <span class="w-full h-[1px] bg-current"></span>
-                    </div>
-                </button>
             </div>
-            
-            <!-- Mobile Menu Overlay -->
-            <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center space-y-10 animate-fade-in text-center">
-                <button class="absolute top-10 right-10 text-4xl font-light" onclick="toggleMenu()">&times;</button>
-                <div class="space-y-6">
-                    <a href="#home" onclick="toggleMenu()" class="block text-3xl font-display italic text-brand-900">Início</a>
-                    <a href="#sobre" onclick="toggleMenu()" class="block text-3xl font-display italic text-brand-900">A Clínica</a>
-                    <a href="#tratamentos" onclick="toggleMenu()" class="block text-3xl font-display italic text-brand-900">Especialidades</a>
-                    <a href="#profissionais" onclick="toggleMenu()" class="block text-3xl font-display italic text-brand-900">Expertise</a>
-                    <a href="#contato" onclick="toggleMenu()" class="block text-3xl font-display italic text-brand-900">Contato</a>
-                </div>
-                <a href="https://wa.me/5511977001032" class="px-12 py-5 bg-brand-700 text-white uppercase text-xs tracking-widest font-bold">Solicitar Avaliação</a>
-            </div>
-        </nav>
-    </header>
 
-    <!-- ==================== MAIN CONTENT ==================== -->
+            <button class="md:hidden text-gray-600 p-2" onclick="toggleMenu()" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full shadow-xl p-4">
+            <div class="flex flex-col gap-1">
+                <a href="#home" onclick="toggleMenu()" class="mobile-menu-link">Início</a>
+                <a href="#sobre" onclick="toggleMenu()" class="mobile-menu-link">A Clínica</a>
+                <a href="#tratamentos" onclick="toggleMenu()" class="mobile-menu-link">Tratamentos</a>
+                <a href="#profissionais" onclick="toggleMenu()" class="mobile-menu-link">Profissionais</a>
+                <a href="https://wa.me/5511977001032" class="mobile-menu-cta">
+                    <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </nav>
+
     <main id="main-content">
 
-        <!-- ==================== SECTION 1: HERO (THE MASTERPIECE) ==================== -->
-        <section id="home" class="min-h-screen flex items-center pt-32 pb-24 relative overflow-hidden">
-            <div class="hidden lg:block hero-decoration-frame top-1/2 left-20 w-[30%] h-[75%] -translate-y-1/2"></div>
-            <div class="absolute top-0 right-0 w-1/3 h-full bg-brand-50/30 -z-10"></div>
-            
-            <div class="container mx-auto px-8 grid lg:grid-cols-2 gap-20 items-center">
-                <div class="space-y-12 reveal">
-                    <div class="flex items-center space-x-6">
-                        <span class="w-16 h-[1px] bg-accent"></span>
-                        <span class="text-[10px] font-bold tracking-[6px] uppercase text-accent">Legado em Saúde Bucal</span>
+        <!-- ==================== HERO ==================== -->
+        <section id="home" class="hero-section flex items-center pt-24 md:pt-0">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative z-10 min-h-screen py-20">
+
+                <!-- Texto -->
+                <div class="text-center md:text-left">
+                    <div class="hero-eyebrow reveal">
+                        <i class="fa-solid fa-award text-accent" style="color: var(--c-accent)"></i>
+                        37 Anos de Tradição e Excelência
                     </div>
-                    
-                    <h1 class="hero-title text-5xl md:text-7xl xl:text-8xl text-brand-700">
-                        A arte de harmonizar <br><span class="italic text-accent">saúde, estética</span> e o seu bem-estar.
+
+                    <h1 class="hero-title reveal reveal-delay-1">
+                        Seu sorriso<br>
+                        saudável <em>começa</em><br>
+                        aqui.
                     </h1>
-                    
-                    <p class="text-lg md:text-2xl text-slate-500 max-w-xl leading-relaxed font-light italic">
-                        Há 38 anos, transcendemos a odontologia convencional para entregar um cuidado absoluto, unindo inovação técnica e sensibilidade humana.
+
+                    <p class="hero-sub reveal reveal-delay-2">
+                        Fundada em 1988, unimos <strong>tradição</strong> e <strong>tecnologia</strong> para transformar sorrisos.<br>
+                        Odontologia Ideale no <strong>Belém</strong>, São Paulo.
                     </p>
-                    
-                    <div class="flex flex-col sm:flex-row gap-8 pt-6">
-                        <a href="https://wa.me/5511977001032" target="_blank" class="btn-luxury gap-6 group">
-                            <span>Solicitar Avaliação</span>
-                            <i class="fa-brands fa-whatsapp text-xl group-hover:rotate-12 transition-transform"></i>
+
+                    <div class="flex flex-col gap-2 mb-8 reveal reveal-delay-2">
+                        <div class="hero-check justify-center md:justify-start">
+                            <i class="fa-solid fa-circle-check"></i> Implantes e Reabilitação Oral
+                        </div>
+                        <div class="hero-check justify-center md:justify-start">
+                            <i class="fa-solid fa-circle-check"></i> Ortodontia Moderna
+                        </div>
+                        <div class="hero-check justify-center md:justify-start">
+                            <i class="fa-solid fa-circle-check"></i> Biossegurança Rigorosa
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-3 justify-center md:justify-start reveal reveal-delay-3">
+                        <a href="https://wa.me/5511977001032" target="_blank" class="btn-primary-hero">
+                            <i class="fa-brands fa-whatsapp"></i> Agendar Avaliação
                         </a>
-                        <a href="#tratamentos" class="btn-outline-luxury flex items-center justify-center">
-                            Nossas Especialidades
-                        </a>
-                    </div>
-                    
-                    <div class="pt-12 flex items-center space-x-16 opacity-40 grayscale">
-                        <div class="text-center">
-                            <p class="text-3xl font-display text-brand-700">38 anos de</p>
-                            <p class="text-[9px] uppercase font-bold tracking-[4px]">Expertise</p>
-                        </div>
-                        <div class="w-px h-12 bg-slate-300"></div>
-                        <div class="text-center">
-                            <p class="text-3xl font-display text-brand-700">5.0</p>
-                            <p class="text-[9px] uppercase font-bold tracking-[4px]">Google Score</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="relative flex justify-center lg:justify-end reveal" style="transition-delay: 0.4s">
-                    <div class="relative w-full max-w-2xl group"> 
-                        <div class="absolute -top-12 -left-12 w-full h-full border border-accent rounded-sm z-0 transition-all group-hover:-top-10 group-hover:-left-10 duration-700"></div>
-                        
-                        <div class="relative z-10 bg-white p-6 shadow-[0_80px_150px_-30px_rgba(0,0,0,0.4)]">
-                            <div class="overflow-hidden">
-                                <img src="fachada-letreiro.jpg" alt="Fachada Odontologia Ideale Belém" class="w-full h-[700px] object-cover transition-all duration-[2000ms] grayscale hover:grayscale-0 hover:scale-105" fetchpriority="high">
-                            </div>
-                        </div>
-                        
-                        <div class="absolute -bottom-14 -right-14 bg-brand-700 text-white p-12 rounded-full w-52 h-52 flex flex-col items-center justify-center text-center shadow-3xl z-20 hidden xl:flex border-[10px] border-cream">
-                            <span class="text-[10px] uppercase tracking-[5px] mb-3 opacity-60">Maestria em</span>
-                            <span class="text-4xl font-display italic">Sorrisos</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== SECTION 2: QUEM SOMOS (PDF UPDATED) ==================== -->
-        <section id="sobre" class="py-44 bg-white relative">
-            <div class="container mx-auto px-8">
-                <div class="grid lg:grid-cols-2 gap-32 items-center">
-                    <div class="relative reveal">
-                        <div class="absolute -inset-4 bg-brand-50 -z-10 translate-x-8 translate-y-8"></div>
-                        <img src="foto-externa-1.png" alt="Ambiente Odontologia Ideale" class="w-full h-[700px] object-cover rounded-sm shadow-2xl">
-                    </div>
-
-                    <div class="space-y-12 reveal" style="transition-delay: 0.3s">
-                        <div class="space-y-6">
-                            <h2 class="text-[12px] font-bold tracking-[8px] uppercase text-accent">O Legado</h2>
-                            <h3 class="text-4xl md:text-6xl font-display text-brand-700 italic leading-tight">38 anos esculpindo <br>trajetórias de sucesso.</h3>
-                            <div class="w-24 h-[1px] bg-accent"></div>
-                        </div>
-                        
-                        <div class="space-y-10 text-slate-600 leading-relaxed font-light text-justify-custom text-xl italic">
-                            <p>
-                                Fundada em 1988, a <strong class="font-semibold text-brand-700">Odontologia Ideale acumula 38 anos de expertise</strong>, buscando incessantemente a atualização técnica e a inovação tecnológica para alcançar o ápice no atendimento odontológico.
-                            </p>
-                            <p>
-                                Nossa filosofia de trabalho reside no acolhimento genuíno e na compreensão profunda das necessidades e expectativas de cada paciente. Cada diagnóstico é uma obra de precisão, onde o planejamento criterioso respeita a individualidade e a transparência em cada etapa.
-                            </p>
-                            <p>
-                                Acreditamos que um sorriso harmônico é a base da autoestima e impacta diretamente a qualidade de vida. Atuamos com ética rigorosa, transformando o receio de ir ao dentista em uma experiência de conforto e segurança absoluta.
-                            </p>
-                            <div class="pt-6">
-                                <p class="font-display text-2xl text-brand-700 border-l-2 border-accent pl-8">
-                                    "Nosso propósito é ser a referência máxima em cuidado dedicado, reconhecidos pela excelência técnica e pelo respeito a cada pessoa atendida."
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== SECTION 3: BIOSSEGURANÇA & RIGOR (PDF PAGE 2) ==================== -->
-        <section class="py-32 bg-brand-900 text-white relative pattern-bg">
-            <div class="container mx-auto px-8">
-                <div class="max-w-6xl mx-auto space-y-20">
-                    <div class="text-center space-y-6 reveal">
-                        <div class="gold-line"></div>
-                        <h2 class="text-3xl md:text-5xl font-display italic text-accent uppercase tracking-widest">Rigor Técnico & Ética Ambiental</h2>
-                        <p class="text-brand-100 max-w-3xl mx-auto text-sm font-light leading-relaxed uppercase tracking-[5px]">Protocolos Institucionais de Segurança</p>
-                    </div>
-
-                    <div class="bio-info-grid reveal" style="transition-delay: 0.2s">
-                        <div class="bio-card space-y-6">
-                            <div class="flex items-center space-x-6 text-accent">
-                                <i class="fa-solid fa-microscope text-3xl"></i>
-                                <h4 class="text-sm font-bold uppercase tracking-widest">Padrões Institucionais</h4>
-                            </div>
-                            <p class="text-brand-100/70 text-sm font-light leading-loose text-justify-custom">
-                                A Odontologia Ideale segue rigorosamente todas as normas de biossegurança e sustentabilidade estabelecidas pela <strong class="text-white">ANVISA</strong> (Agência de Vigilância Sanitária) e pelo <strong class="text-white">CONAMA</strong> (Conselho Nacional do Meio Ambiente).
-                            </p>
-                        </div>
-
-                        <div class="bio-card space-y-6">
-                            <div class="flex items-center space-x-6 text-accent">
-                                <i class="fa-solid fa-shield-virus text-3xl"></i>
-                                <h4 class="text-sm font-bold uppercase tracking-widest">Ciclo de Esterilização</h4>
-                            </div>
-                            <p class="text-brand-100/70 text-sm font-light leading-loose text-justify-custom">
-                                Todos os instrumentais são processados em autoclave. Insumos clínicos são estritamente de <strong class="text-white">uso único</strong> e descartados imediatamente. A desinfecção de superfícies é realizada com agentes químicos à base de álcool, clorexidina e cloro.
-                            </p>
-                        </div>
-
-                        <div class="bio-card space-y-6">
-                            <div class="flex items-center space-x-6 text-accent">
-                                <i class="fa-solid fa-leaf text-3xl"></i>
-                                <h4 class="text-sm font-bold uppercase tracking-widest">Responsabilidade Pública</h4>
-                            </div>
-                            <p class="text-brand-100/70 text-sm font-light leading-loose text-justify-custom">
-                                Resíduos contaminados são segregados e acondicionados em recipientes certificados, com coleta realizada por empresas especializadas sob determinação da <strong class="text-white">Prefeitura de São Paulo</strong> para incineração controlada.
-                            </p>
-                        </div>
-
-                        <div class="bio-card space-y-6">
-                            <div class="flex items-center space-x-6 text-accent">
-                                <i class="fa-solid fa-recycle text-3xl"></i>
-                                <h4 class="text-sm font-bold uppercase tracking-widest">Compromisso Ecológico</h4>
-                            </div>
-                            <p class="text-brand-100/70 text-sm font-light leading-loose text-justify-custom">
-                                Materiais recicláveis (plásticos, metais e papéis) são destinados às estações de reciclagem. Adotamos o uso consciente de recursos hídricos e energia elétrica em toda a nossa operação clínica.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== SECTION 4: ESPECIALIDADES (BOUTIQUE GRID) ==================== -->
-        <section id="tratamentos" class="py-44 bg-cream">
-            <div class="container mx-auto px-8">
-                <!-- Section Intro -->
-                <div class="text-center max-w-3xl mx-auto mb-32 reveal">
-                    <h2 class="text-[12px] font-bold tracking-[8px] uppercase text-accent mb-6">Expertise em Performance</h2>
-                    <h3 class="text-5xl md:text-7xl font-display text-brand-700 italic">Sua saúde bucal em mãos de mestres.</h3>
-                </div>
-
-                <!-- Grid de Tratamentos Expandido -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
-                    
-                    <!-- CARD 1: ORTODONTIA -->
-                    <div class="card-editorial flex flex-col h-full reveal" style="transition-delay: 0.1s">
-                        <div class="image-zoom-wrapper h-[450px]">
-                            <img src="alinhador.png" alt="Ortodontia de Alta Performance" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-brand-900/40 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-                                <span class="text-white text-[10px] tracking-[5px] uppercase border border-white p-6">Detalhes Técnicos</span>
-                            </div>
-                        </div>
-                        <div class="p-14 flex flex-col flex-grow">
-                            <div class="flex justify-between items-start mb-8">
-                                <h4 class="text-3xl font-display text-brand-900 italic">Ortodontia</h4>
-                                <span class="text-[10px] text-accent font-bold uppercase tracking-widest">Elite</span>
-                            </div>
-                            <p class="text-slate-500 font-light mb-10 flex-grow leading-relaxed text-lg">
-                                Alinhamento imperceptível através de tecnologia invisível ou convencional. Planejamento digital para resultados harmônicos.
-                            </p>
-                            
-                            <!-- Accordion Content -->
-                            <div id="descOrto" class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
-                                <div class="pt-8 border-t border-slate-100 space-y-6">
-                                    <ul class="text-[11px] uppercase tracking-[4px] text-brand-700 font-bold space-y-3">
-                                        <li>• Invisalign & Alinhadores</li>
-                                        <li>• Aparelhos Estéticos Ceramizados</li>
-                                        <li>• Ortodontia Autoligada Digital</li>
-                                    </ul>
-                                    <button onclick="openInfographic(['alinhador-3.png', 'alinhador-4.png', 'alinhador-2.png'], 'Ortodontia Digital')" class="w-full py-5 bg-brand-50 text-brand-700 text-[10px] font-bold uppercase tracking-[3px] hover:bg-brand-700 hover:text-white transition">
-                                        Ver Galeria Clínica
-                                    </button>
-                                </div>
-                            </div>
-                            
-                            <!-- Trigger Button -->
-                            <button onclick="toggleCard('descOrto', this)" class="mt-10 flex justify-between items-center group/btn toggle-btn border-t border-slate-100 pt-10">
-                                <span class="toggle-text text-[11px] uppercase tracking-[4px] font-bold text-brand-900 group-hover/btn:text-accent transition">Conhecer</span>
-                                <i class="fa-solid fa-plus text-xs text-accent transition-transform group-hover:rotate-90 toggle-icon"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- CARD 2: IMPLANTES -->
-                    <div class="card-editorial flex flex-col h-full reveal" style="transition-delay: 0.2s">
-                        <div class="image-zoom-wrapper h-[450px]">
-                            <img src="implante.png" alt="Implantodontia de Precisão" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-14 flex flex-col flex-grow text-left">
-                            <div class="flex justify-between items-start mb-8">
-                                <h4 class="text-3xl font-display text-brand-900 italic">Implantes</h4>
-                                <span class="text-[10px] text-accent font-bold uppercase tracking-widest">Cirurgia</span>
-                            </div>
-                            <p class="text-slate-500 font-light mb-10 flex-grow leading-relaxed text-lg">
-                                Reabilitação total com sistemas de titânio biocompatível. Conforto pleno, segurança e estética restaurada.
-                            </p>
-                            <div id="descImp" class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
-                                <div class="pt-8 border-t border-slate-100 space-y-6">
-                                    <ul class="text-[11px] uppercase tracking-[4px] text-brand-700 font-bold space-y-3">
-                                        <li>• Carga Imediata Superior</li>
-                                        <li>• Enxertos Ósseos Complexos</li>
-                                        <li>• Próteses Fixas em Zircônia</li>
-                                    </ul>
-                                    <button onclick="openInfographic(['implante2.png','implante3.png'], 'Implantodontia')" class="w-full py-5 bg-brand-50 text-brand-700 text-[10px] font-bold uppercase tracking-[3px] hover:bg-brand-700 hover:text-white transition">
-                                        Protocolo de Tratamento
-                                    </button>
-                                </div>
-                            </div>
-                            <button onclick="toggleCard('descImp', this)" class="mt-10 flex justify-between items-center group/btn toggle-btn border-t border-slate-100 pt-10">
-                                <span class="toggle-text text-[11px] uppercase tracking-[4px] font-bold text-brand-900 group-hover/btn:text-accent transition">Conhecer</span>
-                                <i class="fa-solid fa-plus text-xs text-accent transition-transform toggle-icon"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- CARD 3: CUIDADO GERAL -->
-                    <div class="card-editorial flex flex-col h-full reveal" style="transition-delay: 0.3s">
-                        <div class="image-zoom-wrapper h-[450px]">
-                            <img src="sala-clinica.png" alt="Cuidado Odontológico Integral" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-14 flex flex-col flex-grow">
-                            <div class="flex justify-between items-start mb-8">
-                                <h4 class="text-3xl font-display text-brand-900 italic">Clínica Geral</h4>
-                                <span class="text-[10px] text-accent font-bold uppercase tracking-widest">Saúde</span>
-                            </div>
-                            <p class="text-slate-500 font-light mb-10 flex-grow leading-relaxed text-lg">
-                                Prevenção contínua e acompanhamento sistêmico especializado, com olhar focado na longevidade bucal.
-                            </p>
-                            <div id="descGeral" class="max-h-0 overflow-hidden transition-all duration-700">
-                                <div class="pt-8 border-t border-slate-100 space-y-6">
-                                    <ul class="text-[11px] uppercase tracking-[4px] text-brand-700 font-bold space-y-3">
-                                        <li>• Check-up Preventivo Digital</li>
-                                        <li>• Odontogeriatria Especializada</li>
-                                        <li>• Estética Restauradora 3D</li>
-                                    </ul>
-                                    <button onclick="openInfographic(['clinica1.png','clinica2.png'], 'Clínica Geral')" class="w-full py-5 bg-brand-50 text-brand-700 text-[10px] font-bold uppercase tracking-[3px] hover:bg-brand-700 hover:text-white transition">
-                                        Nossa Metodologia
-                                    </button>
-                                </div>
-                            </div>
-                            <button onclick="toggleCard('descGeral', this)" class="mt-10 flex justify-between items-center group/btn toggle-btn border-t border-slate-100 pt-10">
-                                <span class="toggle-text text-[11px] uppercase tracking-[4px] font-bold text-brand-900 group-hover/btn:text-accent transition">Conhecer</span>
-                                <i class="fa-solid fa-plus text-xs text-accent transition-transform toggle-icon"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- CARD 4: REABILITAÇÃO -->
-                    <div class="card-editorial flex flex-col h-full reveal" style="transition-delay: 0.1s">
-                        <div class="image-zoom-wrapper h-[450px]">
-                            <img src="tratamento1.png" alt="Reabilitação Oral e Prótese" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-14 flex flex-col flex-grow text-left">
-                            <div class="flex justify-between items-start mb-8">
-                                <h4 class="text-3xl font-display text-brand-900 italic">Prótese</h4>
-                                <span class="text-[10px] text-accent font-bold uppercase tracking-widest">Maestria</span>
-                            </div>
-                            <p class="text-slate-500 font-light mb-10 flex-grow leading-relaxed text-lg">
-                                Devolução total da função e harmonia. Próteses fixas ou removíveis projetadas com tecnologia CAD/CAM.
-                            </p>
-                            <div id="descProt" class="max-h-0 overflow-hidden transition-all duration-700">
-                                <div class="pt-8 border-t border-slate-100 space-y-6">
-                                    <ul class="text-[11px] uppercase tracking-[4px] text-brand-700 font-bold space-y-3">
-                                        <li>• Facetas & Lentes de Contato</li>
-                                        <li>• Coroas em Porcelana Pura</li>
-                                        <li>• Reabilitação Protética Oral</li>
-                                    </ul>
-                                    <button onclick="openInfographic(['tratamento1.1.png','tratamento1.2.png'], 'Estética e Prótese')" class="w-full py-5 bg-brand-50 text-brand-700 text-[10px] font-bold uppercase tracking-[3px] hover:bg-brand-700 hover:text-white transition">
-                                        Casos de Sucesso
-                                    </button>
-                                </div>
-                            </div>
-                            <button onclick="toggleCard('descProt', this)" class="mt-10 flex justify-between items-center group/btn toggle-btn border-t border-slate-100 pt-10">
-                                <span class="toggle-text text-[11px] uppercase tracking-[4px] font-bold text-brand-900 group-hover/btn:text-accent transition">Conhecer</span>
-                                <i class="fa-solid fa-plus text-xs text-accent transition-transform toggle-icon"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- CARD 5: CANAL -->
-                    <div class="card-editorial flex flex-col h-full reveal" style="transition-delay: 0.2s">
-                        <div class="image-zoom-wrapper h-[450px]">
-                            <img src="tratamento2.png" alt="Endodontia Tecnológica" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-14 flex flex-col flex-grow text-left">
-                            <div class="flex justify-between items-start mb-8">
-                                <h4 class="text-3xl font-display text-brand-900 italic">Endodontia</h4>
-                                <span class="text-[10px] text-accent font-bold uppercase tracking-widest">Precisão</span>
-                            </div>
-                            <p class="text-slate-500 font-light mb-10 flex-grow leading-relaxed text-lg">
-                                Tratamentos de canal indolores através de sistemas rotatórios e tecnologia micro-invasiva.
-                            </p>
-                            <div id="descEndo" class="max-h-0 overflow-hidden transition-all duration-700">
-                                <div class="pt-8 border-t border-slate-100 space-y-6">
-                                    <ul class="text-[11px] uppercase tracking-[4px] text-brand-700 font-bold space-y-3">
-                                        <li>• Tratamento em Sessão Única</li>
-                                        <li>• Instrumentação Rotatória</li>
-                                        <li>• Localizador Apical Digital</li>
-                                    </ul>
-                                    <button onclick="openInfographic(['tratamento2.1.png','tratamento2.2.png'], 'Canal (Endodontia)')" class="w-full py-5 bg-brand-50 text-brand-700 text-[10px] font-bold uppercase tracking-[3px] hover:bg-brand-700 hover:text-white transition">
-                                        Protocolo Endodôntico
-                                    </button>
-                                </div>
-                            </div>
-                            <button onclick="toggleCard('descEndo', this)" class="mt-10 flex justify-between items-center group/btn toggle-btn border-t border-slate-100 pt-10">
-                                <span class="toggle-text text-[11px] uppercase tracking-[4px] font-bold text-brand-900 group-hover/btn:text-accent transition">Conhecer</span>
-                                <i class="fa-solid fa-plus text-xs text-accent transition-transform toggle-icon"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- CARD 6: GENGIVA -->
-                    <div class="card-editorial flex flex-col h-full reveal" style="transition-delay: 0.3s">
-                        <div class="image-zoom-wrapper h-[450px]">
-                            <img src="tratamento3.png" alt="Periodontia e Saúde Gengival" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-14 flex flex-col flex-grow text-left">
-                            <div class="flex justify-between items-start mb-8">
-                                <h4 class="text-3xl font-display text-brand-900 italic">Periodontia</h4>
-                                <span class="text-[10px] text-accent font-bold uppercase tracking-widest">Base</span>
-                            </div>
-                            <p class="text-slate-500 font-light mb-10 flex-grow leading-relaxed text-lg">
-                                Saúde dos tecidos de sustentação. Enxertos gengivais e tratamento de doenças periodontais complexas.
-                            </p>
-                            <div id="descPerio" class="max-h-0 overflow-hidden transition-all duration-700">
-                                <div class="pt-8 border-t border-slate-100 space-y-6">
-                                    <ul class="text-[11px] uppercase tracking-[4px] text-brand-700 font-bold space-y-3">
-                                        <li>• Cirurgia Plástica Periodontal</li>
-                                        <li>• Tratamento de Retração</li>
-                                        <li>• Enxertos de Tecido Mole</li>
-                                    </ul>
-                                    <button onclick="openInfographic(['tratamento3.1.png','tratamento3.2.png' , 'tratamento4.png','tratamento5.png'], 'Saúde da Gengiva')" class="w-full py-5 bg-brand-50 text-brand-700 text-[10px] font-bold uppercase tracking-[3px] hover:bg-brand-700 hover:text-white transition">
-                                        Processos Cirúrgicos
-                                    </button>
-                                </div>
-                            </div>
-                            <button onclick="toggleCard('descPerio', this)" class="mt-10 flex justify-between items-center group/btn toggle-btn border-t border-slate-100 pt-10">
-                                <span class="toggle-text text-[11px] uppercase tracking-[4px] font-bold text-brand-900 group-hover/btn:text-accent transition">Conhecer</span>
-                                <i class="fa-solid fa-plus text-xs text-accent transition-transform toggle-icon"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== SECTION 5: EQUIPE ==================== -->
-        <section id="profissionais" class="py-44 bg-white relative">
-            <div class="container mx-auto px-8">
-                <div class="flex flex-col lg:flex-row justify-between items-end mb-32 space-y-8">
-                    <div class="reveal">
-                        <h2 class="text-[12px] font-bold tracking-[8px] uppercase text-accent mb-6">Mestria Técnica</h2>
-                        <h3 class="text-5xl md:text-7xl font-display text-brand-700 italic">Corpo Clínico.</h3>
-                    </div>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-24">
-                    <div class="space-y-10 reveal text-center lg:text-left" style="transition-delay: 0.1s">
-                        <div class="relative group mx-auto lg:mx-0 max-w-[320px]">
-                            <div class="absolute -inset-6 border border-accent/20 rounded-full transition-transform group-hover:scale-110 duration-700 pointer-events-none"></div>
-                            <div class="relative w-72 h-72 rounded-full bg-brand-50 flex items-center justify-center text-brand-700 text-7xl transition-all group-hover:bg-brand-700 group-hover:text-white shadow-inner">
-                                <i class="fa-solid fa-user-doctor"></i>
-                            </div>
-                        </div>
-                        <div class="space-y-4">
-                            <h4 class="text-3xl font-display text-brand-900 italic">Dr. Luiz F. Cardoso</h4>
-                            <p class="text-[11px] font-bold uppercase tracking-[5px] text-accent">Responsável Técnico | CRO-SP 35.371</p>
-                        </div>
-                    </div>
-
-                    <div class="space-y-10 reveal text-center lg:text-left" style="transition-delay: 0.2s">
-                        <div class="relative group mx-auto lg:mx-0 max-w-[320px]">
-                            <div class="absolute -inset-6 border border-accent/20 rounded-full transition-transform group-hover:scale-110 duration-700 pointer-events-none"></div>
-                            <div class="relative w-72 h-72 rounded-full bg-brand-50 flex items-center justify-center text-brand-700 text-7xl transition-all group-hover:bg-brand-700 group-hover:text-white shadow-inner">
-                                <i class="fa-solid fa-user-doctor"></i>
-                            </div>
-                        </div>
-                        <div class="space-y-4">
-                            <h4 class="text-3xl font-display text-brand-900 italic">Dr. Paulo Lautenschlaeger</h4>
-                            <p class="text-[11px] font-bold uppercase tracking-[5px] text-accent">CRO-SP 30.648</p>
-                        </div>
-                    </div>
-
-                    <div class="space-y-10 reveal text-center lg:text-left" style="transition-delay: 0.3s">
-                        <div class="relative group mx-auto lg:mx-0 max-w-[320px]">
-                            <div class="absolute -inset-6 border border-accent/20 rounded-full transition-transform group-hover:scale-110 duration-700 pointer-events-none"></div>
-                            <div class="relative w-72 h-72 rounded-full bg-brand-50 flex items-center justify-center text-brand-700 text-7xl transition-all group-hover:bg-brand-700 group-hover:text-white shadow-inner">
-                                <i class="fa-solid fa-user-doctor"></i>
-                            </div>
-                        </div>
-                        <div class="space-y-4">
-                            <h4 class="text-3xl font-display text-brand-900 italic">Dra. Simone Marta</h4>
-                            <p class="text-[11px] font-bold uppercase tracking-[5px] text-accent">CRO-SP 50.389</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== SECTION 6: CONTATO & MAPA ==================== -->
-        <section id="contato" class="py-44 bg-brand-900 text-white relative">
-            <div class="container mx-auto px-8">
-                <div class="grid lg:grid-cols-2 gap-32 items-center reveal">
-                    <div class="space-y-16">
-                        <h2 class="text-6xl md:text-8xl font-display leading-none italic">Sua nova <br><span class="text-accent not-italic font-bold tracking-tighter uppercase">Versão.</span></h2>
-                        
-                        <div class="space-y-12">
-                            <div class="flex items-center gap-10 group">
-                                <div class="w-20 h-20 rounded-full border border-accent/30 flex items-center justify-center text-accent transition-all group-hover:bg-accent group-hover:text-brand-900">
-                                    <i class="fa-solid fa-phone-volume text-2xl"></i>
-                                </div>
-                                <div>
-                                    <p class="text-[10px] uppercase font-bold tracking-[5px] text-accent mb-2">Canais Directos</p>
-                                    <p class="text-2xl font-light italic hover:text-accent transition block">(11) 2292-8008</p>
-                                    <p class="text-2xl font-light italic hover:text-accent transition block">97700-1032</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-10 group">
-                                <div class="w-20 h-20 rounded-full border border-accent/30 flex items-center justify-center text-accent transition-all group-hover:bg-accent group-hover:text-brand-900">
-                                    <i class="fa-solid fa-location-dot text-2xl"></i>
-                                </div>
-                                <div>
-                                    <p class="text-[10px] uppercase font-bold tracking-[5px] text-accent mb-2">Onde Estamos</p>
-                                    <p class="text-2xl font-light italic">Rua Herval, 579 - Belém</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a href="https://wa.me/5511977001032" target="_blank" class="btn-luxury w-full shadow-3xl">
-                            Iniciar Agendamento
+                        <a href="#tratamentos" class="btn-secondary-hero">
+                            Ver Tratamentos <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
                     </div>
+                </div>
 
-                    <div class="h-[750px] w-full border border-white/10 grayscale hover:grayscale-0 transition-all duration-[1500ms] shadow-3xl overflow-hidden relative">
-                        <iframe src="https://maps.google.com/maps?q=Rua%20Herval%2C%20579%20-%20Bel%C3%A9m&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <!-- Imagem + carrossel -->
+                <div class="hidden md:block relative reveal reveal-delay-2">
+                    <div class="hero-image-frame">
+                        <div id="heroCarousel" class="carousel slide carousel-fade w-full h-[520px]" data-bs-ride="carousel">
+                            <div class="carousel-inner h-full">
+                                <div class="carousel-item active h-full">
+                                    <img src="fachada-letreiro.jpg" class="d-block w-full h-full object-cover" alt="Fachada da Odontologia Ideale no Belém" loading="eager" fetchpriority="high" decoding="sync">
+                                </div>
+                                <div class="carousel-item h-full">
+                                    <img src="foto-externa-1.png" class="d-block w-full h-full object-cover" alt="Entrada do consultório Odontologia Ideale" loading="eager" decoding="async">
+                                </div>
+                                <div class="carousel-item h-full">
+                                    <img src="foto-externa-2.png" class="d-block w-full h-full object-cover" alt="Sala de espera Odontologia Ideale" loading="lazy" decoding="async">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Badge flutuante -->
+                    <div class="hero-badge">
+                        <div class="hero-badge-icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <div class="hero-badge-num">5.0</div>
+                            <div class="hero-badge-txt">Google Reviews</div>
+                        </div>
+                    </div>
+
+                    <!-- Segundo badge -->
+                    <div style="position:absolute; top:-1rem; right:-1rem; background:#fff; border-radius:14px; padding:.9rem 1.2rem; box-shadow: var(--shadow-card); display:flex; align-items:center; gap:.6rem; z-index:10;">
+                        <div style="width:38px;height:38px;background:linear-gradient(135deg,#C8A96E,#d4b87c);border-radius:9px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <div style="font-size:.75rem;font-weight:700;color:#111;">Biossegurança</div>
+                            <div style="font-size:.68rem;color:#9ca3af;text-transform:uppercase;letter-spacing:.05em;">ANVISA & CRO-SP</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- ==================== STATS STRIP ==================== -->
+        <div class="stats-strip">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-wrap justify-center md:justify-between items-center gap-8">
+                    <div class="stat-item">
+                        <div class="stat-num">38+</div>
+                        <div class="stat-label">Anos de Experiência</div>
+                    </div>
+                    <div class="stat-divider hidden md:block"></div>
+                    <div class="stat-item">
+                        <div class="stat-num">5.0</div>
+                        <div class="stat-label">Avaliação Google</div>
+                    </div>
+                    <div class="stat-divider hidden md:block"></div>
+                    <div class="stat-item">
+                        <div class="stat-num">3</div>
+                        <div class="stat-label">Especialistas</div>
+                    </div>
+                    <div class="stat-divider hidden md:block"></div>
+                    <div class="stat-item">
+                        <div class="stat-num">6</div>
+                        <div class="stat-label">Especialidades</div>
+                    </div>
+                    <div class="stat-divider hidden md:block"></div>
+                    <div class="stat-item">
+                        <div class="stat-num">Seg–Sex</div>
+                        <div class="stat-label">08h – 18h</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== SOBRE ==================== -->
+        <section id="sobre" class="sobre-section py-24">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-start gap-16">
+
+                    <!-- Imagem -->
+                    <div class="md:w-5/12 reveal">
+                        <div class="sobre-image">
+                            <div class="sobre-image-accent"></div>
+                            <img src="foto-externa-1.png" alt="Fachada da Odontologia Ideale" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+
+                    <!-- Texto -->
+                    <div class="md:w-7/12 reveal reveal-delay-1">
+                        <div class="section-label">Nossa História</div>
+                        <h2 class="sobre-title mb-6">Odontologia Ideale</h2>
+
+                        <div class="sobre-text mb-6">
+                            <p>
+                                Fundada em 1988, a Odontologia Ideale acumula <strong style="color:var(--c-dark)">38 anos de experiência</strong>, buscando constantemente a atualização, inovação e a qualidade técnica para alcançar a excelência no atendimento odontológico.
+                            </p>
+                            <p>
+                                Nosso trabalho é baseado no acolhimento e entendimento das necessidades e expectativas do paciente para oferecer opções de tratamento. Para isso dedicamos todo o cuidado no diagnóstico e planejamento, sempre respeitando suas necessidades, prioridades e expectativas.
+                            </p>
+                            <p>
+                                Acreditamos que dentes saudáveis e um sorriso harmonioso influenciam diretamente a autoestima e a qualidade de vida, impactando aspectos sociais, profissionais e pessoais.
+                            </p>
+                            <p>
+                                A saúde bucal é parte essencial da saúde do corpo como um todo. Atuamos com ética, atendimento humanizado e respeito aos receios do paciente. Nosso objetivo é ser reconhecidos pela excelência nos serviços e pelo cuidado dedicado a cada pessoa atendida.
+                            </p>
+                        </div>
+
+                        <!-- Biossegurança -->
+                        <div class="bio-card mb-6">
+                            <div class="bio-card-title">
+                                <i class="fa-solid fa-shield-virus"></i> Biossegurança e Sustentabilidade
+                            </div>
+                            <p style="font-size:.85rem;color:var(--c-muted);line-height:1.75;margin-bottom:.75rem;">
+                                A Odontologia Ideale segue rigorosamente todas as normas de biossegurança e sustentabilidade estabelecidas pela <strong style="color:var(--c-text)">ANVISA</strong> (Agência de Vigilância Sanitária) e pelo <strong style="color:var(--c-text)">CONAMA</strong> (Conselho Nacional do Meio Ambiente).
+                            </p>
+                            <p style="font-size:.85rem;color:var(--c-muted);line-height:1.75;margin-bottom:.75rem;">
+                                Todos os instrumentais são esterilizados em autoclave, demais insumos clínicos esterilizados são de uso único e logo descartados após o uso. A desinfecção de demais utensílios e superfícies é realizada com substâncias à base de álcool, clorexidina e cloro.
+                            </p>
+                            <p style="font-size:.85rem;color:var(--c-muted);line-height:1.75;margin-bottom:.75rem;">
+                                Para proteger a Saúde Pública e o Meio Ambiente, os resíduos contaminados são separados, acondicionados em recipientes específicos, retirados por empresas sob determinação da Prefeitura do Município de São Paulo para serem incinerados.
+                            </p>
+                            <p style="font-size:.85rem;color:var(--c-muted);line-height:1.75;">
+                                Os materiais plásticos, metais e papéis não contaminados são destinados corretamente às estações de reciclagem. Também adotamos o uso consciente de água e energia elétrica, reduzindo os impactos ambientais de nossa atividade.
+                            </p>
+                        </div>
+
+                        <!-- Contato rápido -->
+                        <div style="background:var(--c-ivory);border-radius:14px;padding:1.25rem 1.5rem;border:1px solid rgba(0,0,0,.06);">
+                            <div class="contact-pill-row">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Rua Herval, 579 – Belém – São Paulo/SP – CEP 03062-000
+                            </div>
+                            <div class="contact-pill-row">
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:1122928008">(11) 2292-8008</a>
+                            </div>
+                            <div class="contact-pill-row">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <a href="https://wa.me/5511977001032">(11) 97700-1032</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TRATAMENTOS ==================== -->
+        <section id="tratamentos" class="tratamentos-section py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                    <div class="section-label justify-center">Especialidades</div>
+                    <h2 style="font-size:clamp(2.2rem,5vw,3.8rem)">Tratamentos Completos</h2>
+                    <p style="font-size:.95rem;color:var(--c-muted);margin-top:.75rem;line-height:1.7;">Diagnóstico minucioso e tecnologia para todas as fases da sua saúde bucal.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+                    <!-- CARD 1: Ortodontia -->
+                    <div class="treatment-card reveal">
+                        <div class="treatment-card-img">
+                            <img src="alinhador.png" alt="Aparelho ortodôntico e alinhadores transparentes" loading="lazy" decoding="async">
+                            <div class="treatment-card-img-overlay"></div>
+                            <h3 class="treatment-card-img-title">Ortodontia</h3>
+                        </div>
+                        <div class="treatment-card-body">
+                            <p class="treatment-card-desc">Um sorriso alinhado vai além da estética — melhora a mastigação, a fala e a autoestima.<br>O tratamento ortodôntico corrige dentes desalinhados, apinhados e problemas de mordida em qualquer fase da vida.</p>
+
+                            <div id="descOrto" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                <div class="card-detail-inner">
+                                    <p class="card-detail-label">Opções de tratamento</p>
+                                    <p>• Aparelho fixo metálico.</p>
+                                    <p>• Aparelho fixo estético (porcelana).</p>
+                                    <p>• Aparelho removível.</p>
+                                    <p>• Alinhadores transparentes — discretos e praticamente imperceptíveis.</p>
+                                    <p class="card-detail-italic">Indicado para crianças, adolescentes e adultos. O diagnóstico precoce amplia os resultados.</p>
+                                </div>
+                                <button onclick="openInfographic(['alinhador-3.png', 'alinhador-4.png', 'alinhador-2.png'], 'Alinhadores')" class="infographic-btn">
+                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                </button>
+                            </div>
+
+                            <button onclick="toggleCard('descOrto', this)" class="toggle-btn" aria-expanded="false" aria-controls="descOrto">
+                                <span class="toggle-text">Ver Detalhes</span>
+                                <i class="fas fa-plus toggle-icon" style="margin-left:auto;font-size:.65rem;"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2: Implantes -->
+                    <div class="treatment-card reveal reveal-delay-1">
+                        <div class="treatment-card-img">
+                            <img src="implante.png" class="object-top" alt="Implantes dentários de titânio" loading="lazy" decoding="async">
+                            <div class="treatment-card-img-overlay"></div>
+                            <h3 class="treatment-card-img-title">Implantes</h3>
+                        </div>
+                        <div class="treatment-card-body">
+                            <p class="treatment-card-desc">Perder um dente não precisa ser definitivo.<br>O implante de titânio é a solução mais próxima de um dente natural — devolve a mastigação, a estética e a qualidade de vida com alta durabilidade.</p>
+
+                            <div id="descImplante" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                <div class="card-detail-inner">
+                                    <p class="card-detail-label">O que oferecemos</p>
+                                    <p>• Implantes de titânio biocompatível (osseointegração).</p>
+                                    <p>• Carga imediata — implante e prótese no mesmo dia.</p>
+                                    <p>• Enxerto ósseo para casos com perda óssea severa.</p>
+                                    <p>• Reabilitação total com foco em estética e função.</p>
+                                    <p class="card-detail-italic">Planejamento individualizado para resultados previsíveis e duradouros.</p>
+                                </div>
+                                <button onclick="openInfographic(['implante2.png','implante3.png'], 'Implantes Dentários')" class="infographic-btn">
+                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                </button>
+                            </div>
+
+                            <button onclick="toggleCard('descImplante', this)" class="toggle-btn" aria-expanded="false" aria-controls="descImplante">
+                                <span class="toggle-text">Ver Detalhes</span>
+                                <i class="fas fa-plus toggle-icon" style="margin-left:auto;font-size:.65rem;"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3: Clínica Geral -->
+                    <div class="treatment-card reveal reveal-delay-2">
+                        <div class="treatment-card-img">
+                            <img src="sala-clinica.png" alt="Sala de atendimento odontológico" loading="lazy" decoding="async">
+                            <div class="treatment-card-img-overlay"></div>
+                            <h3 class="treatment-card-img-title">Clínica Geral</h3>
+                        </div>
+                        <div class="treatment-card-body">
+                            <p class="treatment-card-desc">A base de um sorriso saudável está no cuidado contínuo, da prevenção ao tratamento, o clínico geral é o ponto de partida para a sua saúde bucal em qualquer fase da vida.</p>
+
+                            <div id="descEstetica" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                <div class="card-detail-inner">
+                                    <p class="card-detail-label">Prevenção</p>
+                                    <p>Consultas de rotina, limpeza, aplicação de flúor, selantes e radiografias — cuidados simples que evitam problemas complexos.</p>
+                                    <p class="card-detail-label" style="margin-top:.5rem">Restaurações</p>
+                                    <p>Tratamento de cáries com resina composta, cerâmica ou restaurações metálicas, devolvendo forma e função ao dente.</p>
+                                    <p class="card-detail-label" style="margin-top:.5rem">Cirurgia & Gengiva</p>
+                                    <p>Extrações, emergências de canal, tratamento de gengivite e encaminhamento para especialistas quando necessário.</p>
+                                    <p class="card-detail-italic">Atendimento especial para pacientes idosos — com atenção às particularidades sistêmicas e uso de medicamentos.</p>
+                                </div>
+                                <button onclick="openInfographic(['clinica1.png','clinica2.png'], 'Estética e Odontologia Geral')" class="infographic-btn">
+                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                </button>
+                            </div>
+
+                            <button onclick="toggleCard('descEstetica', this)" class="toggle-btn" aria-expanded="false" aria-controls="descEstetica">
+                                <span class="toggle-text">Ver Detalhes</span>
+                                <i class="fas fa-plus toggle-icon" style="margin-left:auto;font-size:.65rem;"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4: Prótese -->
+                    <div class="treatment-card reveal">
+                        <div class="treatment-card-img">
+                            <img src="tratamento1.png" alt="Prótese dentária fixa e removível" loading="lazy" decoding="async">
+                            <div class="treatment-card-img-overlay"></div>
+                            <h3 class="treatment-card-img-title">Prótese</h3>
+                        </div>
+                        <div class="treatment-card-body">
+                            <p class="treatment-card-desc">Dentes perdidos afetam muito mais do que a aparência — comprometem a mastigação, a fala e a autoestima.<br>A prótese dentária devolve tudo isso com planejamento preciso e resultado duradouro.</p>
+
+                            <div id="descProtese" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                <div class="card-detail-inner">
+                                    <p class="card-detail-label">Próteses Fixas</p>
+                                    <p>A melhor opção para restabelecer mastigação e estética. Apoiadas em dentes naturais ou implantes, são estáveis e praticamente idênticas aos dentes originais.</p>
+                                    <p class="card-detail-label" style="margin-top:.5rem">Próteses Removíveis</p>
+                                    <p>Totais (dentadura) ou parciais (ponte móvel) — soluções acessíveis e funcionais para reposição de vários dentes perdidos.</p>
+                                    <p class="card-detail-italic">O tratamento pode envolver etapas complementares como endodontia, periodontia ou implantes — tudo planejado de forma integrada.</p>
+                                </div>
+                                <button onclick="openInfographic(['tratamento1.1.png','tratamento1.2.png'], 'Próteses Dentárias')" class="infographic-btn">
+                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                </button>
+                            </div>
+
+                            <button onclick="toggleCard('descProtese', this)" class="toggle-btn" aria-expanded="false" aria-controls="descProtese">
+                                <span class="toggle-text">Ver Detalhes</span>
+                                <i class="fas fa-plus toggle-icon" style="margin-left:auto;font-size:.65rem;"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 5: Endodontia -->
+                    <div class="treatment-card reveal reveal-delay-1">
+                        <div class="treatment-card-img">
+                            <img src="tratamento2.png" alt="Tratamento de canal odontológico" loading="lazy" decoding="async">
+                            <div class="treatment-card-img-overlay"></div>
+                            <h3 class="treatment-card-img-title">Endodontia</h3>
+                        </div>
+                        <div class="treatment-card-body">
+                            <p class="treatment-card-desc">O tratamento de canal tem má fama — mas é ele que elimina a dor e salva o dente.<br>Com técnica adequada, é preciso, eficaz e muito menos desconfortável do que se imagina.</p>
+
+                            <div id="descEndo" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                <div class="card-detail-inner">
+                                    <p class="card-detail-label">Quando é indicado</p>
+                                    <p>Cárie profunda que atingiu a polpa (parte interna com nervos e vasos) ou traumas que causaram necrose do tecido vivo do dente.</p>
+                                    <p class="card-detail-label" style="margin-top:.5rem">Como funciona</p>
+                                    <p>Remove-se o tecido infectado, desinfectam-se os canais radiculares e realiza-se o selamento — preservando o dente natural e eliminando a dor.</p>
+                                    <p class="card-detail-italic">Salvar o dente natural é sempre a melhor opção. O tratamento endodôntico evita extrações e mantém a integridade da arcada dentária.</p>
+                                </div>
+                                <button onclick="openInfographic(['tratamento2.1.png','tratamento2.2.png'], 'Endodontia – Tratamento de Canal')" class="infographic-btn">
+                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                </button>
+                            </div>
+
+                            <button onclick="toggleCard('descEndo', this)" class="toggle-btn" aria-expanded="false" aria-controls="descEndo">
+                                <span class="toggle-text">Ver Detalhes</span>
+                                <i class="fas fa-plus toggle-icon" style="margin-left:auto;font-size:.65rem;"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 6: Periodontia -->
+                    <div class="treatment-card reveal reveal-delay-2">
+                        <div class="treatment-card-img">
+                            <img src="tratamento3.png" alt="Tratamento da gengiva e periodontia" loading="lazy" decoding="async">
+                            <div class="treatment-card-img-overlay"></div>
+                            <h3 class="treatment-card-img-title">Periodontia & Enxerto</h3>
+                        </div>
+                        <div class="treatment-card-body">
+                            <p class="treatment-card-desc">Gengiva inflamada, sangramento ou dentes móveis são sinais de alerta. A saúde periodontal é a base de todo o tratamento — e o enxerto reconstrói o que a doença ou o tempo comprometeram.</p>
+
+                            <div id="descPerio" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                                <div class="card-detail-inner">
+                                    <p class="card-detail-label">Gengivite & Periodontite</p>
+                                    <p>A gengivite é o estágio inicial — reversível com tratamento. Sem cuidado, evolui para periodontite: uma infecção crônica que destrói o osso e o ligamento que sustentam o dente, podendo levar à perda dentária e até afetar a saúde geral do organismo.</p>
+                                    <p class="card-detail-label" style="margin-top:.5rem">Enxerto Ósseo & Gengival</p>
+                                    <p>Quando há perda de volume ósseo ou retração gengival, o enxerto reconstrói esses tecidos — viabilizando implantes, protegendo raízes expostas e recuperando a estética do sorriso.</p>
+                                    <p class="card-detail-italic">Pacientes fumantes e diabéticos têm risco aumentado de doença periodontal — o acompanhamento regular é essencial.</p>
+                                </div>
+                                <button onclick="openInfographic(['tratamento3.1.png','tratamento3.2.png','tratamento4.png','tratamento5.png'], 'Periodontia')" class="infographic-btn">
+                                    <i class="fas fa-images"></i> Ver Infográfico Completo
+                                </button>
+                            </div>
+
+                            <button onclick="toggleCard('descPerio', this)" class="toggle-btn" aria-expanded="false" aria-controls="descPerio">
+                                <span class="toggle-text">Ver Detalhes</span>
+                                <i class="fas fa-plus toggle-icon" style="margin-left:auto;font-size:.65rem;"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROFISSIONAIS ==================== -->
+        <section id="profissionais" class="equipe-section py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-14 reveal">
+                    <div class="section-label justify-center">Corpo Clínico</div>
+                    <h2 style="font-size:clamp(2rem,4vw,3.2rem)">Nossa Equipe</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                    <div class="doctor-card reveal">
+                        <div class="doctor-avatar" style="background: linear-gradient(135deg, rgba(11,92,59,.15), rgba(11,92,59,.08)); color: var(--c-brand);">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div class="doctor-name">Dr. Luiz F. Cardoso</div>
+                        <div class="doctor-cro">CRO-SP 35.271</div>
+                        <div class="doctor-spec">Ortodontista, Implantodontista e Clínico Geral</div>
+                    </div>
+
+                    <div class="doctor-card reveal reveal-delay-1">
+                        <div class="doctor-avatar" style="background: linear-gradient(135deg, rgba(200,169,110,.2), rgba(200,169,110,.08)); color: var(--c-accent);">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div class="doctor-name">Dr. Paulo Lautenschlaeger</div>
+                        <div class="doctor-cro">CRO-SP 30.648</div>
+                        <div class="doctor-spec">Implantodontista<br>Proficiência em Enxerto Ósseo</div>
+                    </div>
+
+                    <div class="doctor-card reveal reveal-delay-2">
+                        <div class="doctor-avatar" style="background: linear-gradient(135deg, rgba(109,40,217,.12), rgba(109,40,217,.06)); color: #7c3aed;">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div class="doctor-name">Dra. Simone da Silva<br>Rodrigues Marta</div>
+                        <div class="doctor-cro">CRO-SP 50.389</div>
+                        <div class="doctor-spec">Endodontista</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== DEPOIMENTOS ==================== -->
+        <section id="depoimentos" class="depoimentos-section py-24">
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="text-center mb-14 reveal">
+                    <div class="section-label justify-center" style="color:rgba(200,169,110,.8)">
+                        <span style="background:rgba(200,169,110,.4);height:1px;"></span>
+                        Pacientes Satisfeitos
+                        <span style="background:rgba(200,169,110,.4);height:1px;"></span>
+                    </div>
+                    <h2 style="color:#fff;font-size:clamp(2rem,4vw,3.2rem)">Confiança Construída<br><em style="color:var(--c-accent)">Através de Sorrisos</em></h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                    <div class="depo-card reveal">
+                        <span class="depo-quote-mark">"</span>
+                        <div class="depo-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="depo-text">"Excelente profissional, muito atencioso, local limpo e organizado. Super indico!"</p>
+                        <div class="depo-author">— Luciana Rocha</div>
+                    </div>
+
+                    <div class="depo-card depo-card-featured reveal reveal-delay-1">
+                        <span class="depo-quote-mark">"</span>
+                        <div class="depo-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="depo-text">"Dr. Luiz Fernando é um excelente profissional! Consultório muito bem estruturado e com ótimo atendimento."</p>
+                        <div class="depo-author">— Marcelo Augusto</div>
+                    </div>
+
+                    <div class="depo-card reveal reveal-delay-2">
+                        <span class="depo-quote-mark">"</span>
+                        <div class="depo-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="depo-text">"Ótimo atendimento e profissionalismo. Fiz meu tratamento e o resultado ficou perfeito. Recomendo a todos."</p>
+                        <div class="depo-author">— Fernanda Souza</div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12 reveal">
+                    <a href="https://g.page/r/CW_YFJt4k_hxEB0/review" target="_blank" class="google-review-btn">
+                        <i class="fa-brands fa-google"></i> Ver mais avaliações no Google
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FAQ ==================== -->
+        <section id="faq" class="faq-section py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+                    <div class="section-label justify-center">Tira-Dúvidas</div>
+                    <h2 style="font-size:clamp(2rem,4vw,3rem)">Dúvidas Comuns</h2>
+                </div>
+
+                <div class="max-w-2xl mx-auto" style="display:flex;flex-direction:column;gap:.75rem;">
+
+                    <div class="faq-item reveal">
+                        <button onclick="toggleFAQ(this)" class="faq-btn" aria-expanded="false" aria-controls="faq-convenios">
+                            <span class="faq-question">Vocês atendem convênios?</span>
+                            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                        </button>
+                        <div id="faq-convenios" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div style="padding:.25rem 1.5rem 1.5rem;font-size:.9rem;color:var(--c-muted);line-height:1.75;border-top:1px solid rgba(0,0,0,.05);">
+                                Optamos pelo atendimento particular para garantir qualidade máxima. Contudo, fornecemos todo o suporte e documentação para <strong style="color:var(--c-text)">reembolso</strong> junto ao seu convênio.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal reveal-delay-1">
+                        <button onclick="toggleFAQ(this)" class="faq-btn" aria-expanded="false" aria-controls="faq-agendar">
+                            <span class="faq-question">Como agendar uma avaliação?</span>
+                            <div class="faq-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                        </button>
+                        <div id="faq-agendar" class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                            <div style="padding:.25rem 1.5rem 1.5rem;font-size:.9rem;color:var(--c-muted);line-height:1.75;border-top:1px solid rgba(0,0,0,.05);">
+                                É muito simples! Basta entrar em contato pelo WhatsApp (11) 97700-1032 ou ligar para (11) 2292-8008.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTATO ==================== -->
+        <section id="contato" class="contato-section py-24">
+            <div class="container mx-auto px-6">
+                <div class="contact-card reveal">
+                    <div class="flex flex-col md:flex-row">
+                        <!-- Info -->
+                        <div class="md:w-1/2 contact-info-side">
+                            <div class="section-label">Localização</div>
+                            <h2 style="font-size:clamp(1.8rem,3.5vw,2.8rem);margin-bottom:.75rem;">Agende sua Visita</h2>
+                            <p style="font-size:.9rem;color:var(--c-muted);margin-bottom:2rem;">Endereço de fácil acesso no Belém. Agende hoje mesmo:</p>
+
+                            <div style="display:flex;flex-direction:column;gap:1.25rem;">
+                                <div style="display:flex;align-items:flex-start;gap:1rem;">
+                                    <div class="contact-icon-circle">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--c-muted);margin-bottom:.3rem;">Telefones</p>
+                                        <p style="font-size:1rem;font-weight:700;color:var(--c-dark);line-height:1.5;">
+                                            <a href="tel:1122928008" style="color:var(--c-dark);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='var(--c-brand)'" onmouseout="this.style.color='var(--c-dark)'">(11) 2292-8008</a>
+                                        </p>
+                                        <p style="font-size:1rem;font-weight:700;color:var(--c-dark);line-height:1.5;display:flex;align-items:center;gap:.5rem;">
+                                            <a href="https://wa.me/5511977001032" style="color:var(--c-dark);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='var(--c-brand)'" onmouseout="this.style.color='var(--c-dark)'">(11) 97700-1032</a>
+                                            <span style="font-size:.68rem;font-weight:700;background:rgba(37,211,102,.12);color:#16a34a;padding:.15rem .5rem;border-radius:100px;">WhatsApp</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div style="display:flex;align-items:flex-start;gap:1rem;">
+                                    <div class="contact-icon-circle">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <p style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--c-muted);margin-bottom:.3rem;">Endereço</p>
+                                        <p style="font-size:.95rem;font-weight:600;color:var(--c-dark);">Rua Herval, 579 - Belém</p>
+                                        <p style="font-size:.85rem;color:var(--c-muted);">São Paulo/SP - CEP: 03062-000</p>
+                                        <a href="https://maps.google.com/?q=Rua+Herval+579+Belém+São+Paulo" target="_blank" style="font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--c-brand);text-decoration:none;margin-top:.25rem;display:inline-block;">
+                                            Abrir no Google Maps <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.65rem;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="https://wa.me/5511977001032" target="_blank" class="btn-whatsapp-cta">
+                                <i class="fa-brands fa-whatsapp text-xl"></i> Agendar pelo WhatsApp
+                            </a>
+                        </div>
+
+                        <!-- Mapa -->
+                        <div class="md:w-1/2 min-h-[420px] bg-gray-100">
+                            <iframe src="https://maps.google.com/maps?q=Rua%20Herval%2C%20579%20-%20Bel%C3%A9m&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;display:block;min-height:420px;" allowfullscreen="" loading="lazy" title="Localização da Odontologia Ideale"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- ==================== FOOTER ==================== -->
-    <footer class="py-32 bg-cream border-t border-slate-100">
-        <div class="container mx-auto px-8">
-            <div class="grid lg:grid-cols-4 gap-20 mb-24">
-                <div class="space-y-10 col-span-1 lg:col-span-1 text-center lg:text-left">
-                    <img src="logo-ideale.png" alt="Ideale Logo" class="h-10 mx-auto lg:mx-0 opacity-50 grayscale">
-                    <p class="text-[10px] text-slate-400 font-light leading-relaxed uppercase tracking-[4px]">Evolução e Maestria Estética no Coração do Belém.</p>
+    <footer class="footer-main py-14">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between gap-10">
+
+                <!-- Logo & RT -->
+                <div>
+                    <img src="logo-ideale.png" alt="Odontologia Ideale" class="h-12 w-auto mb-4" style="filter:brightness(0) invert(1);opacity:.85;" loading="lazy" decoding="async">
+                    <p class="footer-brand-name" style="margin-bottom:.25rem;">Dr. Luiz Fernando Cardoso</p>
+                    <p style="font-size:.75rem;color:rgba(255,255,255,.35);letter-spacing:.05em;">CRO/SP 35.271</p>
                 </div>
-                <div class="space-y-8 text-center lg:text-left">
-                    <h5 class="text-[11px] font-bold uppercase tracking-[5px] text-brand-900">Diretório</h5>
-                    <ul class="text-[10px] space-y-4 text-slate-400 font-light uppercase tracking-[3px]">
-                        <li><a href="#home" class="hover:text-accent transition">Home</a></li>
-                        <li><a href="#sobre" class="hover:text-accent transition">Quem Somos</a></li>
-                        <li><a href="#tratamentos" class="hover:text-accent transition">Especialidades</a></li>
-                        <li><a href="#contato" class="hover:text-accent transition">Agendamento</a></li>
-                    </ul>
+
+                <!-- Links -->
+                <div class="flex flex-wrap gap-12">
+                    <div>
+                        <div class="footer-heading">Clínica</div>
+                        <div style="display:flex;flex-direction:column;gap:.5rem;">
+                            <a href="#home" class="footer-link">Home</a>
+                            <a href="#sobre" class="footer-link">História</a>
+                            <a href="#tratamentos" class="footer-link">Tratamentos</a>
+                            <a href="#profissionais" class="footer-link">Equipe</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="footer-heading">Legal</div>
+                        <div style="display:flex;flex-direction:column;gap:.5rem;">
+                            <a href="/privacidade.html" class="footer-link">Privacidade</a>
+                            <a href="/termos.html" class="footer-link">Termos</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="space-y-8 text-center lg:text-left">
-                    <h5 class="text-[11px] font-bold uppercase tracking-[5px] text-brand-900">Legal</h5>
-                    <ul class="text-[10px] space-y-4 text-slate-400 font-light uppercase tracking-[3px]">
-                        <li><a href="/privacidade.html" class="hover:text-accent transition">Privacidade</a></li>
-                        <li><a href="/termos.html" class="hover:text-accent transition">Termos de Uso</a></li>
-                    </ul>
-                </div>
-                <div class="space-y-8 text-center lg:text-left">
-                    <h5 class="text-[11px] font-bold uppercase tracking-[5px] text-brand-900">Responsável</h5>
-                    <div class="text-[10px] text-slate-400 space-y-2 font-light uppercase tracking-[3px]">
-                        <p class="text-brand-700 font-bold tracking-[4px]">Dr. Luiz Fernando Cardoso</p>
-                        <p>CRO/SP 35.371</p>
+
+                <!-- Social -->
+                <div>
+                    <div class="footer-heading">Redes Sociais</div>
+                    <div style="display:flex;gap:.5rem;">
+                        <a href="https://www.instagram.com/odontologiaideale/" target="_blank" class="footer-social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="pt-16 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center text-center space-y-6 md:space-y-0">
-                <p class="text-[9px] uppercase tracking-[4px] text-slate-300 italic">© 2026 Odontologia Ideale. Todos os direitos reservados.</p>
-                <p class="text-[9px] uppercase tracking-[4px] text-slate-300 italic">Criado por <a href="https://www.redesigner.com.br" class="text-brand-900 hover:text-accent underline transition">Redesigner PPM</a></p>
+
+            <hr class="footer-divider">
+
+            <div style="display:flex;flex-direction:column;gap:.5rem;align-items:center;text-align:center;" class="md:flex-row md:justify-between">
+                <p class="footer-copyright">© 2026 Odontologia Ideale. Todos os direitos reservados. — Responsável Técnico: Dr. Luiz Fernando Cardoso - CRO/SP 35.271</p>
+                <p class="footer-copyright">Desenvolvido por <a href="https://www.redesigner.com.br" class="footer-link" style="text-decoration:underline;">Redesigner PPM</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- MODAL -->
-    <div id="infographic-modal" class="infographic-modal" onclick="closeInfographicOnBackdrop(event)">
-        <div class="modal-content-custom">
-            <div class="p-10 border-b flex justify-between items-center bg-brand-50">
-                <span id="modal-title" class="font-display text-brand-700 text-xl italic tracking-widest uppercase">Protocolo Clínico</span>
-                <div class="flex items-center gap-10">
-                    <div id="modal-nav" class="flex gap-6">
-                        <button onclick="changeSlide(-1)" class="w-12 h-12 rounded-full border border-brand-200 text-brand-900 hover:bg-brand-900 hover:text-white transition-all flex items-center justify-center disabled:opacity-30"><i class="fa-solid fa-chevron-left text-xs"></i></button>
-                        <span id="modal-counter" class="text-[11px] font-bold text-brand-900 tracking-[5px] min-w-[50px] text-center"></span>
-                        <button onclick="changeSlide(1)" class="w-12 h-12 rounded-full border border-brand-200 text-brand-900 hover:bg-brand-900 hover:text-white transition-all flex items-center justify-center disabled:opacity-30"><i class="fa-solid fa-chevron-right text-xs"></i></button>
-                    </div>
-                    <button onclick="closeInfographic()" class="text-red-400 hover:text-red-600 hover:scale-125 transition-transform p-3 text-3xl">&times;</button>
+    <!-- ==================== MODAL INFOGRÁFICO ==================== -->
+    <div id="infographic-modal" class="infographic-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="closeInfographicOnBackdrop(event)">
+        <div class="infographic-modal-dialog">
+            <div class="infographic-modal-header">
+                <span id="modal-title" class="infographic-modal-title"></span>
+                <div class="infographic-modal-nav" id="modal-nav">
+                    <button onclick="changeSlide(-1)" id="modal-prev" aria-label="Anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <span id="modal-counter" class="infographic-modal-counter"></span>
+                    <button onclick="changeSlide(1)" id="modal-next" aria-label="Próximo">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
+                <button onclick="closeInfographic()" class="infographic-modal-close" aria-label="Fechar">
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
-            <div class="overflow-auto bg-slate-100 flex-1 flex items-center justify-center p-16">
-                <img id="modal-img" src="" class="max-w-full shadow-4xl rounded-sm border-[20px] border-white transition-opacity duration-500" />
+            <div class="infographic-modal-body">
+                <img id="modal-img" src="" alt="Infográfico" class="infographic-modal-img" />
             </div>
         </div>
     </div>
 
-    <!-- WHATSAPP BOUTIQUE -->
-    <a href="https://wa.me/5511977001032" target="_blank" class="fixed bottom-12 right-12 z-[45] bg-brand-700 text-white w-20 h-20 rounded-full flex items-center justify-center shadow-3xl hover:bg-accent transition-all hover:scale-110 active:scale-95 group shadow-brand-900/40" aria-label="WhatsApp">
-        <i class="fa-brands fa-whatsapp text-4xl"></i>
-        <span class="absolute right-24 bg-brand-900 text-white px-6 py-3 text-[10px] uppercase tracking-[4px] font-bold opacity-0 group-hover:opacity-100 transition-all duration-500 whitespace-nowrap shadow-2xl translate-x-4 group-hover:translate-x-0">Concierge Ideale</span>
+    <!-- ==================== WHATSAPP FAB ==================== -->
+    <a href="https://wa.me/5511977001032" target="_blank" class="whatsapp-fab" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <!-- SCRIPTS -->
+    <!-- ==================== SCROLL TOP ==================== -->
+    <button id="scrollTopBtn" onclick="scrollToTop()" aria-label="Voltar ao topo" style="display:none;">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ==================== LGPD BANNER ==================== -->
+    <div id="lgpd-banner" class="lgpd-banner">
+        <span>Utilizamos cookies para melhorar sua experiência. Ao continuar, você concorda com nossa <a href="/privacidade.html">Política de Privacidade</a>.</span>
+        <button onclick="acceptCookies()">Aceitar</button>
+    </div>
+
+    <!-- ==================== SCRIPTS ==================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+
     <script>
-        function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
-        function toggleCard(id, button) {
-            const content = document.getElementById(id);
+        // ------------------------------------------------------------------
+        // LAZY LOADING
+        // ------------------------------------------------------------------
+        document.addEventListener('DOMContentLoaded', function() {
+            const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('loaded');
+                            imageObserver.unobserve(entry.target);
+                        }
+                    });
+                });
+                lazyImages.forEach(img => imageObserver.observe(img));
+            }
+
+            // LGPD
+            if (!localStorage.getItem('lgpd-aceito')) {
+                document.getElementById('lgpd-banner').classList.add('show');
+            }
+
+            // SCROLL REVEAL
+            const revealEls = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+            revealEls.forEach(el => revealObserver.observe(el));
+        });
+
+        // ------------------------------------------------------------------
+        // COOKIES
+        // ------------------------------------------------------------------
+        function acceptCookies() {
+            localStorage.setItem('lgpd-aceito', 'true');
+            document.getElementById('lgpd-banner').classList.remove('show');
+        }
+
+        // ------------------------------------------------------------------
+        // MENU MOBILE
+        // ------------------------------------------------------------------
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const button = document.querySelector('[aria-controls="mobile-menu"]');
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+            menu.classList.toggle('hidden');
+            button.setAttribute('aria-expanded', !isExpanded);
+        }
+
+        // ------------------------------------------------------------------
+        // FAQ
+        // ------------------------------------------------------------------
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
             const isOpened = content.style.maxHeight && content.style.maxHeight !== '0px';
-            document.querySelectorAll('[id^="desc"]').forEach(el => {
+
+            document.querySelectorAll('.faq-content').forEach(el => {
                 el.style.maxHeight = '0px';
-                const parentBtn = el.closest('.card-editorial').querySelector('.toggle-btn');
-                if (parentBtn) {
-                    parentBtn.querySelector('.toggle-icon').style.transform = 'rotate(0deg)';
-                    parentBtn.querySelector('.toggle-text').textContent = 'Conhecer';
+                const prevIcon = el.previousElementSibling && el.previousElementSibling.querySelector('i');
+                if (prevIcon) {
+                    prevIcon.style.transform = 'rotate(0deg)';
+                    el.previousElementSibling.setAttribute('aria-expanded', 'false');
                 }
             });
+
             if (!isOpened) {
                 content.style.maxHeight = content.scrollHeight + "px";
-                button.querySelector('.toggle-icon').style.transform = 'rotate(45deg)';
-                button.querySelector('.toggle-text').textContent = 'Fechar';
+                icon.style.transform = 'rotate(180deg)';
+                button.setAttribute('aria-expanded', 'true');
             }
         }
-        let _infographicImages = []; let _infographicIndex = 0;
+
+        // ------------------------------------------------------------------
+        // CARDS DE TRATAMENTOS
+        // ------------------------------------------------------------------
+        function toggleCard(id, button) {
+            const content = document.getElementById(id);
+            const textSpan = button.querySelector('.toggle-text');
+            const icon = button.querySelector('.toggle-icon');
+            const isOpened = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+            document.querySelectorAll('[id^="desc"]').forEach(el => {
+                el.style.maxHeight = '0px';
+                const btn = el.parentElement.querySelector('.toggle-btn');
+                if (btn) {
+                    const btnText = btn.querySelector('.toggle-text');
+                    const btnIcon = btn.querySelector('.toggle-icon');
+                    if (btnText) btnText.textContent = 'Ver Detalhes';
+                    if (btnIcon) { btnIcon.classList.remove('fa-minus'); btnIcon.classList.add('fa-plus'); }
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            if (!isOpened) {
+                content.style.maxHeight = content.scrollHeight + "px";
+                textSpan.textContent = 'Fechar';
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+                button.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        // ------------------------------------------------------------------
+        // SCROLL / NAVBAR
+        // ------------------------------------------------------------------
+        const scrollBtn = document.getElementById("scrollTopBtn");
+        const navbar    = document.getElementById("navbar");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollBtn.style.display = 'flex';
+            } else {
+                scrollBtn.style.display = 'none';
+            }
+            if (window.scrollY > 10) navbar.classList.add("scrolled");
+            else navbar.classList.remove("scrolled");
+        };
+
+        // ------------------------------------------------------------------
+        // MODAL INFOGRÁFICO
+        // ------------------------------------------------------------------
+        let _infographicImages = [];
+        let _infographicIndex  = 0;
+
         function openInfographic(images, title) {
-            _infographicImages = images; _infographicIndex = 0;
+            _infographicImages = images;
+            _infographicIndex  = 0;
             document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-nav').style.display = images.length > 1 ? 'flex' : 'none';
             _renderSlide();
             document.getElementById('infographic-modal').classList.add('open');
             document.body.style.overflow = 'hidden';
         }
-        function closeInfographic() { document.getElementById('infographic-modal').classList.remove('open'); document.body.style.overflow = ''; }
-        function closeInfographicOnBackdrop(e) { if (e.target.id === 'infographic-modal') closeInfographic(); }
+
+        function closeInfographic() {
+            document.getElementById('infographic-modal').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        function closeInfographicOnBackdrop(e) {
+            if (e.target === document.getElementById('infographic-modal')) closeInfographic();
+        }
+
         function changeSlide(dir) {
             const next = _infographicIndex + dir;
             if (next < 0 || next >= _infographicImages.length) return;
-            _infographicIndex = next; _renderSlide();
+            _infographicIndex = next;
+            _renderSlide();
         }
+
         function _renderSlide() {
             const img = document.getElementById('modal-img');
-            img.style.opacity = '0';
-            setTimeout(() => {
-                img.src = _infographicImages[_infographicIndex];
-                document.getElementById('modal-counter').textContent = (_infographicIndex + 1) + '/' + _infographicImages.length;
-                document.getElementById('modal-prev').disabled = _infographicIndex === 0;
-                document.getElementById('modal-next').disabled = _infographicIndex === _infographicImages.length - 1;
-                img.style.opacity = '1';
-            }, 200);
+            img.classList.add('loading');
+            img.onload  = () => img.classList.remove('loading');
+            img.onerror = () => img.classList.remove('loading');
+            img.src = _infographicImages[_infographicIndex];
+            img.alt = document.getElementById('modal-title').textContent + ' – imagem ' + (_infographicIndex + 1);
+            document.getElementById('modal-counter').textContent =
+                _infographicImages.length > 1
+                    ? (_infographicIndex + 1) + ' / ' + _infographicImages.length
+                    : '';
+            document.getElementById('modal-prev').disabled = _infographicIndex === 0;
+            document.getElementById('modal-next').disabled = _infographicIndex === _infographicImages.length - 1;
         }
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-        window.onscroll = function() {
-            const navbar = document.getElementById("navbar");
-            if (window.scrollY > 150) navbar.classList.add("py-3", "shadow-2xl");
-            else navbar.classList.remove("py-3", "shadow-2xl");
-        };
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape')     closeInfographic();
+            if (e.key === 'ArrowLeft')  changeSlide(-1);
+            if (e.key === 'ArrowRight') changeSlide(1);
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     </script>
 </body>
 </html>
