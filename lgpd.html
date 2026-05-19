@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="format-detection" content="telephone=yes">
+  <meta name="description"
+    content="LGPD - Seus direitos na Odontologia Ideale. Informações sobre a Lei Geral de Proteção de Dados e como tratamos suas informações pessoais.">
+
+  <title>LGPD | Odontologia Ideale - Dr. Luiz Fernando Cardoso</title>
+
+  <link rel="icon" href="logo-ideale.png">
+  <link rel="apple-touch-icon" href="logo-ideale.png">
+  <meta name="theme-color" content="#0B5C3B">
+
+  <!-- Fontes modernas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Core -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f8f4',
+              500: '#1f845f',
+              600: '#0B5C3B',
+              700: '#084832',
+              900: '#052E1D',
+            },
+            accent: '#C8A96E',
+            dark: '#0B0F0E',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --c-brand: #0B5C3B;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+    }
+
+    #navbar {
+      transition: all 0.4s ease;
+      background: transparent;
+    }
+
+    #navbar.scrolled {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(15px);
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body class="selection:bg-brand-600 selection:text-white">
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav id="navbar" class="fixed w-full z-50 py-6">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-2 group">
+        <img src="logo-ideale.png" alt="Logo" class="h-10 md:h-12 w-auto transition-all" id="nav-logo">
+      </a>
+
+      <div class="hidden lg:flex items-center gap-10">
+        <div class="flex gap-8 font-bold text-xs uppercase tracking-widest">
+          <a href="index.html#home" class="text-white hover:text-accent transition nav-link-text">Home</a>
+          <a href="index.html#sobre" class="text-white hover:text-accent transition nav-link-text">A Clínica</a>
+          <a href="index.html#tratamentos" class="text-white hover:text-accent transition nav-link-text">Tratamentos</a>
+          <a href="index.html#profissionais" class="text-white hover:text-accent transition nav-link-text">Equipe</a>
+          <a href="index.html#contato" class="text-white hover:text-accent transition nav-link-text">Contato</a>
+        </div>
+        <a href="https://wa.me/5511977001032" target="_blank"
+          class="bg-brand-600 text-white px-8 py-3 rounded-lg font-bold text-xs uppercase tracking-widest hover:bg-brand-700 transition shadow-lg">
+          Agendar Consulta
+        </a>
+      </div>
+
+      <button class="lg:hidden text-white text-2xl" onclick="toggleMenu()" id="menu-toggle">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-dark text-white flex flex-col items-center justify-center gap-8 z-50">
+      <button class="absolute top-10 right-10 text-3xl" onclick="toggleMenu()">&times;</button>
+      <a href="index.html#home" onclick="toggleMenu()" class="text-3xl font-extrabold">Home</a>
+      <a href="index.html#sobre" onclick="toggleMenu()" class="text-3xl font-extrabold">A Clínica</a>
+      <a href="index.html#tratamentos" onclick="toggleMenu()" class="text-3xl font-extrabold">Tratamentos</a>
+      <a href="index.html#profissionais" onclick="toggleMenu()" class="text-3xl font-extrabold">Equipe</a>
+      <a href="index.html#contato" onclick="toggleMenu()" class="text-3xl font-extrabold">Contato</a>
+      <a href="https://wa.me/5511977001032" class="bg-brand-600 px-10 py-4 rounded-xl text-xl font-bold">WhatsApp</a>
+    </div>
+  </nav>
+
+  <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
+  <main class="pt-36 pb-24 bg-white">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-gray-100">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-brand-900 mb-6 border-b border-brand-200 pb-4">
+          LGPD – Seus Direitos
+        </h1>
+
+        <div class="space-y-6 text-gray-700 leading-relaxed">
+          <section>
+            <h2 class="text-2xl font-bold text-brand-800 mb-3 flex items-center gap-2">
+              <i class="fa-solid fa-scale-balanced"></i> 1. Base legal
+            </h2>
+            <p class="text-justify">
+              A Odontologia Ideale atua em conformidade com a <strong>Lei Geral de Proteção de Dados (Lei 13.709/2018)</strong>. Respeitamos sua privacidade e garantimos a proteção de seus dados pessoais, adotando medidas técnicas e organizacionais adequadas.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-bold text-brand-800 mb-3 flex items-center gap-2">
+              <i class="fa-solid fa-database"></i> 2. Dados coletados
+            </h2>
+            <p class="text-justify">
+              Coletamos apenas informações estritamente necessárias para o agendamento de consultas, contato via WhatsApp e cumprimento de obrigações legais (ex.: registros clínicos). Entre os dados podem estar: nome completo, telefone, e-mail e histórico odontológico quando fornecido voluntariamente.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-bold text-brand-800 mb-3 flex items-center gap-2">
+              <i class="fa-solid fa-hand-peace"></i> 3. Seus direitos (Título III da LGPD)
+            </h2>
+            <p class="text-justify">Você, como titular dos dados, tem os seguintes direitos, a qualquer momento e mediante requisição:</p>
+            <ul class="list-disc pl-6 mt-2 space-y-1">
+              <li>Confirmação da existência de tratamento;</li>
+              <li>Acesso aos seus dados;</li>
+              <li>Correção de dados incompletos, inexatos ou desatualizados;</li>
+              <li>Anonimização, bloqueio ou eliminação de dados desnecessários;</li>
+              <li>Portabilidade dos dados a outro fornecedor de serviço;</li>
+              <li>Eliminação dos dados tratados com consentimento, exceto nas hipóteses legais de guarda;</li>
+              <li>Revogação do consentimento a qualquer momento.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-bold text-brand-800 mb-3 flex items-center gap-2">
+              <i class="fa-solid fa-shield-halved"></i> 4. Segurança e compartilhamento
+            </h2>
+            <p class="text-justify">
+              Seus dados são armazenados em ambiente seguro e com acesso restrito. Não compartilhamos suas informações com terceiros sem seu consentimento explícito, exceto quando exigido por lei ou para cumprimento de ordem judicial. As informações de saúde são protegidas pelo sigilo profissional inerente à odontologia.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-bold text-brand-800 mb-3 flex items-center gap-2">
+              <i class="fa-solid fa-envelope-circle-check"></i> 5. Encarregado (DPO) e exercício de direitos
+            </h2>
+            <p class="text-justify">
+              Para exercer qualquer um dos seus direitos, ou para esclarecer dúvidas sobre o tratamento de seus dados, entre em contato com nosso Encarregado de Proteção de Dados:
+            </p>
+            <div class="mt-3 bg-brand-50 p-5 rounded-xl border border-brand-100">
+              <p><strong>E-mail:</strong> <a href="mailto:privacidade@odontologiaideale.com.br" class="text-brand-700 hover:underline">privacidade@odontologiaideale.com.br</a></p>
+              <p class="mt-2"><strong>Correspondência:</strong> Rua Herval, 579 - Belém, São Paulo - SP, CEP 03031-040</p>
+            </div>
+            <p class="text-justify mt-3">
+              Responderemos sua solicitação no prazo legal de até 15 dias, sempre com transparência.
+            </p>
+          </section>
+        </div>
+
+        <p class="text-xs text-gray-400 mt-12 text-center border-t pt-6">
+          Esta declaração de privacidade é parte integrante da Política de Privacidade da Odontologia Ideale. Última revisão: 19 de Maio de 2026.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-dark text-white pt-20 pb-10 relative overflow-hidden">
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-brand-600 opacity-10 blur-[150px]"></div>
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="grid lg:grid-cols-4 gap-12 mb-12">
+        <div>
+          <img src="logo-ideale.png" alt="Odontologia Ideale" class="h-10 mb-6 brightness-0 invert opacity-70">
+          <p class="text-gray-400 text-sm">Excelência em saúde bucal desde 1988. Equipe dedicada e tecnologia de ponta.</p>
+        </div>
+        <div>
+          <h5 class="font-bold text-xs uppercase tracking-[0.2em] text-brand-400 mb-6">Institucional</h5>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="index.html#home" class="hover:text-white">Início</a></li>
+            <li><a href="index.html#sobre" class="hover:text-white">Quem Somos</a></li>
+            <li><a href="index.html#tratamentos" class="hover:text-white">Tratamentos</a></li>
+            <li><a href="index.html#contato" class="hover:text-white">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold text-xs uppercase tracking-[0.2em] text-brand-400 mb-6">Legal</h5>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="privacidade.html" class="hover:text-white">Privacidade</a></li>
+            <li><a href="termos.html" class="hover:text-white">Termos de Uso</a></li>
+            <li><a href="cookies.html" class="hover:text-white">Política de Cookies</a></li>
+            <li><a href="lgpd.html" class="hover:text-white underline">LGPD</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold text-xs uppercase tracking-[0.2em] text-brand-400 mb-6">Atendimento</h5>
+          <div class="text-sm text-gray-400 space-y-2">
+            <p><i class="fa-regular fa-clock"></i> Seg–Sex: 08h–18h</p>
+            <p><i class="fa-solid fa-phone"></i> (11) 2292-8008</p>
+            <p><i class="fa-brands fa-whatsapp"></i> (11) 97700-1032</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+        <p>© 2026 Odontologia Ideale — Dr. Luiz Fernando Cardoso CRO-SP 35.371</p>
+        <div class="flex gap-4">
+          <a href="https://www.instagram.com/odontologiaideale/" target="_blank" class="hover:text-white"><i class="fa-brands fa-instagram text-base"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5511977001032" target="_blank"
+    class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-all duration-300">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    window.onscroll = () => {
+      const navbar = document.getElementById("navbar");
+      const logo = document.getElementById("nav-logo");
+      const linkTexts = document.querySelectorAll(".nav-link-text");
+      const toggle = document.getElementById("menu-toggle");
+
+      if (window.scrollY > 100) {
+        navbar.classList.add("scrolled");
+        if (logo) logo.style.filter = "none";
+        if (toggle) toggle.classList.replace("text-white", "text-brand-900");
+        linkTexts.forEach(l => l.classList.replace("text-white", "text-gray-700"));
+      } else {
+        navbar.classList.remove("scrolled");
+        if (logo) logo.style.filter = "brightness(0) invert(1)";
+        if (toggle) toggle.classList.replace("text-brand-900", "text-white");
+        linkTexts.forEach(l => l.classList.replace("text-gray-700", "text-white"));
+      }
+    };
+  </script>
+</body>
+
+</html>
