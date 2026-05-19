@@ -165,12 +165,17 @@
       .text-justify, .text-justify p { text-align: justify; }
     }
     .text-justify { text-align: justify; }
+
+    /* Transição suave para a logo */
+    #nav-logo {
+      transition: filter 0.3s ease;
+    }
   </style>
 </head>
 
 <body class="selection:bg-brand-600 selection:text-white">
 
-  <!-- ==================== NAVBAR (com link Contato) ==================== -->
+  <!-- ==================== NAVBAR ==================== -->
   <nav id="navbar" class="fixed w-full z-50 py-6">
     <div class="container mx-auto px-6 flex justify-between items-center">
       <a href="#home" class="flex items-center gap-2 group">
@@ -183,7 +188,6 @@
           <a href="#sobre" class="text-white hover:text-accent transition nav-link-text">A Clínica</a>
           <a href="#tratamentos" class="text-white hover:text-accent transition nav-link-text">Tratamentos</a>
           <a href="#profissionais" class="text-white hover:text-accent transition nav-link-text">Equipe</a>
-          <!-- NOVO LINK CONTATO -->
           <a href="#contato" class="text-white hover:text-accent transition nav-link-text">Contato</a>
         </div>
         <a href="https://wa.me/5511977001032" target="_blank"
@@ -288,7 +292,7 @@
         <p class="text-gray-500 text-lg">Tecnologia de ponta e diagnóstico minucioso para o seu sorriso.</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Cards resumidos para manter clareza, mas mantendo a mesma estrutura -->
+        <!-- CARD 1: Ortodontia -->
         <div class="modern-card p-4 reveal group">
           <div class="overflow-hidden rounded-[20px] h-72 mb-8 relative">
             <img src="alinhador.png" alt="Ortodontia" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
@@ -372,7 +376,7 @@
     </div>
   </section>
 
-  <!-- ==================== CONTATO (com botão reduzido) ==================== -->
+  <!-- ==================== CONTATO ==================== -->
   <section id="contato" class="py-32 bg-white">
     <div class="container mx-auto px-6">
       <div class="grid lg:grid-cols-2 gap-20 items-center">
@@ -389,7 +393,7 @@
     </div>
   </section>
 
-  <!-- ==================== FOOTER (com link Contato) ==================== -->
+  <!-- ==================== FOOTER ==================== -->
   <footer class="bg-dark text-white pt-24 pb-12 relative overflow-hidden">
     <div class="absolute bottom-0 right-0 w-96 h-96 bg-brand-600 opacity-10 blur-[150px]"></div>
     <div class="container mx-auto px-6 relative z-10">
@@ -401,13 +405,13 @@
       </div>
       <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
         <div class="flex gap-6 text-lg text-gray-500"><a href="https://www.instagram.com/odontologiaideale/" target="_blank" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a><a href="#" class="hover:text-white"><i class="fa-brands fa-facebook"></i></a></div>
-        <div class="text-[10px] font-bold text-gray-600 uppercase tracking-[0.3em]">© 2026 Odontologia Ideale — Criado por Redesigner PPM</div>
+        <div class="text-[10px] font-bold text-gray-600 uppercase tracking-[0.3em]">© 2026 Odontologia Ideale — Criado por <a href="https://www.redesigner.com.br" target="_blank" class="hover:text-white">Redesigner PPM</a></div>
         <div class="flex gap-4 text-[10px] font-bold text-gray-600 uppercase tracking-widest"><a href="#" class="hover:text-white" id="openLgpdModalFooter">Privacidade</a><a href="#" class="hover:text-white" id="openTermosFooter">Termos</a></div>
       </div>
     </div>
   </footer>
 
-  <!-- ==================== MODAL LGPD (Garantia Legal) ==================== -->
+  <!-- ==================== MODAL LGPD ==================== -->
   <div id="lgpdModalOverlay" class="lgpd-modal-overlay">
     <div class="lgpd-modal-card">
       <div class="lgpd-modal-header"><i class="fa-solid fa-shield-heart text-3xl"></i><h3 class="text-xl font-black mt-2">Sua privacidade em primeiro lugar</h3></div>
@@ -427,10 +431,10 @@
     </div>
   </div>
 
-  <!-- Submodais para páginas legais -->
+  <!-- Submodais -->
   <div id="submodalOverlay" class="submodal-overlay"><div class="submodal-card"><div id="submodalContent"></div><button class="mt-6 bg-gray-200 px-4 py-2 rounded-full text-sm" onclick="closeSubModal()">Fechar</button></div></div>
 
-  <!-- Botão flutuante WhatsApp -->
+  <!-- WhatsApp -->
   <a href="https://wa.me/5511977001032" target="_blank" class="fixed bottom-8 right-8 z-[40] w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center text-white text-3xl shadow-[0_20px_50px_rgba(37,211,102,0.4)] hover:scale-110 transition-all duration-300"><i class="fa-brands fa-whatsapp"></i></a>
 
   <!-- Scripts -->
@@ -471,20 +475,32 @@
       }, 150);
     }
 
-    window.onscroll = () => {
-      let navbar = document.getElementById("navbar"), logo = document.getElementById("nav-logo"), linkTexts = document.querySelectorAll(".nav-link-text"), toggle = document.getElementById("menu-toggle");
-      if (window.scrollY > 100) {
-        navbar.classList.add("scrolled"); logo.style.filter = "none";
+    // Função que atualiza a navbar e a logo com base no scroll
+    function updateNavbarStyle() {
+      const navbar = document.getElementById("navbar");
+      const logo = document.getElementById("nav-logo");
+      const linkTexts = document.querySelectorAll(".nav-link-text");
+      const toggle = document.getElementById("menu-toggle");
+      const scrolled = window.scrollY > 100;
+
+      if (scrolled) {
+        navbar.classList.add("scrolled");
+        if (logo) logo.style.filter = "none";               // logo normal (original)
         if (toggle) toggle.classList.replace("text-white", "text-brand-900");
         linkTexts.forEach(l => l.classList.replace("text-white", "text-gray-500"));
       } else {
-        navbar.classList.remove("scrolled"); logo.style.filter = "brightness(0) invert(1)";
+        navbar.classList.remove("scrolled");
+        if (logo) logo.style.filter = "brightness(0) invert(1)";  // logo branca para fundo escuro
         if (toggle) toggle.classList.replace("text-brand-900", "text-white");
         linkTexts.forEach(l => l.classList.replace("text-gray-500", "text-white"));
       }
-    };
+    }
 
-    // LGPD - Exibição obrigatória
+    // Executa no scroll e também no carregamento da página
+    window.addEventListener("scroll", updateNavbarStyle);
+    document.addEventListener("DOMContentLoaded", updateNavbarStyle);
+
+    // LGPD
     const lgpdOverlay = document.getElementById('lgpdModalOverlay');
     function showLgpdModal() { if (!localStorage.getItem('lgpd-aceito') && !localStorage.getItem('lgpd-recusado')) lgpdOverlay.classList.add('active'); }
     function acceptCookies() { localStorage.setItem('lgpd-aceito', 'true'); lgpdOverlay.classList.remove('active'); }
@@ -493,7 +509,7 @@
     document.getElementById('refuseCookiesBtn')?.addEventListener('click', refuseCookies);
     setTimeout(showLgpdModal, 1200);
 
-    // Submodais para políticas (conteúdo completo)
+    // Submodais
     const subOverlay = document.getElementById('submodalOverlay');
     function openSubModal(type) {
       let content = '';
@@ -525,7 +541,7 @@
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 
-  <!-- Modal de imagens (infográfico) -->
+  <!-- Modal Infográfico -->
   <div id="infographic-modal" class="infographic-modal" role="dialog" onclick="if(event.target===this) closeInfographic()">
     <div class="bg-white rounded-[40px] max-w-5xl w-full p-4 overflow-hidden shadow-2xl">
       <div class="flex items-center justify-between p-8 border-b">
