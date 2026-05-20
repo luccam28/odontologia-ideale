@@ -170,6 +170,13 @@
     #nav-logo {
       transition: filter 0.3s ease;
     }
+
+    /* Força renderização correta do ponto no "i" e detalhes da fonte */
+    h2, .text-accent, .brand-title {
+      text-rendering: geometricPrecision;
+      -webkit-font-smoothing: antialiased;
+      font-variant-ligatures: none;
+    }
   </style>
 </head>
 
@@ -179,7 +186,8 @@
   <nav id="navbar" class="fixed w-full z-50 py-6">
     <div class="container mx-auto px-6 flex justify-between items-center">
       <a href="index.html" class="flex items-center gap-2 group">
-        <img src="logo-ideale.png" alt="Logo" class="h-10 md:h-12 w-auto transition-all" id="nav-logo">
+        <!-- Logo maior: h-12 md:h-16 (antes h-10 md:h-12) -->
+        <img src="logo-ideale.png" alt="Logo" class="h-12 md:h-16 w-auto transition-all" id="nav-logo">
       </a>
 
       <div class="hidden lg:flex items-center gap-10">
@@ -285,112 +293,112 @@
   </section>
 
   <!-- ==================== TRATAMENTOS ==================== -->
-    <section id="tratamentos" class="py-32 bg-gray-50 overflow-hidden">
-      <div class="container mx-auto px-6">
-        <div class="text-center max-w-3xl mx-auto mb-20 reveal">
-          <h2 class="text-4xl md:text-6xl font-extrabold text-brand-900 mb-6">Nossas <span class="text-brand-500">Especialidades</span></h2>
-          <p class="text-gray-500 text-lg">Tecnologia de ponta e diagnóstico minucioso para o seu sorriso.</p>
+  <section id="tratamentos" class="py-32 bg-gray-50 overflow-hidden">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+        <h2 class="text-4xl md:text-6xl font-extrabold text-brand-900 mb-6">Nossas <span class="text-brand-500">Especialidades</span></h2>
+        <p class="text-gray-500 text-lg">Tecnologia de ponta e diagnóstico minucioso para o seu sorriso.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- CARD 1: Ortodontia -->
+        <div class="modern-card p-4 reveal group">
+          <div class="overflow-hidden rounded-[20px] h-72 mb-8 relative">
+            <img src="alinhador.png" alt="Ortodontia" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full font-black text-[10px] text-brand-600 shadow-xl">Uso de Recursos Digitais/Scanner</div>
+          </div>
+          <div class="px-6 pb-10">
+            <h4 class="text-2xl font-extrabold text-brand-900 mb-4">Ortodontia</h4>
+            <p class="text-gray-500 text-sm mb-8 leading-relaxed text-justify">Dentes alinhados melhoram a mastigação, a fala e a estética em qualquer fase da vida.</p>
+            <div id="descOrto" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="pt-4 border-t border-gray-100 mb-6 space-y-2 text-sm text-gray-600 font-medium">
+                <p>• Alinhadores Transparentes</p><p>• Aparelhos Estéticos</p><p>• Correção Funcional</p>
+              </div>
+              <button onclick="openInfographic(['alinhador-3.png', 'alinhador-4.png', 'alinhador-2.png'], 'Ortodontia')" class="w-full py-4 bg-brand-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brand-900 transition-colors mb-4"><i class="fa-solid fa-images mr-2"></i> Ver Galeria Completa</button>
+            </div>
+            <button onclick="toggleCard('descOrto', this)" class="toggle-btn w-full py-4 rounded-xl border-2 border-brand-500 text-brand-600 font-bold text-xs uppercase tracking-widest hover:bg-brand-600 hover:text-white transition-all"><span class="toggle-text">Ver Detalhes</span> <i class="fa-solid fa-plus toggle-icon text-[10px]"></i></button>
+          </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- CARD 1: Ortodontia -->
-          <div class="modern-card p-4 reveal group">
-            <div class="overflow-hidden rounded-[20px] h-72 mb-8 relative">
-              <img src="alinhador.png" alt="Ortodontia" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-              <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full font-black text-[10px] text-brand-600 shadow-xl">Uso de Recursos Digitais/Scanner</div>
-            </div>
-            <div class="px-6 pb-10">
-              <h4 class="text-2xl font-extrabold text-brand-900 mb-4">Ortodontia</h4>
-              <p class="text-gray-500 text-sm mb-8 leading-relaxed text-justify">Dentes alinhados melhoram a mastigação, a fala e a estética em qualquer fase da vida.</p>
-              <div id="descOrto" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                <div class="pt-4 border-t border-gray-100 mb-6 space-y-2 text-sm text-gray-600 font-medium">
-                  <p>• Alinhadores Transparentes</p><p>• Aparelhos Estéticos</p><p>• Correção Funcional</p>
-                </div>
-                <button onclick="openInfographic(['alinhador-3.png', 'alinhador-4.png', 'alinhador-2.png'], 'Ortodontia')" class="w-full py-4 bg-brand-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brand-900 transition-colors mb-4"><i class="fa-solid fa-images mr-2"></i> Ver Galeria Completa</button>
-              </div>
-              <button onclick="toggleCard('descOrto', this)" class="toggle-btn w-full py-4 rounded-xl border-2 border-brand-500 text-brand-600 font-bold text-xs uppercase tracking-widest hover:bg-brand-600 hover:text-white transition-all"><span class="toggle-text">Ver Detalhes</span> <i class="fa-solid fa-plus toggle-icon text-[10px]"></i></button>
-            </div>
+        <!-- CARD 2: Implantes -->
+        <div class="modern-card p-4 reveal group">
+          <div class="overflow-hidden rounded-[20px] h-72 mb-8 relative">
+            <img src="implante.png" alt="Implantes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full font-black text-[10px] text-brand-600 shadow-xl">Uso de Recursos Digitais/Scanner</div>
           </div>
-          <!-- CARD 2: Implantes -->
-          <div class="modern-card p-4 reveal group">
-            <div class="overflow-hidden rounded-[20px] h-72 mb-8 relative">
-              <img src="implante.png" alt="Implantes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-              <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full font-black text-[10px] text-brand-600 shadow-xl">Uso de Recursos Digitais/Scanner</div>
+          <div class="px-6 pb-10">
+            <h4 class="text-2xl font-extrabold text-brand-900 mb-4">Implantes</h4>
+            <p class="text-gray-500 text-sm mb-8 leading-relaxed text-justify">A solução definitiva para dentes perdidos. Recupere sua mastigação e autoconfiança.</p>
+            <div id="descImp" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="pt-4 border-t border-gray-100 mb-6 space-y-2 text-sm text-gray-600 font-medium"><p>• Carga Imediata</p><p>• Enxerto Ósseo</p><p>• Titânio de Alta Durabilidade</p></div>
+              <button onclick="openInfographic(['implante2.png','implante3.png'], 'Implantes Dentários')" class="w-full py-4 bg-brand-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brand-900 transition-colors mb-4"><i class="fa-solid fa-images mr-2"></i> Ver Galeria Completa</button>
             </div>
-            <div class="px-6 pb-10">
-              <h4 class="text-2xl font-extrabold text-brand-900 mb-4">Implantes</h4>
-              <p class="text-gray-500 text-sm mb-8 leading-relaxed text-justify">A solução definitiva para dentes perdidos. Recupere sua mastigação e autoconfiança.</p>
-              <div id="descImp" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                <div class="pt-4 border-t border-gray-100 mb-6 space-y-2 text-sm text-gray-600 font-medium"><p>• Carga Imediata</p><p>• Enxerto Ósseo</p><p>• Titânio de Alta Durabilidade</p></div>
-                <button onclick="openInfographic(['implante2.png','implante3.png'], 'Implantes Dentários')" class="w-full py-4 bg-brand-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brand-900 transition-colors mb-4"><i class="fa-solid fa-images mr-2"></i> Ver Galeria Completa</button>
-              </div>
-              <button onclick="toggleCard('descImp', this)" class="toggle-btn w-full py-4 rounded-xl border-2 border-brand-500 text-brand-600 font-bold text-xs uppercase tracking-widest hover:bg-brand-600 hover:text-white transition-all"><span class="toggle-text">Ver Detalhes</span> <i class="fa-solid fa-plus toggle-icon text-[10px]"></i></button>
-            </div>
+            <button onclick="toggleCard('descImp', this)" class="toggle-btn w-full py-4 rounded-xl border-2 border-brand-500 text-brand-600 font-bold text-xs uppercase tracking-widest hover:bg-brand-600 hover:text-white transition-all"><span class="toggle-text">Ver Detalhes</span> <i class="fa-solid fa-plus toggle-icon text-[10px]"></i></button>
           </div>
-          <!-- CARD 3: Clínica Geral -->
-          <div class="modern-card p-4 reveal group">
-            <div class="overflow-hidden rounded-[20px] h-72 mb-8 relative">
-              <img src="sala-clinica.png" alt="Geral" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-              <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full font-black text-[10px] text-brand-600 shadow-xl">SAÚDE INTEGRAL</div>
-            </div>
-            <div class="px-6 pb-10">
-              <h4 class="text-2xl font-extrabold text-brand-900 mb-4">Clínica Geral</h4>
-              <p class="text-gray-500 text-sm mb-8 leading-relaxed text-justify">Cuidado contínuo e prevenção para garantir uma vida com dentes saudáveis e fortes.</p>
-              <div id="descGeral" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                <div class="pt-4 border-t border-gray-100 mb-6 space-y-2 text-sm text-gray-600 font-medium"><p>• Profilaxia e Limpeza</p><p>• Restaurações em Resina</p><p>• Odontogeriatria</p></div>
-                <button onclick="openInfographic(['clinica1.png','clinica2.png'], 'Estética e Geral')" class="w-full py-4 bg-brand-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brand-900 transition-colors mb-4"><i class="fa-solid fa-images mr-2"></i> Ver Galeria Completa</button>
-              </div>
-              <button onclick="toggleCard('descGeral', this)" class="toggle-btn w-full py-4 rounded-xl border-2 border-brand-500 text-brand-600 font-bold text-xs uppercase tracking-widest hover:bg-brand-600 hover:text-white transition-all"><span class="toggle-text">Ver Detalhes</span> <i class="fa-solid fa-plus toggle-icon text-[10px]"></i></button>
-            </div>
+        </div>
+        <!-- CARD 3: Clínica Geral -->
+        <div class="modern-card p-4 reveal group">
+          <div class="overflow-hidden rounded-[20px] h-72 mb-8 relative">
+            <img src="sala-clinica.png" alt="Geral" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full font-black text-[10px] text-brand-600 shadow-xl">SAÚDE INTEGRAL</div>
           </div>
-          <!-- CARD 4: Prótese (com badge adicionado) -->
-          <div class="modern-card p-4 reveal group">
-            <div class="overflow-hidden rounded-[20px] h-72 mb-8 relative">
-              <img src="tratamento1.png" class="w-full h-full object-cover">
-              <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full font-black text-[10px] text-brand-600 shadow-xl">Uso de Recursos Digitais/Scanner</div>
+          <div class="px-6 pb-10">
+            <h4 class="text-2xl font-extrabold text-brand-900 mb-4">Clínica Geral</h4>
+            <p class="text-gray-500 text-sm mb-8 leading-relaxed text-justify">Cuidado contínuo e prevenção para garantir uma vida com dentes saudáveis e fortes.</p>
+            <div id="descGeral" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="pt-4 border-t border-gray-100 mb-6 space-y-2 text-sm text-gray-600 font-medium"><p>• Profilaxia e Limpeza</p><p>• Restaurações em Resina</p><p>• Odontogeriatria</p></div>
+              <button onclick="openInfographic(['clinica1.png','clinica2.png'], 'Estética e Geral')" class="w-full py-4 bg-brand-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brand-900 transition-colors mb-4"><i class="fa-solid fa-images mr-2"></i> Ver Galeria Completa</button>
             </div>
-            <div class="px-6 pb-10">
-              <h4 class="text-2xl font-extrabold text-brand-900 mb-4">Prótese</h4>
-              <p class="text-gray-500 text-sm mb-8 text-justify">Restabelecimento da função mastigatória com materiais de alta performance.</p>
-              <div id="descPro" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                <div class="pt-4 border-t border-gray-100 mb-6"><p>• Próteses Fixas e Removíveis</p><p>• Lentes de Contato Dental</p></div>
-                <button onclick="openInfographic(['tratamento1.1.png','tratamento1.2.png'], 'Próteses')" class="w-full py-4 bg-brand-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brand-900 transition-colors mb-4"><i class="fa-solid fa-images mr-2"></i> Ver Galeria Completa</button>
-              </div>
-              <button onclick="toggleCard('descPro', this)" class="toggle-btn w-full py-4 rounded-xl border-2 border-brand-500 text-brand-600 font-bold text-xs uppercase tracking-widest hover:bg-brand-600 hover:text-white transition-all"><span class="toggle-text">Ver Detalhes</span> <i class="fa-solid fa-plus toggle-icon text-[10px]"></i></button>
-            </div>
+            <button onclick="toggleCard('descGeral', this)" class="toggle-btn w-full py-4 rounded-xl border-2 border-brand-500 text-brand-600 font-bold text-xs uppercase tracking-widest hover:bg-brand-600 hover:text-white transition-all"><span class="toggle-text">Ver Detalhes</span> <i class="fa-solid fa-plus toggle-icon text-[10px]"></i></button>
           </div>
-          <!-- CARD 5: Endodontia -->
-          <div class="modern-card p-4 reveal group">
-            <div class="overflow-hidden rounded-[20px] h-72 mb-8 relative">
-              <img src="tratamento2.png" class="w-full h-full object-cover">
-            </div>
-            <div class="px-6 pb-10">
-              <h4 class="text-2xl font-extrabold text-brand-900 mb-4">Endodontia</h4>
-              <p class="text-gray-500 text-sm mb-8 text-justify">Eliminação de dores e infecções. Salvando seu dente natural.</p>
-              <div id="descEndo" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                <div class="pt-4 border-t border-gray-100 mb-6"><p>• Sistemas Rotatórios (Precisão)</p><p>• Tratamento Indolor</p></div>
-                <button onclick="openInfographic(['tratamento2.1.png','tratamento2.2.png'], 'Endodontia')" class="w-full py-4 bg-brand-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brand-900 transition-colors mb-4"><i class="fa-solid fa-images mr-2"></i> Ver Galeria Completa</button>
-              </div>
-              <button onclick="toggleCard('descEndo', this)" class="toggle-btn w-full py-4 rounded-xl border-2 border-brand-500 text-brand-600 font-bold text-xs uppercase tracking-widest hover:bg-brand-600 hover:text-white transition-all"><span class="toggle-text">Ver Detalhes</span> <i class="fa-solid fa-plus toggle-icon text-[10px]"></i></button>
-            </div>
+        </div>
+        <!-- CARD 4: Prótese (com badge adicionado) -->
+        <div class="modern-card p-4 reveal group">
+          <div class="overflow-hidden rounded-[20px] h-72 mb-8 relative">
+            <img src="tratamento1.png" class="w-full h-full object-cover">
+            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full font-black text-[10px] text-brand-600 shadow-xl">Uso de Recursos Digitais/Scanner</div>
           </div>
-          <!-- CARD 6: Periodontia -->
-          <div class="modern-card p-4 reveal group">
-            <div class="overflow-hidden rounded-[20px] h-72 mb-8 relative">
-              <img src="tratamento3.png" class="w-full h-full object-cover">
+          <div class="px-6 pb-10">
+            <h4 class="text-2xl font-extrabold text-brand-900 mb-4">Prótese</h4>
+            <p class="text-gray-500 text-sm mb-8 text-justify">Restabelecimento da função mastigatória com materiais de alta performance.</p>
+            <div id="descPro" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="pt-4 border-t border-gray-100 mb-6"><p>• Próteses Fixas e Removíveis</p><p>• Lentes de Contato Dental</p></div>
+              <button onclick="openInfographic(['tratamento1.1.png','tratamento1.2.png'], 'Próteses')" class="w-full py-4 bg-brand-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brand-900 transition-colors mb-4"><i class="fa-solid fa-images mr-2"></i> Ver Galeria Completa</button>
             </div>
-            <div class="px-6 pb-10">
-              <h4 class="text-2xl font-extrabold text-brand-900 mb-4">Periodontia</h4>
-              <p class="text-gray-500 text-sm mb-8 text-justify">Cuidado essencial com a gengiva e tecidos de suporte.</p>
-              <div id="descPerio" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                <div class="pt-4 border-t border-gray-100 mb-6"><p>• Tratamento de Gengivite/Periodontite</p><p>• Enxerto Gengival Estético</p></div>
-                <button onclick="openInfographic(['tratamento3.1.png','tratamento3.2.png','tratamento4.png','tratamento5.png'], 'Periodontia')" class="w-full py-4 bg-brand-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brand-900 transition-colors mb-4"><i class="fa-solid fa-images mr-2"></i> Ver Galeria Completa</button>
-              </div>
-              <button onclick="toggleCard('descPerio', this)" class="toggle-btn w-full py-4 rounded-xl border-2 border-brand-500 text-brand-600 font-bold text-xs uppercase tracking-widest hover:bg-brand-600 hover:text-white transition-all"><span class="toggle-text">Ver Detalhes</span> <i class="fa-solid fa-plus toggle-icon text-[10px]"></i></button>
+            <button onclick="toggleCard('descPro', this)" class="toggle-btn w-full py-4 rounded-xl border-2 border-brand-500 text-brand-600 font-bold text-xs uppercase tracking-widest hover:bg-brand-600 hover:text-white transition-all"><span class="toggle-text">Ver Detalhes</span> <i class="fa-solid fa-plus toggle-icon text-[10px]"></i></button>
+          </div>
+        </div>
+        <!-- CARD 5: Endodontia -->
+        <div class="modern-card p-4 reveal group">
+          <div class="overflow-hidden rounded-[20px] h-72 mb-8 relative">
+            <img src="tratamento2.png" class="w-full h-full object-cover">
+          </div>
+          <div class="px-6 pb-10">
+            <h4 class="text-2xl font-extrabold text-brand-900 mb-4">Endodontia</h4>
+            <p class="text-gray-500 text-sm mb-8 text-justify">Eliminação de dores e infecções. Salvando seu dente natural.</p>
+            <div id="descEndo" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="pt-4 border-t border-gray-100 mb-6"><p>• Sistemas Rotatórios (Precisão)</p><p>• Tratamento Indolor</p></div>
+              <button onclick="openInfographic(['tratamento2.1.png','tratamento2.2.png'], 'Endodontia')" class="w-full py-4 bg-brand-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brand-900 transition-colors mb-4"><i class="fa-solid fa-images mr-2"></i> Ver Galeria Completa</button>
             </div>
+            <button onclick="toggleCard('descEndo', this)" class="toggle-btn w-full py-4 rounded-xl border-2 border-brand-500 text-brand-600 font-bold text-xs uppercase tracking-widest hover:bg-brand-600 hover:text-white transition-all"><span class="toggle-text">Ver Detalhes</span> <i class="fa-solid fa-plus toggle-icon text-[10px]"></i></button>
+          </div>
+        </div>
+        <!-- CARD 6: Periodontia -->
+        <div class="modern-card p-4 reveal group">
+          <div class="overflow-hidden rounded-[20px] h-72 mb-8 relative">
+            <img src="tratamento3.png" class="w-full h-full object-cover">
+          </div>
+          <div class="px-6 pb-10">
+            <h4 class="text-2xl font-extrabold text-brand-900 mb-4">Periodontia</h4>
+            <p class="text-gray-500 text-sm mb-8 text-justify">Cuidado essencial com a gengiva e tecidos de suporte.</p>
+            <div id="descPerio" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="pt-4 border-t border-gray-100 mb-6"><p>• Tratamento de Gengivite/Periodontite</p><p>• Enxerto Gengival Estético</p></div>
+              <button onclick="openInfographic(['tratamento3.1.png','tratamento3.2.png','tratamento4.png','tratamento5.png'], 'Periodontia')" class="w-full py-4 bg-brand-600 text-white rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-brand-900 transition-colors mb-4"><i class="fa-solid fa-images mr-2"></i> Ver Galeria Completa</button>
+            </div>
+            <button onclick="toggleCard('descPerio', this)" class="toggle-btn w-full py-4 rounded-xl border-2 border-brand-500 text-brand-600 font-bold text-xs uppercase tracking-widest hover:bg-brand-600 hover:text-white transition-all"><span class="toggle-text">Ver Detalhes</span> <i class="fa-solid fa-plus toggle-icon text-[10px]"></i></button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
   <!-- ==================== EQUIPE ==================== -->
   <section id="profissionais" class="py-32 bg-white">
